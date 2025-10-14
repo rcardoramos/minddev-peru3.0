@@ -1,0 +1,548 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+  body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0f172a;
+      /* Fondo principal: Azul profundo */
+  }
+
+  /* --- PERSONALIZACIÓN DEL SCROLLBAR (Toque Final) --- */
+  /* Compatible con Webkit (Chrome, Safari, Edge) */
+  ::-webkit-scrollbar {
+      width: 8px;
+      /* Ancho más delgado */
+  }
+
+  ::-webkit-scrollbar-track {
+      background: #0f172a;
+      /* Color de la pista: Azul Profundo */
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: #0f1a37;
+      /* Color del pulgar: Azul Oscuro (Dark Alt) */
+      border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+      background: #3b82f6;
+      /* Color al hacer hover: Azul Eléctrico */
+  }
+
+  /* ----------------------------------------------------- */
+
+  /* 1. Fondo con Profundidad Radial para el Hero */
+  #inicio {
+      background-color: #0f172a;
+      /* Fondo base Azul Profundo */
+      /* Gradiente radial sutil para dar efecto de foco de luz central/profundidad */
+      background-image: radial-gradient(circle at center, rgba(59, 130, 246, 0.05) 0%, rgba(15, 23, 42, 1) 70%);
+  }
+
+  /* Animación para el Carrusel Infinito de Clientes */
+  @keyframes scroll-x {
+      from {
+          transform: translateX(0);
+      }
+
+      to {
+          transform: translateX(-100%);
+      }
+  }
+
+  .infinite-scroll {
+      animation: scroll-x 30s linear infinite;
+      /* 30s para el loop */
+      width: max-content;
+      /* Asegura que todos los logos estén en una fila */
+  }
+
+  .text-gradient {
+      background-image: linear-gradient(to right, #3b82f6, #5355dd);
+      background-clip: text;
+      /* 💎 Estándar */
+      -webkit-background-clip: text;
+      /* 🧩 Compatibilidad Safari/Chrome */
+      color: transparent;
+      /* 💡 Alternativa moderna */
+      -webkit-text-fill-color: transparent;
+      /* 🧩 Para Safari */
+  }
+
+  /* Clase para el efecto de hover suave en el menú */
+  .nav-item-hover {
+      transition: color 0.3s, background-color 0.3s;
+  }
+
+  /* Contenedor del texto del enlace, siempre visible pero con opacidad controlada */
+  .nav-label {
+      height: 0;
+      /* Lo ocultamos, el texto está invisible */
+      opacity: 0;
+      visibility: hidden;
+      /* Transición más suave: 0.3s */
+      transition: all 0.3s ease-in-out;
+      margin-top: 0;
+      line-height: 0;
+  }
+
+  /* Muestra el texto de la etiqueta al hacer hover */
+  .group:hover .nav-label {
+      height: auto;
+      opacity: 1;
+      visibility: visible;
+      margin-top: 4px;
+      /* Pequeño margen superior para separación */
+      line-height: 1;
+  }
+
+  /* Estilo Glassmorphism para las tarjetas del Hero */
+  .glass-card {
+      background-color: rgba(15, 23, 42, 0.4);
+      /* deep-blue/40 */
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      /* electric-blue/20 */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Estilo para los chips de tecnología dentro de las cards de servicio (NUEVO ESTILO DE PÍLDORA GLASS) */
+  .tech-chip {
+      background-color: rgba(255, 255, 255, 0.05);
+      /* Blanco muy transparente */
+      color: #ffffff;
+      /* Texto blanco puro */
+      border: 1px solid rgba(59, 130, 246, 0.4);
+      /* Borde sutil azul eléctrico */
+      padding: 4px 12px;
+      border-radius: 9999px;
+      /* full rounded */
+      font-size: 0.75rem;
+      /* text-xs */
+      font-weight: 500;
+      /* font-medium */
+      margin-right: 8px;
+      margin-bottom: 8px;
+      /* Eliminamos la transición para que no haya hover */
+  }
+
+  /* Estilos específicos para la nueva card de Portafolio */
+  .case-study-card {
+      background-color: #0f1a37;
+      /* dark-alt */
+      border: 1px solid transparent;
+      transition: all 0.3s ease-in-out;
+  }
+
+  .case-study-card:hover {
+      border-color: #3b82f6;
+      /* electric-blue */
+      box-shadow: 0 10px 15px rgba(59, 130, 246, 0.1);
+      transform: translateY(-5px);
+  }
+
+  .case-study-tag {
+      color: #3b82f6;
+      font-weight: 600;
+      font-size: 0.875rem;
+      /* text-sm */
+  }
+
+  /* Animación para el carrusel de clientes (adaptada de infinite-scroll) */
+  @keyframes scroll-logos {
+      from {
+          transform: translateX(0);
+      }
+
+      to {
+          transform: translateX(-50%);
+      }
+
+      /* Mueve la mitad del contenedor (una copia) */
+  }
+
+  .logo-track {
+      display: flex;
+      width: 200%;
+      /* Asegura espacio para la copia y el scroll infinito */
+      animation: scroll-logos 30s linear infinite;
+  }
+
+  .logo-track:hover {
+      animation-play-state: paused;
+  }
+
+  .logo-item {
+      flex-shrink: 0;
+      width: 200px;
+      /* Ancho fijo para cada logo */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  /* Estilos para el Testimonio Asimétrico (Nuevo) */
+  .testimonial-card {
+      background-color: #0f172a;
+      /* deep-blue */
+      border-radius: 2rem;
+      position: relative;
+      z-index: 10;
+      padding: 2.5rem;
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+  }
+
+  .quote-icon {
+      font-size: 3rem;
+      line-height: 1;
+      color: #3b82f6;
+      /* electric-blue */
+      opacity: 0.2;
+      position: absolute;
+      top: 1rem;
+      left: 1.5rem;
+  }
+
+  /* Estilos para el contenedor de la sección de Tecnología */
+  /* Eliminamos margin-bottom en las categorías individuales para controlar el espacio con el nuevo diseño */
+  .tech-category-grid {
+      margin-bottom: 0;
+  }
+
+  /* Nuevo estilo para la tarjeta de liderazgo con biografía oculta */
+  .bio-detail {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+      padding: 0 1rem;
+  }
+
+  .bio-detail.open {
+      max-height: 500px;
+      /* Suficiente altura para el contenido */
+      padding: 1rem 1rem 0.5rem 1rem;
+  }
+
+  /* Estilos para la sección de Proceso (Timeline/Flujo) */
+  .process-step {
+      position: relative;
+      padding-top: 1rem;
+      text-align: center;
+  }
+
+  /* Línea de conexión para desktop */
+  .process-line {
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      right: 50%;
+      height: 2px;
+      background-color: #3b82f6;
+      /* electric-blue */
+      z-index: 5;
+      transform: translateX(-50%);
+  }
+
+  /* Ajuste de línea para el primer y último paso */
+  .process-step:first-child .process-line {
+      left: 50%;
+  }
+
+  .process-step:last-child .process-line {
+      right: 50%;
+  }
+
+  /* Estilos para el FAQ (Acordeón) */
+  .faq-item {
+      background-color: #0f1a37;
+      /* dark-alt */
+      border-radius: 0.75rem;
+      margin-bottom: 0.75rem;
+      border: 1px solid #3b82f640;
+      /* electric-blue/25 */
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+  }
+
+  .faq-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      font-weight: 600;
+  }
+
+  .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 1.5rem;
+      transition: max-height 0.4s ease-in-out;
+  }
+
+  .faq-answer p {
+      padding-bottom: 1.5rem;
+      color: #9ca3af;
+      /* gray-400 */
+      font-size: 0.9rem;
+  }
+
+  /* Estilo activo para el header */
+  .faq-item.active {
+      background-color: #0f172a;
+      /* deep-blue */
+      border-color: #3b82f6;
+  }
+
+  .faq-item.active .faq-answer {
+      max-height: 300px;
+      /* Suficiente altura para expandir */
+  }
+
+  /* Estilo para la tarjeta de soporte lateral */
+  .support-card {
+      background-color: #0f1a37;
+      /* dark-alt */
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+  }
+
+  .support-card-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M100 0L0 100h100zM0 0l100 100V0z' fill='%233b82f6' opacity='0.05'/%3E%3C/svg%3E");
+      background-size: 100px 100px;
+      opacity: 0.4;
+  }
+
+  /* Estilos personalizados para los inputs del Formulario */
+  .form-input-custom {
+      background-color: transparent !important;
+      border: none !important;
+      border-bottom: 1px solid #3b82f640 !important;
+      /* electric-blue semi-transparente */
+      border-radius: 0 !important;
+      padding: 12px 0 !important;
+      color: #ffffff;
+      /* Texto de entrada */
+      transition: border-color 0.3s ease-in-out;
+  }
+
+  .form-input-custom:focus {
+      outline: none !important;
+      border-bottom: 1px solid #3b82f6 !important;
+      /* electric-blue sólido en focus */
+      box-shadow: none !important;
+  }
+
+  .form-input-custom::placeholder {
+      color: #9ca3af;
+      /* gray-400 */
+      font-size: 0.9rem;
+  }
+
+  /* Botón de WhatsApp Flotante */
+  .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 60;
+      width: 56px;
+      /* Tamaño ligeramente más grande que el botón de volver */
+      height: 56px;
+      background-color: #25D366;
+      /* Color oficial de WhatsApp */
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 0 0 0 rgba(37, 211, 102, 0.7);
+      /* Sombra y efecto de pulsación */
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      animation: pulse-whatsapp 2s infinite;
+      /* Animación sutil de pulsación */
+  }
+
+  .whatsapp-float:hover {
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+      transform: scale(1.1);
+      animation: none;
+  }
+
+  @keyframes pulse-whatsapp {
+      0% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+      }
+
+      70% {
+          box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+      }
+
+      100% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
+  }
+
+  /* Estilos para las tarjetas de Partners */
+  .partner-card-link {
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      border: 1px solid transparent;
+      /* Base para el hover */
+  }
+
+  .partner-card-link:hover {
+      border-color: #3b82f680;
+      /* Borde sutil al hacer hover */
+      box-shadow: 0 8px 16px rgba(59, 130, 246, 0.15);
+      /* Sombra suave */
+      transform: translateY(-4px);
+  }
+
+  /* --- ESTILOS DEL TOGGLE SWITCH (INTERRUPTOR DE IDIOMA) --- */
+  .language-switch {
+      width: 70px;
+      /* Ancho del switch */
+      height: 28px;
+      /* Altura del switch */
+      background-color: #0f172a;
+      /* Fondo: deep-blue */
+      border: 1px solid #3b82f6;
+      /* Borde: electric-blue */
+      border-radius: 9999px;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+  }
+
+  .switch-label {
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      /* text-xs */
+      font-weight: 700;
+      transition: all 0.3s ease-in-out;
+  }
+
+  .switch-toggle {
+      width: 50%;
+      height: 100%;
+      background-color: #3b82f6;
+      /* Color de la palanca: electric-blue */
+      border-radius: 9999px;
+      position: absolute;
+      transition: transform 0.3s ease-in-out;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Estado EN (la palanca se mueve a la derecha) */
+  .language-switch[data-lang="en"] .switch-toggle {
+      transform: translateX(100%);
+  }
+
+  /* Color del texto activo/inactivo */
+  .language-switch[data-lang="es"] .es-label {
+      color: #0f172a;
+  }
+
+  /* Texto activo (ES) */
+  .language-switch[data-lang="es"] .en-label {
+      color: #ffffff;
+  }
+
+  /* Texto inactivo (EN) */
+  .language-switch[data-lang="en"] .es-label {
+      color: #ffffff;
+  }
+
+  /* Texto inactivo (ES) */
+  .language-switch[data-lang="en"] .en-label {
+      color: #0f172a;
+  }
+
+  /* Texto activo (EN) */
+  /* Ajuste de posición de los labels */
+  .es-label {
+      left: 0;
+      z-index: 10;
+  }
+
+  .en-label {
+      right: 0;
+      z-index: 10;
+  }
+
+  /* ----------------------------------------------------- */
+
+  /* --- ESTILOS DEL BLOG (VERSIÓN FINAL CON HOVER MODERNO Y NUEVO DISEÑO) --- */
+  .blog-card {
+      background-color: #0f1a37;
+      /* dark-alt como fondo de tarjeta */
+      border: 1px solid transparent;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .blog-card:hover {
+      border-color: #5355dd;
+      /* Borde Acento morado al pasar el mouse */
+      box-shadow: 0 10px 20px rgba(83, 85, 221, 0.15);
+      transform: translateY(-5px);
+      /* Efecto de elevación */
+  }
+
+  /* Nuevo estilo para el círculo de ícono (similar al hero/referencia) */
+  .blog-icon-circle-new {
+      width: 48px;
+      height: 48px;
+      background-color: #3b82f61a;
+      /* electric-blue/10 */
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+  }
+
+  .blog-title-link {
+      transition: color 0.3s;
+  }
+
+  .blog-card:hover .blog-title-link {
+      color: #3b82f6;
+      /* electric-blue */
+  }
+
+  /* Estilo para el enlace Leer Artículo (como en la imagen) */
+  .blog-read-link {
+      color: #3b82f6;
+      /* electric-blue */
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      margin-top: 1rem;
+      transition: color 0.3s;
+  }
+
+  .blog-card:hover .blog-read-link {
+      color: #5355dd;
+      /* accent-purple */
+  }
