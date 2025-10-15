@@ -1,0 +1,124 @@
+<section id="alianzas" class="py-16 bg-deep-blue">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+        <p class="case-study-tag uppercase text-center mb-2" data-text-key="partners_tag">Nuestros Partners</p>
+        <h2 class="text-4xl font-bold text-center mb-10" data-text-key="partners_title">Alianzas <span
+                class="text-electric-blue">Estratégicas</span></h2>
+
+
+        <div class="text-center mb-10">
+            <a href="#contacto"
+                class="inline-flex items-center text-lg font-bold text-white-pure bg-electric-blue/20 px-6 py-2 rounded-full hover:bg-electric-blue/30 transition duration-300 border border-electric-blue/50"
+                data-text-key="btn_be_partner">
+                <span data-lucide="handshake" class="w-5 h-5 mr-2"></span> Sé Partner Nuestro
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+            <!-- Partner 1: CALL BELL (CRM de WhatsApp) -->
+
+            <div class="p-6 bg-dark-alt rounded-xl shadow-lg flex flex-col items-center text-center partner-card-link"
+                onclick="openPartnerModal('Call Bell', 'CRM de WhatsApp', 'Call Bell es un CRM que te permite gestionar mensajes, enviar masivos y medir métricas conectadas a la API oficial de WhatsApp, optimizando tu comunicación y ventas.', './assets/images/icon-emp/partner-callbell.png', 'https://wa.me/51903067489?text=Hola%20Minddev%2C%20quiero%20solicitar%20mi%20DEMO%20de%20Callbell%20y%20obtener%20un%20beneficio%20con%20su%20socio.')">
+                <img src="./assets/images/icon-emp/partner-callbell.png" alt="Logo Call Bell" class="h-10 mb-3">
+                <h4 class="text-lg font-semibold text-white-pure mb-1">Call Bell</h4>
+                <p class="text-sm text-electric-blue mb-2" data-text-key="partner1_service">CRM de WhatsApp</p>
+                <p class="text-xs text-gray-400" data-text-key="partner1_desc">Mensajería, Métricas y Gestión.
+                </p>
+            </div>
+
+            <!-- Partner 2: VTURB (Reproductor de Video) -->
+
+            <div class="p-6 bg-dark-alt rounded-xl shadow-lg flex flex-col items-center text-center partner-card-link"
+                onclick="openPartnerModal('VTurb', 'Reproductor de Video para Ventas', 'VTurb es el único reproductor de video del mundo enfocado 100% en hacer que tu VSL o Webinario venda más, optimizado para la conversión.', './assets/images/icon-emp/partner-vturb.png', 'https://www.vturb.com/?ref=minddev&discount=15%25&coupon=MINDDEVPERU')">
+                <img src="./assets/images/icon-emp/partner-vturb.png" alt="Logo VTurb" class="h-14 mb-2">
+                <h4 class="text-lg font-semibold text-white-pure mb-1">VTurb</h4>
+                <p class="text-sm text-electric-blue mb-2" data-text-key="partner2_service">Video Marketing</p>
+                <p class="text-xs text-gray-400" data-text-key="partner2_desc">Optimización de VSLs y
+                    Webinarios.</p>
+            </div>
+
+            <!-- Partner 3: INTERCAPITAL PERÚ (Inversiones) -->
+
+            <div class="p-6 bg-dark-alt rounded-xl shadow-lg flex flex-col items-center text-center partner-card-link"
+                onclick="openPartnerModal('Intercapital Perú', 'Inversiones Inmobiliarias Seguras', 'Intercapital Perú busca inversionistas que pueden obtener del 30% al 36% anual por invertir con garantía hipotecaria. Inversión totalmente segura y respaldada.', './assets/images/icon-emp/ICP-EMPRESA-PNG.png', 'https://intercapitalperu.com/')">
+                <img src="./assets/images/icon-emp/ICP-EMPRESA-PNG.png" alt="Logo Intercapital Perú" class="h-10 mb-3">
+                <h4 class="text-lg font-semibold text-white-pure mb-1">Intercapital Perú</h4>
+                <p class="text-sm text-electric-blue mb-2" data-text-key="partner3_service">Inversiones
+                    Hipotecarias</p>
+                <p class="text-xs text-gray-400" data-text-key="partner3_desc">Rendimiento anual del 30% al 36%.
+                </p>
+            </div>
+
+            <!-- Partner 4: VOCANTY (Consultora/Escuela) -->
+
+            <!-- <div class="p-6 bg-dark-alt rounded-xl shadow-lg flex flex-col items-center text-center partner-card-link"
+                        onclick="openPartnerModal('Vocanty', 'Consultora de Comercio Exterior', 'Vocanty es líder en consultoría y escuela de comercio exterior y metodologías ágiles para la gestión empresarial, brindando soluciones integrales y capacitaciones.', 'https://placehold.co/150x60/0f1a37/ffffff?text=VOCANTY', 'https://tu-enlace-referido-vocanty.com?ref=minddev&discount=EXCLUSIVO')">
+                        <img src="https://placehold.co/150x60/0f1a37/ffffff?text=VOCANTY" alt="Logo Vocanty"
+                            class="h-10 mb-3 grayscale hover:grayscale-0 transition duration-300">
+                        <h4 class="text-lg font-semibold text-white-pure mb-1">Vocanty</h4>
+                        <p class="text-sm text-electric-blue mb-2" data-text-key="partner4_service">Comercio Exterior &
+                            Agile</p>
+                        <p class="text-xs text-gray-400" data-text-key="partner4_desc">Asesoramiento y Capacitaciones.
+                        </p>
+                    </div> -->
+        </div>
+    </div>
+</section>
+
+<!-- Modal de Detalles del Partner -->
+
+<div id="partner-modal"
+    class="hidden fixed inset-0 z-[100] bg-deep-blue/80 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity duration-300 opacity-0">
+    <div class="bg-dark-alt rounded-2xl shadow-2xl max-w-lg w-full transform scale-95 transition-transform duration-300 border border-accent-purple/50"
+        id="partner-modal-content">
+        <div class="p-6 sm:p-8 relative">
+
+            <button onclick="closePartnerModal()"
+                class="absolute top-4 right-4 text-gray-400 hover:text-electric-blue transition z-20 p-2 rounded-full hover:bg-deep-blue">
+                <span data-lucide="x" class="w-6 h-6"></span>
+            </button>
+
+            <div class="text-center">
+                <img id="partner-modal-logo" src="" alt="Logo del Partner" class="h-12 mx-auto mb-4 grayscale">
+                <h2 id="partner-modal-title" class="text-2xl font-bold text-white-pure mb-1"></h2>
+                <p id="partner-modal-service" class="text-electric-blue font-semibold mb-4"></p>
+            </div>
+
+            <div class="border-t border-gray-700/50 pt-4 mt-4">
+                <h3 class="text-xl font-semibold text-white-pure mb-2" data-text-key="partner_modal_details">
+                    Detalles de la Alianza</h3>
+                <p id="partner-modal-description" class="text-gray-300 leading-relaxed mb-6 text-sm"></p>
+
+                <div class="bg-deep-blue p-4 rounded-xl text-center border border-accent-purple/30">
+                    <p class="text-lg font-bold text-accent-purple mb-2" data-text-key="partner_modal_benefit_title">
+                        Beneficio Exclusivo MindDev</p>
+                    <p id="partner-modal-benefit-text" class="text-sm text-gray-400 mb-4">¡Obtén un <span
+                            id="partner-modal-discount" class="font-extrabold text-electric-blue">beneficio
+                            exclusivo</span> por ser cliente nuestro!</p>
+
+                    <!-- Campo de Cupón (Visible solo si hay cupón) -->
+                    <div id="coupon-display" class="mt-4 hidden">
+                        <p class="text-xs text-gray-500 mb-1" data-text-key="partner_modal_coupon_label">Usa
+                            este cupón al registrarte:</p>
+                        <div class="inline-flex items-center bg-dark-alt border border-electric-blue/50 rounded-lg p-2">
+                            <span id="partner-modal-coupon-code"
+                                class="text-lg font-extrabold text-electric-blue mr-3 select-all">MINDDEVPERU</span>
+                            <button onclick="copyCouponCode()"
+                                class="bg-electric-blue text-deep-blue px-3 py-1 rounded-md text-xs font-bold hover:bg-accent-purple transition"
+                                data-text-key="partner_modal_copy_btn">
+                                Copiar
+                            </button>
+                        </div>
+                    </div>
+
+                    <a id="partner-modal-link" href="#" target="_blank" onclick="closePartnerModal()"
+                        class="inline-flex items-center bg-electric-blue text-deep-blue px-6 py-3 rounded-full font-bold hover:bg-accent-purple hover:text-white-pure transition duration-300 shadow-md mt-4"
+                        data-text-key="partner_modal_get_benefit">
+                        <span data-lucide="external-link" class="w-5 h-5 mr-2"></span> Obtener Beneficio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

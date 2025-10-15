@@ -1,0 +1,173 @@
+<section id="contacto" class="py-16 bg-deep-blue">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Contenedor principal del Formulario y la Tarjeta de Valor -->
+        <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto rounded-3xl shadow-2xl border border-electric-blue/30 overflow-hidden bg-dark-alt">
+
+            <!-- Columna Izquierda: Formulario de Inputs -->
+            <div class="p-8 lg:p-10 bg-dark-alt">
+
+                <div class="text-left mb-6">
+                    <!-- COMENTARIO: MODIFICAR TÍTULOS DEL FORMULARIO AQUÍ -->
+                    <h2 class="text-4xl font-extrabold mb-2 leading-tight" data-text-key="contact_form_title">
+                        Contáctanos</h2>
+                    <p class="text-lg text-gray-300" data-text-key="contact_form_subtitle">Desarrollemos tu
+                        software a medida.</p>
+                </div>
+
+                <form id="contactForm" class="space-y-6">
+
+                    <!-- Input: Nombre y Apellido -->
+                    <div>
+                        <label for="full_name" class="block text-sm font-medium text-gray-300 mb-1"
+                            data-text-key="form_label_name">Nombre y Apellido</label>
+                        <input type="text" id="full_name" name="full_name" class="w-full form-input-custom"
+                            data-placeholder-key="form_placeholder_name" placeholder="Ingresa tu nombre y apellido aquí"
+                            required>
+                    </div>
+
+                    <!-- Input: Email Corporativo -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300 mb-1"
+                            data-text-key="form_label_email">Email</label>
+                        <input type="email" id="email" name="email" class="w-full form-input-custom"
+                            data-placeholder-key="form_placeholder_email" placeholder="nombre@mail.com" required>
+                    </div>
+
+                    <!-- Dropdown: Servicio de Interés -->
+                    <div class="relative">
+                        <label for="service_interest" class="block text-sm font-medium text-gray-300 mb-1"
+                            data-text-key="form_label_service">¿Qué servicio te interesa?</label>
+                        <select id="service_interest" name="service_interest"
+                            class="w-full form-input-custom appearance-none" required>
+                            <!-- COMENTARIO: MODIFICAR OPTIONS DEL FORMULARIO AQUÍ (Necesitan ser traducidos en JS) -->
+                            <option value="" disabled selected class="text-gray-500 bg-dark-alt"
+                                data-option-key="option_select_service">Selecciona un servicio o alianza
+                            </option>
+                            <option value="desarrollo_web" class="bg-dark-alt" data-option-key="option_web_dev">
+                                Desarrollo Web (Sitios, E-commerce, Landing)</option>
+                            <option value="app_movil" class="bg-dark-alt" data-option-key="option_mobile_app">
+                                Aplicaciones Móviles (iOS, Android, Híbridas)</option>
+                            <option value="mantenimiento_seo" class="bg-dark-alt" data-option-key="option_maint_seo">
+                                Mantenimiento Web, Rediseño y SEO</option>
+                            <option value="hosting_cloud" class="bg-dark-alt" data-option-key="option_hosting">
+                                Hosting y Cloud Computing</option>
+                            <option value="capacitaciones" class="bg-dark-alt" data-option-key="option_training">
+                                Capacitaciones Tecnológicas</option>
+                            <option value="alianza" class="bg-dark-alt font-bold" data-option-key="option_alliance">
+                                Quiero formar parte de su Alianza Estratégica
+                            </option>
+                        </select>
+                        <span class="absolute right-0 bottom-3 pointer-events-none p-2"><span data-lucide="chevron-down"
+                                class="w-4 h-4 text-gray-400"></span></span>
+                    </div>
+
+                    <!-- Input: Teléfono (Combinado) -->
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-300 mb-1"
+                            data-text-key="form_label_phone">Teléfono</label>
+                        <div class="flex space-x-2 relative">
+                            <!-- Selector de Código (Simulado) -->
+                            <select
+                                class="form-input-custom w-24 flex-shrink-0 bg-dark-alt text-gray-300 appearance-none pr-6">
+                                <option value="PE" class="bg-dark-alt">PE +51</option>
+                                <option value="CO" class="bg-dark-alt">CO +57</option>
+                                <option value="MX" class="bg-dark-alt">MX +52</option>
+                                <option value="AR" class="bg-dark-alt">AR +54</option>
+                            </select>
+                            <input type="tel" id="phone" name="phone" class="w-full form-input-custom"
+                                data-placeholder-key="form_placeholder_phone" placeholder="Ingresa tu teléfono aquí">
+                        </div>
+                    </div>
+
+                    <!-- Checkboxes de Aceptación -->
+                    <div class="space-y-3 pt-2 text-sm">
+                        <div class="flex items-start">
+                            <input id="accept_terms" type="checkbox" required
+                                class="mt-1 w-4 h-4 text-electric-blue bg-deep-blue border-gray-600 rounded focus:ring-electric-blue">
+                            <label for="accept_terms" class="ml-3 text-gray-300 cursor-pointer"
+                                data-text-key="form_check_terms">
+                                Acepto los <a href="#" target="_blank"
+                                    class="text-electric-blue hover:text-accent-purple transition duration-200 font-semibold">
+                                    términos,
+                                    condiciones y política de privacidad</a>.
+                            </label>
+                        </div>
+                        <div class="flex items-start">
+                            <input id="accept_info" type="checkbox"
+                                class="mt-1 w-4 h-4 text-electric-blue bg-deep-blue border-gray-600 rounded focus:ring-electric-blue">
+                            <label for="accept_info" class="ml-3 text-gray-300 cursor-pointer"
+                                data-text-key="form_check_info">
+                                Acepto recibir información exclusiva sobre eventos y programas.
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Botón de Envío -->
+                    <div class="pt-4">
+                        <button type="submit"
+                            class="w-full bg-electric-blue text-white-pure px-6 py-3 rounded-xl font-bold text-lg hover:bg-accent-purple transition duration-300 shadow-lg shadow-electric-blue/40 transform hover:scale-[1.01]"
+                            data-text-key="btn_submit_form">
+                            Enviar Solicitud
+                        </button>
+                        <p class="text-center text-xs text-gray-500 mt-3" data-text-key="form_legal_note">Al
+                            enviar tus datos en este formulario, aceptas recibir comunicación de parte de
+                            Minddev Perú.</p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Columna Derecha: Tarjeta de Valor / Información de Contacto -->
+            <div class="p-8 lg:p-10 bg-deep-blue flex flex-col justify-center space-y-6 lg:space-y-8">
+                <div class="text-left">
+                    <span data-lucide="rocket" class="w-10 h-10 text-electric-blue mb-4"></span>
+                    <!-- COMENTARIO: MODIFICAR TEXTOS DE LA TARJETA LATERAL AQUÍ -->
+                    <h3 class="text-4xl sm:text-5xl font-extrabold text-white-pure leading-tight mb-2"
+                        data-text-key="contact_card_title_line1">
+                        Da el <span class="text-accent-purple" data-text-key="contact_card_title_highlight">siguiente
+                            paso</span> con Minddev
+                    </h3>
+                    <p class="text-lg text-gray-400 max-w-sm" data-text-key="contact_card_subtitle">
+                        Hablemos de tu MVP, rediseño web, o estrategia digital. ¡La transformación comienza
+                        ahora!
+                    </p>
+                </div>
+
+                <!-- Contacto Directo -->
+                <div class="space-y-2">
+                    <div class="flex items-center space-x-3">
+                        <span data-lucide="mail" class="w-5 h-5 text-electric-blue"></span>
+                        <div>
+                            <p class="text-sm text-gray-400" data-text-key="contact_label_email">Email Directo
+                            </p>
+                            <p class="font-semibold text-white-pure">contacto@minddevperu.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span data-lucide="phone" class="w-5 h-5 text-electric-blue"></span>
+                        <div>
+                            <p class="text-sm text-gray-400" data-text-key="contact_label_phone">Llama o Envía
+                                WhatsApp</p>
+                            <p class="font-semibold text-white-pure">+51 903 067 489</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="formModal" class="fixed inset-0 bg-deep-blue/80 backdrop-blur-sm hidden justify-center items-center z-[999]">
+    <div
+        class="bg-dark-alt border border-electric-blue/40 rounded-2xl shadow-2xl max-w-sm w-[90%] text-center p-8 transform scale-95 opacity-0 transition-all duration-300">
+        <span id="formModalIcon" class="block mx-auto mb-4 text-4xl"></span>
+        <h3 id="formModalTitle" class="text-2xl font-bold text-white-pure mb-2"></h3>
+        <p id="formModalMessage" class="text-gray-400 mb-6"></p>
+        <button id="closeFormModal"
+            class="bg-electric-blue text-deep-blue font-bold px-6 py-2 rounded-full hover:bg-accent-purple hover:text-white-pure transition">
+            Cerrar
+        </button>
+    </div>
+</div>
+
+<script src="../js/form.js"></script>

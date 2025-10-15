@@ -173,1706 +173,63 @@
 
     <main>
         <!-- 3. Hero Principal (Inicio) -->
-        <section id="inicio" class="pt-24 pb-32">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- Contenedor principal dividido en dos columnas para desktop -->
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
-                    <!-- Columna Izquierda: Título y Botones -->
-                    <div class="lg:col-span-8 text-center lg:text-left">
-                        <!-- COMENTARIO: MODIFICAR TEXTO HEADING DEL HERO AQUÍ -->
-                        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight mb-4">
-                            <span class="block" data-text-key="hero_title_line1">Transformamos</span>
-                            <span class="block" data-text-key="hero_title_line2">ideas en soluciones</span>
-                            <!-- Cambiamos el color para que sea más claro y visible sobre el fondo deep-blue -->
-                            <span class="text-electric-blue" data-text-key="hero_title_line3">digitales</span>
-                        </h1>
-                        <p class="text-xl sm:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto lg:mx-0"
-                            data-text-key="hero_subtitle">
-                            Especialistas en desarrollo web, aplicaciones móviles y servicios tecnológicos para
-                            potenciar tu negocio.
-                        </p>
-                        <!-- Botones alineados a la izquierda en desktop -->
-                        <div
-                            class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-                            <!-- Botón Principal: Iniciar Proyecto -->
-                            <a href="#contacto"
-                                class="bg-electric-blue text-white-pure px-8 py-3 rounded-xl font-bold text-lg hover:bg-accent-purple transition duration-300 shadow-xl shadow-electric-blue/40 flex items-center justify-center sm:justify-start transform hover:scale-105"
-                                data-text-key="btn_start_project">
-                                <span data-lucide="send" class="w-5 h-5 mr-2"></span>
-                                Iniciar Proyecto
-                            </a>
-                            <!-- Botón Secundario: Explorar - HOVER REFINADO -->
-                            <a href="#servicios"
-                                class="bg-dark-alt text-white-pure px-8 py-3 rounded-xl font-bold text-lg border border-gray-700 hover:bg-deep-blue/50 transition duration-300 flex items-center justify-center sm:justify-start transform hover:scale-105"
-                                data-text-key="btn_explore">
-                                <span data-lucide="search" class="w-5 h-5 mr-2"></span>
-                                Explorar
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Columna Derecha: Tarjetas Glassmorphism -->
-                    <div class="lg:col-span-4 flex flex-col space-y-6 items-center lg:items-end mt-12 lg:mt-0">
-                        <!-- Card 1: Desarrollo Web/Software -->
-                        <div
-                            class="glass-card w-full max-w-xs p-5 rounded-2xl text-center transition duration-500 hover:scale-105 hover:shadow-electric-blue/50">
-                            <span data-lucide="code" class="w-10 h-10 text-electric-blue mx-auto mb-2"></span>
-                            <p class="text-lg font-semibold text-white-pure" data-text-key="hero_card1_title">Desarrollo
-                                Software</p>
-                            <p class="text-xs text-gray-400" data-text-key="hero_card1_subtitle">Web, MVP y Backend</p>
-                        </div>
-
-                        <!-- Card 2: Aplicaciones Móviles -->
-                        <div
-                            class="glass-card w-full max-w-xs p-5 rounded-2xl text-center transition duration-500 hover:scale-105 hover:shadow-electric-blue/50">
-                            <span data-lucide="smartphone" class="w-10 h-10 text-electric-blue mx-auto mb-2"></span>
-                            <p class="text-lg font-semibold text-white-pure" data-text-key="hero_card2_title">Apps
-                                Móviles</p>
-                            <p class="text-xs text-gray-400" data-text-key="hero_card2_subtitle">iOS, Android,
-                                Multi-Plataforma</p>
-                        </div>
-
-                        <!-- Card 3: SEO / IA / Marketing -->
-                        <div
-                            class="glass-card w-full max-w-xs p-5 rounded-2xl text-center transition duration-500 hover:scale-105 hover:shadow-electric-blue/50">
-                            <span data-lucide="brain" class="w-10 h-10 text-electric-blue mx-auto mb-2"></span>
-                            <p class="text-lg font-semibold text-white-pure" data-text-key="hero_card3_title">Estrategia
-                                Digital</p>
-                            <p class="text-xs text-gray-400" data-text-key="hero_card3_subtitle">SEO, Marketing y Cloud
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div id="inicio"></div>
 
         <!-- 4. Sección Nuestros Servicios -->
-        <section id="servicios" class="py-16 bg-dark-alt">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- COMENTARIO: MODIFICAR TÍTULOS DE SERVICIOS AQUÍ -->
-                <h2 class="text-4xl font-bold text-center mb-4" data-text-key="services_title_main">Nuestros <span
-                        class="text-electric-blue">Servicios</span></h2>
-                <p class="text-center text-lg text-gray-300 mb-12 max-w-3xl mx-auto" data-text-key="services_subtitle">
-                    Potenciamos tu negocio con una gama completa de soluciones digitales adaptadas a tus necesidades.
-                </p>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-                    <!-- Card 1: Desarrollo Web -->
-                    <div
-                        class="p-6 bg-deep-blue rounded-xl shadow-2xl transition duration-300 hover:shadow-electric-blue/30 hover:scale-[1.02]">
-                        <div class="flex justify-between items-start mb-4">
-                            <div
-                                class="w-12 h-12 bg-dark-alt rounded-xl flex items-center justify-center border border-electric-blue/30">
-                                <span data-lucide="globe" class="w-6 h-6 text-electric-blue"></span>
-                            </div>
-                            <span class="text-3xl font-extrabold text-electric-blue/20">01</span>
-                        </div>
-
-                        <h3 class="text-xl font-bold mb-2" data-text-key="service1_title">Desarrollo Web</h3>
-                        <p class="text-gray-400 text-sm mb-4" data-text-key="service1_desc">Creamos sitios web
-                            personalizados, rápidos y optimizados para SEO que convierten visitantes en clientes.</p>
-
-                        <div class="flex flex-wrap">
-                            <span class="tech-chip">React</span>
-                            <span class="tech-chip">Node.js</span>
-                            <span class="tech-chip">SEO</span>
-                        </div>
-                    </div>
-
-                    <!-- Card 2: Aplicaciones Móviles -->
-                    <div
-                        class="p-6 bg-deep-blue rounded-xl shadow-2xl transition duration-300 hover:shadow-electric-blue/30 hover:scale-[1.02]">
-                        <div class="flex justify-between items-start mb-4">
-                            <div
-                                class="w-12 h-12 bg-dark-alt rounded-xl flex items-center justify-center border border-electric-blue/30">
-                                <span data-lucide="smartphone" class="w-6 h-6 text-electric-blue"></span>
-                            </div>
-                            <span class="text-3xl font-extrabold text-electric-blue/20">02</span>
-                        </div>
-
-                        <h3 class="text-xl font-bold mb-2" data-text-key="service2_title">Aplicaciones Móviles</h3>
-                        <p class="text-gray-400 text-sm mb-4" data-text-key="service2_desc">Desarrollamos apps nativas e
-                            híbridas para iOS y Android con las mejores tecnologías del mercado.</p>
-
-                        <div class="flex flex-wrap">
-                            <span class="tech-chip">iOS</span>
-                            <span class="tech-chip">Android</span>
-                            <span class="tech-chip">Flutter</span>
-                        </div>
-                    </div>
-
-                    <!-- Card 3: Mantenimiento Web (Rediseño y Mantenimiento) -->
-                    <div
-                        class="p-6 bg-deep-blue rounded-xl shadow-2xl transition duration-300 hover:shadow-electric-blue/30 hover:scale-[1.02]">
-                        <div class="flex justify-between items-start mb-4">
-                            <div
-                                class="w-12 h-12 bg-dark-alt rounded-xl flex items-center justify-center border border-electric-blue/30">
-                                <span data-lucide="wrench" class="w-6 h-6 text-electric-blue"></span>
-                            </div>
-                            <span class="text-3xl font-extrabold text-electric-blue/20">03</span>
-                        </div>
-
-                        <h3 class="text-xl font-bold mb-2" data-text-key="service3_title">Mantenimiento Web</h3>
-                        <p class="text-gray-400 text-sm mb-4" data-text-key="service3_desc">Actualizaciones periódicas,
-                            backups y seguridad para mantener tu sitio en óptimas condiciones.</p>
-
-                        <div class="flex flex-wrap">
-                            <span class="tech-chip">Backups</span>
-                            <span class="tech-chip">Hosting</span>
-                            <span class="tech-chip">Optimización</span>
-                        </div>
-                    </div>
-
-                    <!-- Card 4: Capacitaciones -->
-                    <div
-                        class="p-6 bg-deep-blue rounded-xl shadow-2xl transition duration-300 hover:shadow-electric-blue/30 hover:scale-[1.02]">
-                        <div class="flex justify-between items-start mb-4">
-                            <div
-                                class="w-12 h-12 bg-dark-alt rounded-xl flex items-center justify-center border border-electric-blue/30">
-                                <span data-lucide="user-cog" class="w-6 h-6 text-electric-blue"></span>
-                            </div>
-                            <span class="text-3xl font-extrabold text-electric-blue/20">04</span>
-                        </div>
-
-                        <h3 class="text-xl font-bold mb-2" data-text-key="service4_title">Capacitaciones</h3>
-                        <p class="text-gray-400 text-sm mb-4" data-text-key="service4_desc">Entrenamos a tu equipo en
-                            las últimas tecnologías y mejores prácticas de desarrollo.</p>
-
-                        <div class="flex flex-wrap">
-                            <span class="tech-chip">Scrum</span>
-                            <span class="tech-chip">Testing</span>
-                            <span class="tech-chip">Buenas Prácticas</span>
-                        </div>
-                    </div>
-
-                    <!-- Card 5: SEO & Marketing -->
-                    <div
-                        class="p-6 bg-deep-blue rounded-xl shadow-2xl transition duration-300 hover:shadow-electric-blue/30 hover:scale-[1.02]">
-                        <div class="flex justify-between items-start mb-4">
-                            <div
-                                class="w-12 h-12 bg-dark-alt rounded-xl flex items-center justify-center border border-electric-blue/30">
-                                <span data-lucide="bar-chart-2" class="w-6 h-6 text-electric-blue"></span>
-                            </div>
-                            <span class="text-3xl font-extrabold text-electric-blue/20">05</span>
-                        </div>
-
-                        <h3 class="text-xl font-bold mb-2" data-text-key="service5_title">SEO & Marketing</h3>
-                        <p class="text-gray-400 text-sm mb-4" data-text-key="service5_desc">Optimizamos tu presencia
-                            online para aumentar el tráfico y conversiones de tu negocio.</p>
-
-                        <div class="flex flex-wrap">
-                            <span class="tech-chip">Google Ads</span>
-                            <span class="tech-chip">Analytics</span>
-                            <span class="tech-chip">SEM</span>
-                        </div>
-                    </div>
-
-                    <!-- Card 6: Hosting & Cloud -->
-                    <div
-                        class="p-6 bg-deep-blue rounded-xl shadow-2xl transition duration-300 hover:shadow-electric-blue/30 hover:scale-[1.02]">
-                        <div class="flex justify-between items-start mb-4">
-                            <div
-                                class="w-12 h-12 bg-dark-alt rounded-xl flex items-center justify-center border border-electric-blue/30">
-                                <span data-lucide="cloud" class="w-6 h-6 text-electric-blue"></span>
-                            </div>
-                            <span class="text-3xl font-extrabold text-electric-blue/20">06</span>
-                        </div>
-
-                        <h3 class="text-xl font-bold mb-2" data-text-key="service6_title">Hosting & Cloud</h3>
-                        <p class="text-gray-400 text-sm mb-4" data-text-key="service6_desc">Soluciones de alojamiento
-                            escalables y seguras para garantizar el máximo rendimiento.</p>
-
-                        <div class="flex flex-wrap">
-                            <span class="tech-chip">CDN</span>
-                            <span class="tech-chip">Escalabilidad</span>
-                            <span class="tech-chip">cPanel</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div id="servicios"></div>
 
         <!-- 5. Nuestro Flujo de Trabajo / Proceso -->
-        <section id="proceso" class="py-16 bg-deep-blue">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- COMENTARIO: MODIFICAR TÍTULOS Y PASOS DEL PROCESO AQUÍ -->
-                <p class="case-study-tag uppercase text-center mb-2" data-text-key="process_tag">Nuestro Método</p>
-                <h2 class="text-4xl font-bold text-center mb-4" data-text-key="process_title">Nuestro <span
-                        class="text-electric-blue">Flujo de Trabajo</span> Probado</h2>
-                <p class="text-center text-lg text-gray-300 mb-12 max-w-3xl mx-auto" data-text-key="process_subtitle">
-                    Transformamos tu idea en una solución digital siguiendo pasos claros y transparentes, garantizando
-                    el éxito.
-                </p>
 
-                <!-- Proceso de Flujo Horizontal para Desktop -->
-                <div class="hidden md:grid grid-cols-4 gap-8 max-w-6xl mx-auto relative">
-
-                    <!-- Líneas de Conexión (Background Layer) -->
-                    <div class="absolute top-1/4 left-[12.5%] right-[12.5%] h-0.5 bg-electric-blue/30 z-0"></div>
-
-                    <!-- Paso 1: Consulta -->
-                    <div class="process-step">
-                        <div class="relative inline-block z-10">
-                            <div
-                                class="w-20 h-20 bg-electric-blue rounded-full flex items-center justify-center mx-auto mb-4 border-4 border-deep-blue shadow-xl">
-                                <span data-lucide="file-text" class="w-10 h-10 text-deep-blue"></span>
-                            </div>
-                            <span
-                                class="absolute top-1 right-1/4 transform translate-x-1/2 bg-deep-blue text-white-pure font-bold w-6 h-6 rounded-full flex items-center justify-center border-2 border-electric-blue text-xs">01</span>
-                        </div>
-
-                        <h3 class="text-lg font-bold text-white-pure mb-2" data-text-key="process1_title">Consulta y
-                            Cotización</h3>
-                        <p class="text-sm text-gray-400" data-text-key="process1_desc">Iniciamos con una reunión para
-                            entender tus objetivos, validar la idea y definir el alcance del proyecto.</p>
-                    </div>
-
-                    <!-- Paso 2: Estrategia -->
-                    <div class="process-step">
-                        <div class="relative inline-block z-10">
-                            <div
-                                class="w-20 h-20 bg-electric-blue rounded-full flex items-center justify-center mx-auto mb-4 border-4 border-deep-blue shadow-xl">
-                                <span data-lucide="lightbulb" class="w-10 h-10 text-deep-blue"></span>
-                            </div>
-                            <span
-                                class="absolute top-1 right-1/4 transform translate-x-1/2 bg-deep-blue text-white-pure font-bold w-6 h-6 rounded-full flex items-center justify-center border-2 border-electric-blue text-xs">02</span>
-                        </div>
-
-                        <h3 class="text-lg font-bold text-white-pure mb-2" data-text-key="process2_title">Diseño y
-                            Planificación</h3>
-                        <p class="text-sm text-gray-400" data-text-key="process2_desc">Creación de wireframes, diseño
-                            UX/UI, arquitectura técnica y definición de la metodología de trabajo (Agile/Scrum).</p>
-                    </div>
-
-                    <!-- Paso 3: Implementación -->
-                    <div class="process-step">
-                        <div class="relative inline-block z-10">
-                            <div
-                                class="w-20 h-20 bg-electric-blue rounded-full flex items-center justify-center mx-auto mb-4 border-4 border-deep-blue shadow-xl">
-                                <span data-lucide="code" class="w-10 h-10 text-deep-blue"></span>
-                            </div>
-                            <span
-                                class="absolute top-1 right-1/4 transform translate-x-1/2 bg-deep-blue text-white-pure font-bold w-6 h-6 rounded-full flex items-center justify-center border-2 border-electric-blue text-xs">03</span>
-                        </div>
-
-                        <h3 class="text-lg font-bold text-white-pure mb-2" data-text-key="process3_title">Desarrollo e
-                            Implementación</h3>
-                        <p class="text-sm text-gray-400" data-text-key="process3_desc">Fase de codificación (Frontend y
-                            Backend), pruebas continuas y despliegue en entornos de staging.</p>
-                    </div>
-
-                    <!-- Paso 4: Resultado Final -->
-                    <div class="process-step">
-                        <div class="relative inline-block z-10">
-                            <div
-                                class="w-20 h-20 bg-electric-blue rounded-full flex items-center justify-center mx-auto mb-4 border-4 border-deep-blue shadow-xl">
-                                <span data-lucide="send" class="w-10 h-10 text-deep-blue"></span>
-                            </div>
-                            <span
-                                class="absolute top-1 right-1/4 transform translate-x-1/2 bg-deep-blue text-white-pure font-bold w-6 h-6 rounded-full flex items-center justify-center border-2 border-electric-blue text-xs">04</span>
-                        </div>
-
-                        <h3 class="text-lg font-bold text-white-pure mb-2" data-text-key="process4_title">Lanzamiento y
-                            Soporte</h3>
-                        <p class="text-sm text-gray-400" data-text-key="process4_desc">Lanzamiento oficial (Go-Live),
-                            monitoreo post-lanzamiento, capacitación y soporte/mantenimiento continuo.</p>
-                    </div>
-                </div>
-
-                <!-- Proceso de Flujo Vertical para Móvil -->
-                <!-- COMENTARIO: Los textos de la versión móvil también se actualizan con los data-keys de arriba -->
-                <div class="md:hidden space-y-8 max-w-sm mx-auto pt-6">
-                    <!-- Paso 1 -->
-                    <div class="flex items-start space-x-4">
-                        <div class="relative flex flex-col items-center">
-                            <div
-                                class="w-10 h-10 bg-electric-blue rounded-full flex items-center justify-center flex-shrink-0 border-2 border-deep-blue shadow-lg">
-                                <span data-lucide="file-text" class="w-5 h-5 text-deep-blue"></span>
-                            </div>
-                            <span
-                                class="absolute top-0 -left-0.5 bg-deep-blue text-white-pure font-bold w-5 h-5 rounded-full flex items-center justify-center border border-electric-blue text-xs">01</span>
-                            <div class="w-0.5 h-full bg-electric-blue/30 absolute top-10"></div>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-white-pure mb-1" data-text-key="process1_title">Consulta y
-                                Cotización</h3>
-                            <p class="text-sm text-gray-400 mb-6" data-text-key="process1_desc">Iniciamos con una
-                                reunión para entender tus objetivos, validar la idea y definir el alcance del proyecto.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Paso 2 -->
-                    <div class="flex items-start space-x-4">
-                        <div class="relative flex flex-col items-center">
-                            <div
-                                class="w-10 h-10 bg-electric-blue rounded-full flex items-center justify-center flex-shrink-0 border-2 border-deep-blue shadow-lg">
-                                <span data-lucide="lightbulb" class="w-5 h-5 text-deep-blue"></span>
-                            </div>
-                            <span
-                                class="absolute top-0 -left-0.5 bg-deep-blue text-white-pure font-bold w-5 h-5 rounded-full flex items-center justify-center border border-electric-blue text-xs">02</span>
-                            <div class="w-0.5 h-full bg-electric-blue/30 absolute top-10"></div>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-white-pure mb-1" data-text-key="process2_title">Diseño y
-                                Planificación</h3>
-                            <p class="text-sm text-gray-400 mb-6" data-text-key="process2_desc">Creación de wireframes,
-                                diseño UX/UI, arquitectura técnica y definición de la metodología de trabajo.</p>
-                        </div>
-                    </div>
-                    <!-- Paso 3 -->
-                    <div class="flex items-start space-x-4">
-                        <div class="relative flex flex-col items-center">
-                            <div
-                                class="w-10 h-10 bg-electric-blue rounded-full flex items-center justify-center flex-shrink-0 border-2 border-deep-blue shadow-lg">
-                                <span data-lucide="code" class="w-5 h-5 text-deep-blue"></span>
-                            </div>
-                            <span
-                                class="absolute top-0 -left-0.5 bg-deep-blue text-white-pure font-bold w-5 h-5 rounded-full flex items-center justify-center border border-electric-blue text-xs">03</span>
-                            <div class="w-0.5 h-full bg-electric-blue/30 absolute top-10"></div>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-white-pure mb-1" data-text-key="process3_title">Desarrollo
-                                e Implementación</h3>
-                            <p class="text-sm text-gray-400 mb-6" data-text-key="process3_desc">Fase de codificación
-                                (Frontend y Backend), pruebas continuas y despliegue en entornos de staging.</p>
-                        </div>
-                    </div>
-                    <!-- Paso 4 -->
-                    <div class="flex items-start space-x-4">
-                        <div class="relative flex flex-col items-center">
-                            <div
-                                class="w-10 h-10 bg-electric-blue rounded-full flex items-center justify-center flex-shrink-0 border-2 border-deep-blue shadow-lg">
-                                <span data-lucide="send" class="w-5 h-5 text-deep-blue"></span>
-                            </div>
-                            <span
-                                class="absolute top-0 -left-0.5 bg-deep-blue text-white-pure font-bold w-5 h-5 rounded-full flex items-center justify-center border border-electric-blue text-xs">04</span>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-white-pure mb-1" data-text-key="process4_title">
-                                Lanzamiento y Soporte</h3>
-                            <p class="text-sm text-gray-400 mb-6" data-text-key="process4_desc">Lanzamiento oficial
-                                (Go-Live), monitoreo post-lanzamiento, capacitación y soporte/mantenimiento continuo.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
+        <div id="proceso"></div>
 
         <!-- 6. Sección Portafolio (Dinámica e Interactiva - Diseño COMPACTO y ZIG ZAG) -->
-        <section id="portafolio" class="py-12 bg-deep-blue">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- COMENTARIO: MODIFICAR TÍTULOS DEL PORTAFOLIO AQUÍ -->
-                <h2 class="text-3xl font-bold text-center mb-3" data-text-key="portfolio_title">Nuestro <span
-                        class="text-electric-blue">Portafolio</span></h2>
-                <p class="text-center text-md text-gray-400 mb-8 max-w-2xl mx-auto" data-text-key="portfolio_subtitle">
-                    Descubre cómo nuestra experiencia ha guiado a nuestros socios a través de sus viajes digitales.
-                </p>
 
-                <!-- Diseño de Casos de Estudio (más compacto y zig zag) -->
-                <div class="space-y-6 max-w-4xl mx-auto">
-
-                    <!-- Caso de Estudio 1: DOMINICK PRO INMOBILIARIA (Orden Normal) -->
-                    <!-- COMENTARIO: MODIFICAR TEXTOS DEL CASO 1 AQUÍ -->
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center case-study-card rounded-xl p-4">
-                        <!-- Columna Izquierda: Detalles del Caso (Order 1) -->
-                        <div class="lg:order-1 space-y-2">
-                            <p class="case-study-tag mb-0 text-xs" data-text-key="project1_tag">DESARROLLO WEB</p>
-                            <h3 class="text-lg font-bold text-white-pure leading-tight" data-text-key="project1_name">
-                                Plataforma Inmobiliaria - <span class="text-electric-blue">Dominick Pro</span></h3>
-                            <p class="text-gray-400 text-xs mb-3" data-text-key="project1_desc">Diseño web completo para
-                                gestión inmobiliaria. Desarrollo Front-end con Tailwind CSS y formulario de contacto
-                                mediante GetForm.</p>
-
-                            <!-- Botón de Acción -->
-                            <button
-                                onclick="openPortfolioModal(1, 'Dominick Pro Inmobiliaria', 'Diseño y desarrollo de una plataforma web 100% responsiva para el sector inmobiliario. Enfocada en la captura de leads y la presentación de propiedades.', 'https://placehold.co/800x600/0f172a/ffffff?text=Web+Inmobiliaria+Dominick')"
-                                class="inline-flex items-center text-electric-blue font-semibold text-xs py-1 px-2 rounded-full border border-electric-blue hover:bg-electric-blue hover:text-deep-blue transition duration-300"
-                                data-text-key="btn_view_details">
-                                Ver Detalles <span data-lucide="arrow-right" class="w-3 h-3 ml-1"></span>
-                            </button>
-
-                            <div class="mt-2 flex space-x-1.5 text-xl">
-                                <span data-lucide="file-code" class="text-electric-blue w-3.5 h-3.5"
-                                    title="HTML/CSS/JS"></span>
-                                <span data-lucide="layout-grid" class="text-electric-blue w-3.5 h-3.5"
-                                    title="Tailwind CSS"></span>
-                                <span data-lucide="mail" class="text-electric-blue w-3.5 h-3.5" title="GetForm"></span>
-                            </div>
-                        </div>
-
-                        <!-- Columna Derecha: Imagen/Mockup (Order 2) -->
-                        <div class="lg:order-2">
-                            <img src="https://placehold.co/400x200/0f172a/5355dd/ffffff?text=Web+Dominick+Pro"
-                                alt="Mockup Dominick Pro"
-                                class="w-full h-auto rounded-lg shadow-xl border border-gray-700/50">
-                        </div>
-                    </div>
-
-                    <!-- Caso de Estudio 2: INTERCAPITAL PERÚ (Orden Invertido) -->
-                    <!-- COMENTARIO: MODIFICAR TEXTOS DEL CASO 2 AQUÍ -->
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center case-study-card rounded-xl p-4">
-                        <!-- Columna Derecha: Imagen/Mockup (Ahora Order 1 en desktop) -->
-                        <div class="lg:order-1">
-                            <img src="https://placehold.co/400x200/0f172a/3b82f6/ffffff?text=Web+Intercapital"
-                                alt="Mockup Intercapital Perú"
-                                class="w-full h-auto rounded-lg shadow-xl border border-gray-700/50">
-                        </div>
-
-                        <!-- Columna Izquierda: Detalles del Caso (Ahora Order 2 en desktop) -->
-                        <div class="lg:order-2 space-y-2">
-                            <p class="case-study-tag mb-0 text-xs" data-text-key="project2_tag">WEB CORPORATIVA</p>
-                            <h3 class="text-lg font-bold text-white-pure leading-tight" data-text-key="project2_name">
-                                Inversiones Seguras - <span class="text-electric-blue">Intercapital Perú</span></h3>
-                            <p class="text-gray-400 text-xs mb-3" data-text-key="project2_desc">Desarrollo de sitio web
-                                con foco en la confianza y seguridad para captación de inversionistas. Implementado con
-                                HTML, CSS y JS puro.</p>
-
-                            <!-- Botón de Acción -->
-                            <button
-                                onclick="openPortfolioModal(2, 'Intercapital Perú Web', 'Desarrollo de un sitio corporativo minimalista para una empresa de inversiones. Énfasis en la claridad de la propuesta de valor y la seguridad de la inversión.', 'https://placehold.co/800x600/0f1a37/ffffff?text=Web+Inversiones')"
-                                class="inline-flex items-center text-electric-blue font-semibold text-xs py-1 px-2 rounded-full border border-electric-blue hover:bg-electric-blue hover:text-deep-blue transition duration-300"
-                                data-text-key="btn_view_details">
-                                Ver Detalles <span data-lucide="arrow-right" class="w-3 h-3 ml-1"></span>
-                            </button>
-
-                            <div class="mt-2 flex space-x-1.5 text-xl">
-                                <span data-lucide="file-code" class="text-electric-blue w-3.5 h-3.5"
-                                    title="HTML/CSS/JS"></span>
-                                <span data-lucide="layout-grid" class="text-electric-blue w-3.5 h-3.5"
-                                    title="Tailwind CSS"></span>
-                                <span data-lucide="trending-up" class="text-electric-blue w-3.5 h-3.5"
-                                    title="Análisis de Mercado"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Caso de Estudio 3: APP MÓVIL (Orden Normal) -->
-                    <!-- COMENTARIO: MODIFICAR TEXTOS DEL CASO 3 AQUÍ -->
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center case-study-card rounded-xl p-4">
-                        <!-- Columna Izquierda: Detalles del Caso (Order 1) -->
-                        <div class="lg:order-1 space-y-2">
-                            <p class="case-study-tag mb-0 text-xs" data-text-key="project3_tag">APLICACIÓN MÓVIL</p>
-                            <h3 class="text-lg font-bold text-white-pure leading-tight" data-text-key="project3_name">
-                                Plataforma de Servicios - <span class="text-electric-blue">App Móvil</span></h3>
-                            <p class="text-gray-400 text-xs mb-3" data-text-key="project3_desc">Aplicación móvil nativa
-                                para iOS y Android con un panel administrativo completo desarrollado con React para la
-                                gestión de usuarios y datos.</p>
-
-                            <!-- Botón de Acción -->
-                            <button
-                                onclick="openPortfolioModal(3, 'App de Servicios Multiplataforma', 'Aplicación desarrollada con React Native para una experiencia nativa en iOS y Android. El panel de control administrativo se desarrolló con React para una gestión eficiente.', 'https://placehold.co/800x600/3b82f6/0f172a?text=App+Movil+RN+%26+Panel+React')"
-                                class="inline-flex items-center text-electric-blue font-semibold text-xs py-1 px-2 rounded-full border border-electric-blue hover:bg-electric-blue hover:text-deep-blue transition duration-300"
-                                data-text-key="btn_view_details">
-                                Ver Detalles <span data-lucide="arrow-right" class="w-3 h-3 ml-1"></span>
-                            </button>
-
-                            <div class="mt-2 flex space-x-1.5 text-xl">
-                                <span data-lucide="smartphone" class="text-electric-blue w-3.5 h-3.5"
-                                    title="React Native"></span>
-                                <span data-lucide="react" class="text-electric-blue w-3.5 h-3.5"
-                                    title="React Panel Admin"></span>
-                                <span data-lucide="server" class="text-electric-blue w-3.5 h-3.5"
-                                    title="API Backend"></span>
-                            </div>
-                        </div>
-
-                        <!-- Columna Derecha: Imagen/Mockup (Order 2) -->
-                        <div class="lg:order-2">
-                            <img src="https://placehold.co/400x200/0f172a/5355dd/ffffff?text=Mockup+App+Movil"
-                                alt="Mockup App Móvil"
-                                class="w-full h-auto rounded-lg shadow-xl border border-gray-700/50">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div id="portafolio"></div>
 
         <!-- 7. Clientes, Testimonios y Llamada a la Acción (Actualizado con estilo de Estadísticas y Nuevo Carrusel de Testimonios) -->
-        <section id="clientes_y_testimonios" class="py-16 bg-dark-alt">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
 
-                <!-- Sección de Testimonios (Estilo Asimétrico) -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-12">
-                    <!-- Columna Izquierda: Título y CTA -->
-                    <div class="text-center lg:text-left">
-                        <!-- COMENTARIO: MODIFICAR TÍTULOS Y DESCRIPCIONES DE TESTIMONIOS AQUÍ -->
-                        <p class="case-study-tag uppercase mb-2" data-text-key="testimonials_tag">Testimonios</p>
-                        <h2 class="text-4xl sm:text-5xl font-extrabold leading-tight mb-3"
-                            data-text-key="testimonials_title_line1">
-                            Historias de <span class="text-electric-blue"
-                                data-text-key="testimonials_title_highlight1">innovación</span> y <span
-                                class="text-electric-blue" data-text-key="testimonials_title_highlight2">impacto</span>
-                        </h2>
-                        <p class="text-lg text-gray-300 mb-6 max-w-md mx-auto lg:mx-0"
-                            data-text-key="testimonials_subtitle">
-                            De la visión a la realidad, así es como influimos en el éxito de nuestros socios.
-                        </p>
-
-                        <!-- Controles de Navegación del Carrusel -->
-                        <div class="flex justify-center lg:justify-start space-x-4 mb-4 lg:mb-0">
-                            <button id="prev-testimony"
-                                class="p-2 rounded-full border border-electric-blue text-electric-blue hover:bg-electric-blue hover:text-deep-blue transition duration-300">
-                                <span data-lucide="chevron-left" class="w-5 h-5"></span>
-                            </button>
-                            <button id="next-testimony"
-                                class="p-2 rounded-full border border-electric-blue text-electric-blue hover:bg-electric-blue hover:text-deep-blue transition duration-300">
-                                <span data-lucide="chevron-right" class="w-5 h-5"></span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Columna Derecha: Tarjeta de Testimonio (Carrusel) -->
-                    <div class="relative w-full h-full min-h-72 overflow-hidden">
-                        <div id="testimonial-carousel" class="flex transition-transform duration-700 ease-in-out">
-                            <!-- Testimonio 1 -->
-                            <div class="testimonial-slide flex-shrink-0 w-full">
-                                <div class="testimonial-card w-full p-6 sm:p-8">
-                                    <span class="quote-icon absolute top-4 left-4 text-6xl font-serif">"</span>
-                                    <p class="italic text-base text-gray-300 relative z-20 pl-6 pb-6"
-                                        data-text-key="testimony1_text">
-                                        "Durante dos años, buscamos sin éxito un equipo de desarrollo que combinara
-                                        conocimientos técnicos, compromiso y perseverancia. Minddev no solo nos dio un
-                                        equipo de desarrollo, sino un <span
-                                            class="text-electric-blue font-semibold">socio estratégico</span> en el que
-                                        podemos confiar totalmente."
-                                    </p>
-                                    <div class="flex items-center pt-3 border-t border-gray-700/50">
-                                        <img src="https://placehold.co/60x60/3b82f6/0f172a?text=JR" alt="Foto Javier R."
-                                            class="w-10 h-10 rounded-full mr-4 object-cover border-2 border-electric-blue">
-                                        <div>
-                                            <p class="font-bold text-white-pure text-sm"
-                                                data-text-key="testimony1_name">Javier R. (Cliente A)</p>
-                                            <p class="text-xs text-electric-blue" data-text-key="testimony1_title">CEO,
-                                                Startup Tech</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Testimonio 2 -->
-                            <div class="testimonial-slide flex-shrink-0 w-full">
-                                <div class="testimonial-card w-full p-6 sm:p-8">
-                                    <span class="quote-icon absolute top-4 left-4 text-6xl font-serif">"</span>
-                                    <p class="italic text-base text-gray-300 relative z-20 pl-6 pb-6"
-                                        data-text-key="testimony2_text">
-                                        "El rediseño de nuestra web superó todas las expectativas. El nuevo enfoque
-                                        minimalista y la optimización de SEO nos permitió mejorar la <span
-                                            class="text-accent-purple font-semibold">conversión de leads</span> en un
-                                        impresionante 40% en el primer trimestre."
-                                    </p>
-                                    <div class="flex items-center pt-3 border-t border-gray-700/50">
-                                        <img src="https://placehold.co/60x60/5355dd/0f172a?text=SM" alt="Foto Sofía M."
-                                            class="w-10 h-10 rounded-full mr-4 object-cover border-2 border-accent-purple">
-                                        <div>
-                                            <p class="font-bold text-white-pure text-sm"
-                                                data-text-key="testimony2_name">Sofía M. (Cliente B)</p>
-                                            <p class="text-xs text-accent-purple" data-text-key="testimony2_title">
-                                                Gerente de Marketing, Retail</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Testimonio 3 -->
-                            <div class="testimonial-slide flex-shrink-0 w-full">
-                                <div class="testimonial-card w-full p-6 sm:p-8">
-                                    <span class="quote-icon absolute top-4 left-4 text-6xl font-serif">"</span>
-                                    <p class="italic text-base text-gray-300 relative z-20 pl-6 pb-6"
-                                        data-text-key="testimony3_text">
-                                        "El proyecto MVP se lanzó en la fecha prometida y con una <span
-                                            class="text-electric-blue font-semibold">calidad excepcional</span>. Su
-                                        metodología de trabajo ágil es la razón por la que seguimos confiando en ellos
-                                        para el desarrollo de nuevas funcionalidades."
-                                    </p>
-                                    <div class="flex items-center pt-3 border-t border-gray-700/50">
-                                        <img src="https://placehold.co/60x60/3b82f6/0f172a?text=CG" alt="Foto Carlos G."
-                                            class="w-10 h-10 rounded-full mr-4 object-cover border-2 border-electric-blue">
-                                        <div>
-                                            <p class="font-bold text-white-pure text-sm"
-                                                data-text-key="testimony3_name">Carlos G. (Cliente C)</p>
-                                            <p class="text-xs text-electric-blue" data-text-key="testimony3_title">
-                                                Director de TI, Fintech</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bloque de Estadísticas Personalizado -->
-                <!-- COMENTARIO: MODIFICAR TEXTOS DE LOGROS CLAVE AQUÍ -->
-                <h3 class="text-xl font-bold mb-6 text-center mt-8" data-text-key="achievements_title">Nuestros <span
-                        class="text-electric-blue">Logros Clave</span></h3>
-                <div class="flex justify-center flex-wrap gap-x-8 gap-y-4 mb-12 py-4">
-                    <div class="p-3">
-                        <p class="text-4xl font-extrabold text-electric-blue leading-none">+8 Años</p>
-                        <p class="text-gray-400 text-xs mt-1" data-text-key="achievement1_desc">de experiencia en el
-                            sector</p>
-                    </div>
-                    <div class="p-3">
-                        <p class="text-4xl font-extrabold text-electric-blue leading-none">+50</p>
-                        <p class="text-gray-400 text-xs mt-1" data-text-key="achievement2_desc">proyectos digitales
-                            completados</p>
-                    </div>
-                    <div class="p-3">
-                        <p class="text-4xl font-extrabold text-electric-blue leading-none">+90%</p>
-                        <p class="text-gray-400 text-xs mt-1" data-text-key="achievement3_desc">tasa de retención de
-                            clientes</p>
-                    </div>
-                </div>
-
-                <!-- Carrusel Infinito de Clientes (Logos) -->
-                <h3 class="text-xl font-bold text-center mb-6" data-text-key="clients_trust">Empresas que <span
-                        class="text-accent-purple">Confían en Nosotros</span></h3>
-                <div class="relative w-full overflow-hidden py-4 border-y border-gray-700/50">
-                    <div class="logo-track flex items-center">
-                        <!-- Logos Originales -->
-                        <div class="logo-item"><img src="https://placehold.co/120x60/0f172a/3b82f6?text=Cliente+A"
-                                alt="Logo Cliente A"
-                                class="h-8 mx-auto opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0">
-                        </div>
-                        <div class="logo-item"><img src="https://placehold.co/120x60/0f172a/3b82f6?text=Cliente+B"
-                                alt="Logo Cliente B"
-                                class="h-8 mx-auto opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0">
-                        </div>
-                        <div class="logo-item"><img src="https://placehold.co/120x60/0f172a/3b82f6?text=Cliente+C"
-                                alt="Logo Cliente C"
-                                class="h-8 mx-auto opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0">
-                        </div>
-                        <div class="logo-item"><img src="https://placehold.co/120x60/0f172a/3b82f6?text=Cliente+D"
-                                alt="Logo Cliente D"
-                                class="h-8 mx-auto opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0">
-                        </div>
-                        <div class="logo-item"><img src="https://placehold.co/120x60/0f172a/3b82f6?text=Cliente+E"
-                                alt="Logo Cliente E"
-                                class="h-8 mx-auto opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0">
-                        </div>
-
-                        <!-- Logos Duplicados para loop seamless -->
-                        <div class="logo-item"><img src="https://placehold.co/120x60/0f172a/3b82f6?text=Cliente+F"
-                                alt="Logo Cliente F"
-                                class="h-8 mx-auto opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0">
-                        </div>
-                        <div class="logo-item"><img src="https://placehold.co/120x60/0f172a/3b82f6?text=Cliente+G"
-                                alt="Logo Cliente G"
-                                class="h-8 mx-auto opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0">
-                        </div>
-                        <div class="logo-item"><img src="https://placehold.co/120x60/0f172a/3b82f6?text=Cliente+H"
-                                alt="Logo Cliente H"
-                                class="h-8 mx-auto opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0">
-                        </div>
-                        <div class="logo-item"><img src="https://placehold.co/120x60/0f172a/3b82f6?text=Cliente+I"
-                                alt="Logo Cliente I"
-                                class="h-8 mx-auto opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0">
-                        </div>
-                        <div class="logo-item"><img src="https://placehold.co/120x60/0f172a/3b82f6?text=Cliente+J"
-                                alt="Logo Cliente J"
-                                class="h-8 mx-auto opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0">
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Botón de Acción -->
-                <div class="text-center mt-12">
-                    <a href="#contacto"
-                        class="inline-flex items-center bg-accent-purple text-white-pure px-8 py-3 rounded-full font-bold text-lg hover:bg-electric-blue transition duration-300 shadow-xl shadow-accent-purple/40 transform hover:scale-105"
-                        data-text-key="btn_schedule_call">
-                        <span data-lucide="calendar-check" class="w-5 h-5 mr-2"></span>
-                        Programa una Llamada
-                    </a>
-                </div>
-
-            </div>
-        </section>
+        <div id="clientes_y_testimonios"></div>
 
         <!-- 8. Sección Alianzas (Partners) - NUEVO DISEÑO DE CUADRÍCULA Y MODAL INTERACTIVO -->
-        <section id="alianzas" class="py-16 bg-deep-blue">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- COMENTARIO: MODIFICAR TÍTULOS DE ALIANZAS AQUÍ -->
-                <p class="case-study-tag uppercase text-center mb-2" data-text-key="partners_tag">Nuestros Partners</p>
-                <h2 class="text-4xl font-bold text-center mb-10" data-text-key="partners_title">Alianzas <span
-                        class="text-electric-blue">Estratégicas</span></h2>
+        <div id="alianzas"></div>
 
-                <!-- Botón sutil de Partner (MANTENIDO) -->
-                <div class="text-center mb-10">
-                    <a href="#contacto"
-                        class="inline-flex items-center text-lg font-bold text-white-pure bg-electric-blue/20 px-6 py-2 rounded-full hover:bg-electric-blue/30 transition duration-300 border border-electric-blue/50"
-                        data-text-key="btn_be_partner">
-                        <span data-lucide="handshake" class="w-5 h-5 mr-2"></span> Sé Partner Nuestro
-                    </a>
-                </div>
+        <!-- 9. Sección Tecnologías (NUEVO DISEÑO DE CALENDARIO/MATRIZ) -->
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div id="tecnologias"></div>
 
-                    <!-- Partner 1: CALL BELL (CRM de WhatsApp) -->
-                    <!-- COMENTARIO: MODIFICAR TEXTOS DEL PARTNER 1 AQUÍ -->
-                    <div class="p-6 bg-dark-alt rounded-xl shadow-lg flex flex-col items-center text-center partner-card-link"
-                        onclick="openPartnerModal('Call Bell', 'CRM de WhatsApp', 'Call Bell es un CRM que te permite gestionar mensajes, enviar masivos y medir métricas conectadas a la API oficial de WhatsApp, optimizando tu comunicación y ventas.', 'https://placehold.co/150x60/0f1a37/ffffff?text=CALL+BELL', 'https://tu-enlace-referido-callbell.com?ref=minddev&discount=EXCLUSIVO')">
-                        <img src="https://placehold.co/150x60/0f1a37/ffffff?text=CALL+BELL" alt="Logo Call Bell"
-                            class="h-10 mb-3 grayscale hover:grayscale-0 transition duration-300">
-                        <h4 class="text-lg font-semibold text-white-pure mb-1">Call Bell</h4>
-                        <p class="text-sm text-electric-blue mb-2" data-text-key="partner1_service">CRM de WhatsApp</p>
-                        <p class="text-xs text-gray-400" data-text-key="partner1_desc">Mensajería, Métricas y Gestión.
-                        </p>
-                    </div>
+        <!-- 10. Sección Equipo -->
 
-                    <!-- Partner 2: VTURB (Reproductor de Video) -->
-                    <!-- COMENTARIO: MODIFICAR TEXTOS DEL PARTNER 2 AQUÍ -->
-                    <div class="p-6 bg-dark-alt rounded-xl shadow-lg flex flex-col items-center text-center partner-card-link"
-                        onclick="openPartnerModal('VTurb', 'Reproductor de Video para Ventas', 'VTurb es el único reproductor de video del mundo enfocado 100% en hacer que tu VSL o Webinario venda más, optimizado para la conversión.', 'https://placehold.co/150x60/0f1a37/ffffff?text=VTURB', 'https://tu-enlace-referido-vturb.com?ref=minddev&discount=15%&coupon=MINDDEVPERU')">
-                        <img src="https://placehold.co/150x60/0f1a37/ffffff?text=VTURB" alt="Logo VTurb"
-                            class="h-10 mb-3 grayscale hover:grayscale-0 transition duration-300">
-                        <h4 class="text-lg font-semibold text-white-pure mb-1">VTurb</h4>
-                        <p class="text-sm text-electric-blue mb-2" data-text-key="partner2_service">Video Marketing</p>
-                        <p class="text-xs text-gray-400" data-text-key="partner2_desc">Optimización de VSLs y
-                            Webinarios.</p>
-                    </div>
+        <div id="equipo"></div>
 
-                    <!-- Partner 3: INTERCAPITAL PERÚ (Inversiones) -->
-                    <!-- COMENTARIO: MODIFICAR TEXTOS DEL PARTNER 3 AQUÍ -->
-                    <div class="p-6 bg-dark-alt rounded-xl shadow-lg flex flex-col items-center text-center partner-card-link"
-                        onclick="openPartnerModal('Intercapital Perú', 'Inversiones Inmobiliarias Seguras', 'Intercapital Perú busca inversionistas que pueden obtener del 30% al 36% anual por invertir con garantía hipotecaria. Inversión totalmente segura y respaldada.', 'https://placehold.co/150x60/0f1a37/ffffff?text=INTERCAPITAL', 'https://tu-enlace-referido-intercapital.com?ref=minddev&discount=36%')">
-                        <img src="https://placehold.co/150x60/0f1a37/ffffff?text=INTERCAPITAL"
-                            alt="Logo Intercapital Perú"
-                            class="h-10 mb-3 grayscale hover:grayscale-0 transition duration-300">
-                        <h4 class="text-lg font-semibold text-white-pure mb-1">Intercapital Perú</h4>
-                        <p class="text-sm text-electric-blue mb-2" data-text-key="partner3_service">Inversiones
-                            Hipotecarias</p>
-                        <p class="text-xs text-gray-400" data-text-key="partner3_desc">Rendimiento anual del 30% al 36%.
-                        </p>
-                    </div>
+        <!-- 11. Sección Blog -->
 
-                    <!-- Partner 4: VOCANTY (Consultora/Escuela) -->
-                    <!-- COMENTARIO: MODIFICAR TEXTOS DEL PARTNER 4 AQUÍ -->
-                    <div class="p-6 bg-dark-alt rounded-xl shadow-lg flex flex-col items-center text-center partner-card-link"
-                        onclick="openPartnerModal('Vocanty', 'Consultora de Comercio Exterior', 'Vocanty es líder en consultoría y escuela de comercio exterior y metodologías ágiles para la gestión empresarial, brindando soluciones integrales y capacitaciones.', 'https://placehold.co/150x60/0f1a37/ffffff?text=VOCANTY', 'https://tu-enlace-referido-vocanty.com?ref=minddev&discount=EXCLUSIVO')">
-                        <img src="https://placehold.co/150x60/0f1a37/ffffff?text=VOCANTY" alt="Logo Vocanty"
-                            class="h-10 mb-3 grayscale hover:grayscale-0 transition duration-300">
-                        <h4 class="text-lg font-semibold text-white-pure mb-1">Vocanty</h4>
-                        <p class="text-sm text-electric-blue mb-2" data-text-key="partner4_service">Comercio Exterior &
-                            Agile</p>
-                        <p class="text-xs text-gray-400" data-text-key="partner4_desc">Asesoramiento y Capacitaciones.
-                        </p>
-                    </div>
+        <div id="blogs"></div>
 
-                    <!-- Partner 5 (Se mantiene uno simulado para llenar espacio) -->
-                    <div class="p-6 bg-dark-alt rounded-xl shadow-lg flex flex-col items-center text-center partner-card-link"
-                        onclick="openPartnerModal('Mentora', 'Creative Studio y Mentoria', 'Mentora ofrece servicios de estudio creativo y mentoría de negocios para founders. Ayudan a nuestros clientes a afinar su pitch de inversión y su identidad visual de alto impacto.', 'https://placehold.co/150x60/0f1a37/ffffff?text=Mentora', 'https://tu-enlace-referido-mentora.com?ref=minddev&discount=15')">
-                        <img src="https://placehold.co/150x60/0f1a37/ffffff?text=Mentora" alt="Logo Mentora"
-                            class="h-10 mb-3 grayscale hover:grayscale-0 transition duration-300">
-                        <h4 class="text-lg font-semibold text-white-pure mb-1">Mentora</h4>
-                        <p class="text-sm text-electric-blue mb-2">Creative Studio</p>
-                        <p class="text-xs text-gray-400">Branding y mentoría de negocios.</p>
-                    </div>
+        <!-- 12. Formulario de Contacto (Cotizar) - NUEVO DISEÑO DE DOS COLUMNAS -->
 
-                </div>
+        <div id="contacto"></div>
 
-            </div>
-        </section>
-
-        <!-- Modal de Detalles del Partner (ACTUALIZADO: para mostrar cupones o beneficios) -->
-        <!-- COMENTARIO: ESTE MODAL ES DINÁMICO, NO NECESITA TRADUCCIÓN MANUAL AQUÍ -->
-        <div id="partner-modal"
-            class="hidden fixed inset-0 z-[100] bg-deep-blue/80 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity duration-300 opacity-0">
-            <div class="bg-dark-alt rounded-2xl shadow-2xl max-w-lg w-full transform scale-95 transition-transform duration-300 border border-accent-purple/50"
-                id="partner-modal-content">
-                <div class="p-6 sm:p-8 relative">
-                    <!-- Botón de Cierre -->
-                    <button onclick="closePartnerModal()"
-                        class="absolute top-4 right-4 text-gray-400 hover:text-electric-blue transition z-20 p-2 rounded-full hover:bg-deep-blue">
-                        <span data-lucide="x" class="w-6 h-6"></span>
-                    </button>
-
-                    <div class="text-center">
-                        <img id="partner-modal-logo" src="" alt="Logo del Partner" class="h-12 mx-auto mb-4 grayscale">
-                        <h2 id="partner-modal-title" class="text-2xl font-bold text-white-pure mb-1"></h2>
-                        <p id="partner-modal-service" class="text-electric-blue font-semibold mb-4"></p>
-                    </div>
-
-                    <div class="border-t border-gray-700/50 pt-4 mt-4">
-                        <h3 class="text-xl font-semibold text-white-pure mb-2" data-text-key="partner_modal_details">
-                            Detalles de la Alianza</h3>
-                        <p id="partner-modal-description" class="text-gray-300 leading-relaxed mb-6 text-sm"></p>
-
-                        <div class="bg-deep-blue p-4 rounded-xl text-center border border-accent-purple/30">
-                            <p class="text-lg font-bold text-accent-purple mb-2"
-                                data-text-key="partner_modal_benefit_title">Beneficio Exclusivo Minddev</p>
-                            <p id="partner-modal-benefit-text" class="text-sm text-gray-400 mb-4">¡Obtén un <span
-                                    id="partner-modal-discount" class="font-extrabold text-electric-blue">beneficio
-                                    exclusivo</span> por ser cliente nuestro!</p>
-
-                            <!-- Campo de Cupón (Visible solo si hay cupón) -->
-                            <div id="coupon-display" class="mt-4 hidden">
-                                <p class="text-xs text-gray-500 mb-1" data-text-key="partner_modal_coupon_label">Usa
-                                    este cupón al registrarte:</p>
-                                <div
-                                    class="inline-flex items-center bg-dark-alt border border-electric-blue/50 rounded-lg p-2">
-                                    <span id="partner-modal-coupon-code"
-                                        class="text-lg font-extrabold text-electric-blue mr-3 select-all">MINDDEVPERU</span>
-                                    <button onclick="copyCouponCode()"
-                                        class="bg-electric-blue text-deep-blue px-3 py-1 rounded-md text-xs font-bold hover:bg-accent-purple transition"
-                                        data-text-key="partner_modal_copy_btn">
-                                        Copiar
-                                    </button>
-                                </div>
-                            </div>
-
-                            <a id="partner-modal-link" href="#" target="_blank" onclick="closePartnerModal()"
-                                class="inline-flex items-center bg-electric-blue text-deep-blue px-6 py-3 rounded-full font-bold hover:bg-accent-purple hover:text-white-pure transition duration-300 shadow-md mt-4"
-                                data-text-key="partner_modal_get_benefit">
-                                <span data-lucide="external-link" class="w-5 h-5 mr-2"></span> Obtener Beneficio
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        <div id="formModal"
+            class="fixed inset-0 bg-deep-blue/80 backdrop-blur-sm hidden justify-center items-center z-[999]">
+            <div
+                class="bg-dark-alt border border-electric-blue/40 rounded-2xl shadow-2xl max-w-sm w-[90%] text-center p-8 transform scale-95 opacity-0 transition-all duration-300">
+                <span id="formModalIcon" class="block mx-auto mb-4 text-4xl"></span>
+                <h3 id="formModalTitle" class="text-2xl font-bold text-white-pure mb-2"></h3>
+                <p id="formModalMessage" class="text-gray-400 mb-6"></p>
+                <button id="closeFormModal"
+                    class="bg-electric-blue text-deep-blue font-bold px-6 py-2 rounded-full hover:bg-accent-purple hover:text-white-pure transition">
+                    Cerrar
+                </button>
             </div>
         </div>
 
-        <!-- 9. Sección Tecnologías (NUEVO DISEÑO DE CALENDARIO/MATRIZ) -->
-        <section id="tecnologias" class="py-16 bg-dark-alt">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- COMENTARIO: MODIFICAR TÍTULOS DE TECNOLOGÍAS AQUÍ -->
-                <h2 class="text-4xl font-bold text-center mb-4" data-text-key="tech_title">Tecnologías que <span
-                        class="text-electric-blue">Dominamos</span></h2>
-                <p class="text-center text-lg text-gray-300 mb-12 max-w-3xl mx-auto" data-text-key="tech_subtitle">
-                    Nuestra pila tecnológica está diseñada para la escalabilidad, el rendimiento y la innovación.
-                </p>
-
-                <!-- Contenedor principal para las categorías en dos columnas (solo en escritorio) -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-
-                    <!-- Columna 1: Frontend y Bases de Datos (Apiladas verticalmente) -->
-                    <div class="space-y-8">
-                        <!-- Categoría 1: Frontend & Desarrollo Web -->
-                        <div class="tech-category-grid">
-                            <h3 class="text-xl font-bold text-electric-blue mb-4 border-b border-gray-700/50 pb-2"
-                                data-text-key="tech_cat1_title">Frontend & Web</h3>
-                            <!-- Las tarjetas de tecnología ahora van apiladas verticalmente en la columna -->
-                            <div class="space-y-4">
-                                <!-- Tech Item: React -->
-                                <div
-                                    class="p-4 bg-deep-blue rounded-xl shadow-lg hover:shadow-electric-blue/20 transition duration-300 transform hover:scale-[1.01] flex items-center justify-between">
-                                    <div class="flex items-center">
-                                        <span data-lucide="react" class="w-8 h-8 text-electric-blue mr-4"></span>
-                                        <div>
-                                            <p class="text-base font-semibold">React / Next.js</p>
-                                            <p class="text-xs text-gray-400" data-text-key="tech_react_desc">Frameworks
-                                                Web de Alto Rendimiento</p>
-                                        </div>
-                                    </div>
-                                    <span
-                                        class="text-xs font-bold text-electric-blue bg-electric-blue/10 px-3 py-1 rounded-full hidden sm:block"
-                                        data-text-key="tech_frontend_tag">Frontend</span>
-                                </div>
-                                <!-- Tech Item: Angular -->
-                                <div
-                                    class="p-4 bg-deep-blue rounded-xl shadow-lg hover:shadow-electric-blue/20 transition duration-300 transform hover:scale-[1.01] flex items-center justify-between">
-                                    <div class="flex items-center">
-                                        <span data-lucide="angular" class="w-8 h-8 text-electric-blue mr-4"></span>
-                                        <div>
-                                            <p class="text-base font-semibold">Angular / Vue</p>
-                                            <p class="text-xs text-gray-400" data-text-key="tech_angular_desc">
-                                                Desarrollo de SPAs robustas</p>
-                                        </div>
-                                    </div>
-                                    <span
-                                        class="text-xs font-bold text-electric-blue bg-electric-blue/10 px-3 py-1 rounded-full hidden sm:block"
-                                        data-text-key="tech_frontend_tag">Frontend</span>
-                                </div>
-                                <!-- Tech Item: JavaScript -->
-                                <div
-                                    class="p-4 bg-deep-blue rounded-xl shadow-lg hover:shadow-electric-blue/20 transition duration-300 transform hover:scale-[1.01] flex items-center justify-between">
-                                    <div class="flex items-center">
-                                        <span data-lucide="file-code" class="w-8 h-8 text-electric-blue mr-4"></span>
-                                        <div>
-                                            <p class="text-base font-semibold">JavaScript / TypeScript</p>
-                                            <p class="text-xs text-gray-400" data-text-key="tech_js_desc">Base del
-                                                desarrollo moderno</p>
-                                        </div>
-                                    </div>
-                                    <span
-                                        class="text-xs font-bold text-electric-blue bg-electric-blue/10 px-3 py-1 rounded-full hidden sm:block"
-                                        data-text-key="tech_core_tag">Core</span>
-                                </div>
-                                <!-- Tech Item: Tailwind -->
-                                <div
-                                    class="p-4 bg-deep-blue rounded-xl shadow-lg hover:shadow-electric-blue/20 transition duration-300 transform hover:scale-[1.01] flex items-center justify-between">
-                                    <div class="flex items-center">
-                                        <span data-lucide="layout-dashboard"
-                                            class="w-8 h-8 text-electric-blue mr-4"></span>
-                                        <div>
-                                            <p class="text-base font-semibold">Tailwind CSS</p>
-                                            <p class="text-xs text-gray-400" data-text-key="tech_tailwind_desc">Diseño
-                                                UI/UX adaptable</p>
-                                        </div>
-                                    </div>
-                                    <span
-                                        class="text-xs font-bold text-electric-blue bg-electric-blue/10 px-3 py-1 rounded-full hidden sm:block"
-                                        data-text-key="tech_design_tag">Diseño</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Categoría 3: Bases de Datos & Almacenamiento (verticalmente debajo de Frontend) -->
-                        <div class="tech-category-grid">
-                            <h3 class="text-xl font-bold text-electric-blue mb-4 border-b border-gray-700/50 pb-2"
-                                data-text-key="tech_cat3_title">Bases de Datos & Almacenamiento</h3>
-                            <div class="space-y-4">
-                                <!-- Tech Item: SQL -->
-                                <div
-                                    class="p-4 bg-deep-blue rounded-xl shadow-lg hover:shadow-electric-blue/20 transition duration-300 transform hover:scale-[1.01] flex items-center justify-between">
-                                    <div class="flex items-center">
-                                        <span data-lucide="database" class="w-8 h-8 text-electric-blue mr-4"></span>
-                                        <div>
-                                            <p class="text-base font-semibold">PostgreSQL / MySQL</p>
-                                            <p class="text-xs text-gray-400" data-text-key="tech_sql_desc">Sistemas SQL
-                                                Relacionales</p>
-                                        </div>
-                                    </div>
-                                    <span
-                                        class="text-xs font-bold text-electric-blue bg-electric-blue/10 px-3 py-1 rounded-full hidden sm:block"
-                                        data-text-key="tech_data_tag">Data</span>
-                                </div>
-                                <!-- Tech Item: NoSQL -->
-                                <div
-                                    class="p-4 bg-deep-blue rounded-xl shadow-lg hover:shadow-electric-blue/20 transition duration-300 transform hover:scale-[1.01] flex items-center justify-between">
-                                    <div class="flex items-center">
-                                        <span data-lucide="git-fork" class="w-8 h-8 text-electric-blue mr-4"></span>
-                                        <div>
-                                            <p class="text-base font-semibold">MongoDB / Firestore</p>
-                                            <p class="text-xs text-gray-400" data-text-key="tech_nosql_desc">Bases de
-                                                Datos NoSQL Flexibles</p>
-                                        </div>
-                                    </div>
-                                    <span
-                                        class="text-xs font-bold text-electric-blue bg-electric-blue/10 px-3 py-1 rounded-full hidden sm:block"
-                                        data-text-key="tech_data_tag">Data</span>
-                                </div>
-                                <!-- Tech Item: Redis -->
-                                <div
-                                    class="p-4 bg-deep-blue rounded-xl shadow-lg hover:shadow-electric-blue/20 transition duration-300 transform hover:scale-[1.01] flex items-center justify-between">
-                                    <div class="flex items-center">
-                                        <span data-lucide="layers" class="w-8 h-8 text-electric-blue mr-4"></span>
-                                        <div>
-                                            <p class="text-base font-semibold">Redis</p>
-                                            <p class="text-xs text-gray-400" data-text-key="tech_redis_desc">
-                                                Almacenamiento en caché de alta velocidad</p>
-                                        </div>
-                                    </div>
-                                    <span
-                                        class="text-xs font-bold text-electric-blue bg-electric-blue/10 px-3 py-1 rounded-full hidden sm:block"
-                                        data-text-key="tech_devops_tag">DevOps</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Columna 2: Backend y Cloud/Mobile (Apiladas verticalmente) -->
-                    <div class="space-y-8">
-                        <!-- Categoría 2: Backend & Servidor -->
-                        <div class="tech-category-grid">
-                            <h3 class="text-xl font-bold text-electric-blue mb-4 border-b border-gray-700/50 pb-2"
-                                data-text-key="tech_cat2_title">Backend & APIs</h3>
-                            <div class="space-y-4">
-                                <!-- Tech Item: Node.js -->
-                                <div
-                                    class="p-4 bg-deep-blue rounded-xl shadow-lg hover:shadow-electric-blue/20 transition duration-300 transform hover:scale-[1.01] flex items-center justify-between">
-                                    <div class="flex items-center">
-                                        <span data-lucide="server" class="w-8 h-8 text-electric-blue mr-4"></span>
-                                        <div>
-                                            <p class="text-base font-semibold">Node.js / Express</p>
-                                            <p class="text-xs text-gray-400" data-text-key="tech_node_desc">APIs
-                                                REST/GraphQL de alta concurrencia</p>
-                                        </div>
-                                    </div>
-                                    <span
-                                        class="text-xs font-bold text-electric-blue bg-electric-blue/10 px-3 py-1 rounded-full hidden sm:block"
-                                        data-text-key="tech_backend_tag">Backend</span>
-                                </div>
-                                <!-- Tech Item: Python -->
-                                <div
-                                    class="p-4 bg-deep-blue rounded-xl shadow-lg hover:shadow-electric-blue/20 transition duration-300 transform hover:scale-[1.01] flex items-center justify-between">
-                                    <div class="flex items-center">
-                                        <span data-lucide="python" class="w-8 h-8 text-electric-blue mr-4"></span>
-                                        <div>
-                                            <p class="text-base font-semibold">Python / Django</p>
-                                            <p class="text-xs text-gray-400" data-text-key="tech_python_desc">Análisis
-                                                de datos y Machine Learning</p>
-                                        </div>
-                                    </div>
-                                    <span
-                                        class="text-xs font-bold text-electric-blue bg-electric-blue/10 px-3 py-1 rounded-full hidden sm:block"
-                                        data-text-key="tech_backend_tag">Backend</span>
-                                </div>
-                                <!-- Tech Item: Go/Rust -->
-                                <div
-                                    class="p-4 bg-deep-blue rounded-xl shadow-lg hover:shadow-electric-blue/20 transition duration-300 transform hover:scale-[1.01] flex items-center justify-between">
-                                    <div class="flex items-center">
-                                        <span data-lucide="shield" class="w-8 h-8 text-electric-blue mr-4"></span>
-                                        <div>
-                                            <p class="text-base font-semibold">Go / Rust</p>
-                                            <p class="text-xs text-gray-400" data-text-key="tech_go_desc">Sistemas de
-                                                alto rendimiento y seguridad</p>
-                                        </div>
-                                    </div>
-                                    <span
-                                        class="text-xs font-bold text-electric-blue bg-electric-blue/10 px-3 py-1 rounded-full hidden sm:block"
-                                        data-text-key="tech_backend_tag">Backend</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Categoría 4: Cloud & Mobile (verticalmente debajo de Backend) -->
-                        <div class="tech-category-grid">
-                            <h3 class="text-xl font-bold text-electric-blue mb-4 border-b border-gray-700/50 pb-2"
-                                data-text-key="tech_cat4_title">Cloud & Mobile</h3>
-                            <div class="space-y-4">
-                                <!-- Tech Item: Cloud (AWS/GCP) -->
-                                <div
-                                    class="p-4 bg-deep-blue rounded-xl shadow-lg hover:shadow-electric-blue/20 transition duration-300 transform hover:scale-[1.01] flex items-center justify-between">
-                                    <div class="flex items-center">
-                                        <span data-lucide="cloud" class="w-8 h-8 text-electric-blue mr-4"></span>
-                                        <div>
-                                            <p class="text-base font-semibold">AWS / Google Cloud</p>
-                                            <p class="text-xs text-gray-400" data-text-key="tech_aws_desc">
-                                                Infraestructura escalable (IaaS/PaaS)</p>
-                                        </div>
-                                    </div>
-                                    <span
-                                        class="text-xs font-bold text-electric-blue bg-electric-blue/10 px-3 py-1 rounded-full hidden sm:block"
-                                        data-text-key="tech_cloud_tag">Cloud</span>
-                                </div>
-                                <!-- Tech Item: Flutter -->
-                                <div
-                                    class="p-4 bg-deep-blue rounded-xl shadow-lg hover:shadow-electric-blue/20 transition duration-300 transform hover:scale-[1.01] flex items-center justify-between">
-                                    <div class="flex items-center">
-                                        <span data-lucide="android" class="w-8 h-8 text-electric-blue mr-4"></span>
-                                        <div>
-                                            <p class="text-base font-semibold">Flutter / React Native</p>
-                                            <p class="text-xs text-gray-400" data-text-key="tech_mobile_desc">Desarrollo
-                                                de Apps Multiplataforma</p>
-                                        </div>
-                                    </div>
-                                    <span
-                                        class="text-xs font-bold text-electric-blue bg-electric-blue/10 px-3 py-1 rounded-full hidden sm:block"
-                                        data-text-key="tech_mobile_tag">Mobile</span>
-                                </div>
-                                <!-- Tech Item: Hosting/DevOps -->
-                                <div
-                                    class="p-4 bg-deep-blue rounded-xl shadow-lg hover:shadow-electric-blue/20 transition duration-300 transform hover:scale-[1.01] flex items-center justify-between">
-                                    <div class="flex items-center">
-                                        <span data-lucide="zap" class="w-8 h-8 text-electric-blue mr-4"></span>
-                                        <div>
-                                            <p class="text-base font-semibold">Docker / Kubernetes</p>
-                                            <p class="text-xs text-gray-400" data-text-key="tech_devops_desc">
-                                                Automatización y Despliegue (DevOps)</p>
-                                        </div>
-                                    </div>
-                                    <span
-                                        class="text-xs font-bold text-electric-blue bg-electric-blue/10 px-3 py-1 rounded-full hidden sm:block"
-                                        data-text-key="tech_devops_tag">DevOps</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- Fin grid lg:grid-cols-2 -->
-
-            </div>
-        </section>
-
-        <!-- 10. Sección Nuestro Equipo (ACTUALIZADO: Sin Misión/Visión, Sin Título de Liderazgo, Colaboradores en Grid 4) -->
-        <section id="equipo" class="py-16 bg-deep-blue">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- COMENTARIO: MODIFICAR TÍTULOS DEL EQUIPO AQUÍ -->
-                <h2 class="text-4xl font-bold text-center mb-12" data-text-key="team_title">Conoce a Nuestro <span
-                        class="text-electric-blue">Equipo</span></h2>
-
-                <!-- Liderazgo (Mantener en el mismo estilo de card, pero sin el título intermedio) -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
-
-                    <!-- CEO Card (Líder 1) -->
-                    <!-- COMENTARIO: MODIFICAR TEXTOS DEL CEO AQUÍ -->
-                    <div class="bg-dark-alt rounded-xl shadow-2xl transition duration-300 overflow-hidden">
-                        <div class="flex items-center p-4">
-                            <!-- Foto -->
-                            <img src="https://placehold.co/80x80/3b82f6/0f172a?text=CEO" alt="Foto del CEO"
-                                class="w-20 h-20 rounded-xl mr-4 object-cover border-2 border-electric-blue">
-
-                            <div class="flex-grow">
-                                <h4 class="text-xl font-bold" data-text-key="leader1_name">Ricardo S.</h4>
-                                <p class="text-electric-blue text-sm" data-text-key="leader1_title">CEO & Fundador</p>
-                                <div class="flex space-x-2 mt-1">
-                                    <a href="#" class="text-gray-400 hover:text-electric-blue"><span
-                                            data-lucide="linkedin" class="w-4 h-4"></span></a>
-                                    <a href="#" class="text-gray-400 hover:text-electric-blue"><span data-lucide="mail"
-                                            class="w-4 h-4"></span></a>
-                                </div>
-                            </div>
-
-                            <!-- Botón de Detalle -->
-                            <button onclick="toggleBio('ceo-bio')"
-                                class="w-8 h-8 rounded-full bg-electric-blue text-white-pure flex items-center justify-center transition duration-300 transform hover:scale-110">
-                                <span data-lucide="plus" id="ceo-icon" class="w-5 h-5"></span>
-                            </button>
-                        </div>
-
-                        <!-- Detalle Ocultable -->
-                        <div id="ceo-bio" class="bio-detail bg-deep-blue">
-                            <p class="text-sm text-gray-300" data-text-key="leader1_bio">Ricardo es el visionario detrás
-                                de Minddev, con más de 15 años de experiencia en transformación digital y arquitecturas
-                                de microservicios. Su enfoque está en la innovación ágil y la expansión global de la
-                                compañía.</p>
-                        </div>
-                    </div>
-
-                    <!-- Co-Founder Card (Líder 2) -->
-                    <!-- COMENTARIO: MODIFICAR TEXTOS DE LA CTO AQUÍ -->
-                    <div class="bg-dark-alt rounded-xl shadow-2xl transition duration-300 overflow-hidden">
-                        <div class="flex items-center p-4">
-                            <!-- Foto -->
-                            <img src="https://placehold.co/80x80/5355dd/0f172a?text=Founder" alt="Foto del Founder"
-                                class="w-20 h-20 rounded-xl mr-4 object-cover border-2 border-accent-purple">
-
-                            <div class="flex-grow">
-                                <h4 class="text-xl font-bold" data-text-key="leader2_name">Lucía P.</h4>
-                                <p class="text-accent-purple text-sm" data-text-key="leader2_title">Co-Founder & CTO</p>
-                                <div class="flex space-x-2 mt-1">
-                                    <a href="#" class="text-gray-400 hover:text-accent-purple"><span
-                                            data-lucide="linkedin" class="w-4 h-4"></span></a>
-                                    <a href="#" class="text-gray-400 hover:text-accent-purple"><span data-lucide="mail"
-                                            class="w-4 h-4"></span></a>
-                                </div>
-                            </div>
-
-                            <!-- Botón de Detalle -->
-                            <button onclick="toggleBio('cto-bio')"
-                                class="w-8 h-8 rounded-full bg-accent-purple text-white-pure flex items-center justify-center transition duration-300 transform hover:scale-110">
-                                <span data-lucide="plus" id="cto-icon" class="w-5 h-5"></span>
-                            </button>
-                        </div>
-
-                        <!-- Detalle Ocultable -->
-                        <div id="cto-bio" class="bio-detail bg-deep-blue">
-                            <p class="text-sm text-gray-300" data-text-key="leader2_bio">Lucía es la fuerza técnica,
-                                liderando la estrategia de desarrollo y asegurando la calidad de cada solución. Es una
-                                experta en Cloud Computing (AWS/GCP) y arquitectura de bases de datos NoSQL.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Cards del Equipo Operativo (NUEVO DISEÑO: Grid 4) -->
-                <h3 class="text-2xl font-bold text-center mb-6" data-text-key="team_collaborators">Nuestros
-                    Colaboradores</h3>
-                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6 max-w-5xl mx-auto">
-                    <!-- COMENTARIO: MODIFICAR DATOS DE COLABORADORES AQUÍ -->
-
-                    <div
-                        class="p-4 bg-dark-alt rounded-lg text-center shadow-lg flex flex-col justify-between hover:shadow-electric-blue/10 transition duration-300">
-                        <div>
-                            <img src="https://placehold.co/80x80/0f172a/3b82f6?text=FE" alt="Frontend Dev"
-                                class="w-16 h-16 rounded-full mx-auto mb-2 object-cover border-2 border-electric-blue/50">
-                            <p class="text-base font-semibold" data-text-key="collab1_name">Ana G.</p>
-                            <p class="text-xs text-electric-blue mb-2" data-text-key="collab1_title">Frontend Developer
-                            </p>
-                        </div>
-                        <a href="https://linkedin.com/in/ana-g" target="_blank"
-                            class="text-gray-400 hover:text-electric-blue mx-auto transition mt-2">
-                            <span data-lucide="linkedin" class="w-4 h-4"></span>
-                        </a>
-                    </div>
-
-                    <div
-                        class="p-4 bg-dark-alt rounded-lg text-center shadow-lg flex flex-col justify-between hover:shadow-electric-blue/10 transition duration-300">
-                        <div>
-                            <img src="https://placehold.co/80x80/0f172a/5355dd?text=BE" alt="Backend Dev"
-                                class="w-16 h-16 rounded-full mx-auto mb-2 object-cover border-2 border-accent-purple/50">
-                            <p class="text-base font-semibold" data-text-key="collab2_name">Pedro C.</p>
-                            <p class="text-xs text-accent-purple mb-2" data-text-key="collab2_title">Backend Engineer
-                            </p>
-                        </div>
-                        <a href="https://linkedin.com/in/pedro-c" target="_blank"
-                            class="text-gray-400 hover:text-accent-purple mx-auto transition mt-2">
-                            <span data-lucide="linkedin" class="w-4 h-4"></span>
-                        </a>
-                    </div>
-
-                    <div
-                        class="p-4 bg-dark-alt rounded-lg text-center shadow-lg flex flex-col justify-between hover:shadow-electric-blue/10 transition duration-300">
-                        <div>
-                            <img src="https://placehold.co/80x80/0f172a/3b82f6?text=Designer" alt="Diseñador"
-                                class="w-16 h-16 rounded-full mx-auto mb-2 object-cover border-2 border-electric-blue/50">
-                            <p class="text-base font-semibold" data-text-key="collab3_name">Julián R.</p>
-                            <p class="text-xs text-electric-blue mb-2" data-text-key="collab3_title">Diseño UX/UI</p>
-                        </div>
-                        <a href="https://linkedin.com/in/julian-r" target="_blank"
-                            class="text-gray-400 hover:text-electric-blue mx-auto transition mt-2">
-                            <span data-lucide="linkedin" class="w-4 h-4"></span>
-                        </a>
-                    </div>
-
-                    <div
-                        class="p-4 bg-dark-alt rounded-lg text-center shadow-lg flex flex-col justify-between hover:shadow-electric-blue/10 transition duration-300">
-                        <div>
-                            <img src="https://placehold.co/80x80/0f172a/5355dd?text=Psic" alt="Psicólogo"
-                                class="w-16 h-16 rounded-full mx-auto mb-2 object-cover border-2 border-accent-purple/50">
-                            <p class="text-base font-semibold" data-text-key="collab4_name">Elena S.</p>
-                            <p class="text-xs text-accent-purple mb-2" data-text-key="collab4_title">Psicología Org.</p>
-                        </div>
-                        <a href="https://linkedin.com/in/elena-s" target="_blank"
-                            class="text-gray-400 hover:text-accent-purple mx-auto transition mt-2">
-                            <span data-lucide="linkedin" class="w-4 h-4"></span>
-                        </a>
-                    </div>
-
-                    <!-- Continuación de Colaboradores (Nuevo Zic Zac / Columna 1 de la 2da Fila en Grid 4) -->
-                    <div
-                        class="p-4 bg-dark-alt rounded-lg text-center shadow-lg flex flex-col justify-between hover:shadow-electric-blue/10 transition duration-300">
-                        <div>
-                            <img src="https://placehold.co/80x80/0f172a/3b82f6?text=Exec" alt="Ejecutivo Comercial"
-                                class="w-16 h-16 rounded-full mx-auto mb-2 object-cover border-2 border-electric-blue/50">
-                            <p class="text-base font-semibold" data-text-key="collab5_name">Manuel T.</p>
-                            <p class="text-xs text-electric-blue mb-2" data-text-key="collab5_title">Ejec. Comercial</p>
-                        </div>
-                        <a href="https://linkedin.com/in/manuel-t" target="_blank"
-                            class="text-gray-400 hover:text-electric-blue mx-auto transition mt-2">
-                            <span data-lucide="linkedin" class="w-4 h-4"></span>
-                        </a>
-                    </div>
-
-                    <div
-                        class="p-4 bg-dark-alt rounded-lg text-center shadow-lg flex flex-col justify-between hover:shadow-electric-blue/10 transition duration-300">
-                        <div>
-                            <img src="https://placehold.co/80x80/0f172a/5355dd?text=PM" alt="Project Manager"
-                                class="w-16 h-16 rounded-full mx-auto mb-2 object-cover border-2 border-accent-purple/50">
-                            <p class="text-base font-semibold" data-text-key="collab6_name">Diana Q.</p>
-                            <p class="text-xs text-accent-purple mb-2" data-text-key="collab6_title">Project Manager</p>
-                        </div>
-                        <a href="https://linkedin.com/in/diana-q" target="_blank"
-                            class="text-gray-400 hover:text-accent-purple mx-auto transition mt-2">
-                            <span data-lucide="linkedin" class="w-4 h-4"></span>
-                        </a>
-                    </div>
-
-                    <!-- Más espacio simulado para llenar la cuadrícula (ejemplos) -->
-                    <div
-                        class="p-4 bg-dark-alt rounded-lg text-center shadow-lg flex flex-col justify-between hover:shadow-electric-blue/10 transition duration-300">
-                        <div>
-                            <img src="https://placehold.co/80x80/0f172a/3b82f6?text=QA" alt="QA Tester"
-                                class="w-16 h-16 rounded-full mx-auto mb-2 object-cover border-2 border-electric-blue/50">
-                            <p class="text-base font-semibold" data-text-key="collab7_name">Javier L.</p>
-                            <p class="text-xs text-electric-blue mb-2" data-text-key="collab7_title">QA Tester</p>
-                        </div>
-                        <a href="https://linkedin.com/in/javier-l" target="_blank"
-                            class="text-gray-400 hover:text-electric-blue mx-auto transition mt-2">
-                            <span data-lucide="linkedin" class="w-4 h-4"></span>
-                        </a>
-                    </div>
-
-                    <div
-                        class="p-4 bg-dark-alt rounded-lg text-center shadow-lg flex flex-col justify-between hover:shadow-electric-blue/10 transition duration-300">
-                        <div>
-                            <img src="https://placehold.co/80x80/0f172a/5355dd?text=Marketing"
-                                alt="Marketing Specialist"
-                                class="w-16 h-16 rounded-full mx-auto mb-2 object-cover border-2 border-accent-purple/50">
-                            <p class="text-base font-semibold" data-text-key="collab8_name">Carla V.</p>
-                            <p class="text-xs text-accent-purple mb-2" data-text-key="collab8_title">Marketing Digital
-                            </p>
-                        </div>
-                        <a href="https://linkedin.com/in/carla-v" target="_blank"
-                            class="text-gray-400 hover:text-accent-purple mx-auto transition mt-2">
-                            <span data-lucide="linkedin" class="w-4 h-4"></span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Oportunidades Laborales / Careers (Se mantiene para CTA) -->
-                <!-- COMENTARIO: MODIFICAR TEXTOS DE CARRERAS AQUÍ -->
-                <div class="mt-12 text-center pt-6 border-t border-gray-700/50">
-                    <h3 class="text-2xl font-bold mb-3" data-text-key="careers_title">Oportunidades Laborales</h3>
-                    <p class="text-gray-400 text-sm mb-4" data-text-key="careers_subtitle">¿Buscas un reto? Únete a
-                        nuestro equipo de alto rendimiento. Creamos el futuro, juntos.</p>
-                    <a href="#"
-                        class="inline-flex items-center bg-transparent border-2 border-electric-blue text-electric-blue px-6 py-2 rounded-full font-bold hover:bg-electric-blue hover:text-white-pure transition duration-300 transform hover:scale-105"
-                        data-text-key="btn_view_careers">
-                        Ver Carreras <span data-lucide="briefcase" class="w-4 h-4 ml-2"></span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- 11. Sección Blog (Preview) - DISEÑO MODERNO CON ÍCONO -->
-        <section class="py-16 bg-dark-alt">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- COMENTARIO: MODIFICAR TÍTULOS DEL BLOG AQUÍ -->
-                <h2 class="text-4xl font-bold text-center mb-10" data-text-key="blog_title">Nuestro <span
-                        class="text-electric-blue">Blog</span></h2>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    <!-- Artículo 1: SEO -->
-                    <a href="#" class="blog-card rounded-xl block group">
-                        <div class="blog-icon-circle-new">
-                            <span data-lucide="trending-up" class="w-6 h-6 text-electric-blue"></span>
-                        </div>
-
-                        <span class="text-electric-blue text-xs font-semibold mb-1 block uppercase"
-                            data-text-key="blog1_tag">SEO & Marketing</span>
-                        <h3 class="text-2xl font-bold mb-3 blog-title-link" data-text-key="blog1_title">5 Tendencias de
-                            SEO que debes dominar en 2025</h3>
-                        <p class="text-gray-400 text-base mb-4" data-text-key="blog1_desc">El futuro del posicionamiento
-                            orgánico y la importancia de la IA conversacional en los rankings.</p>
-
-                        <!-- Enlace Leer Artículo -->
-                        <span class="blog-read-link" data-text-key="btn_read_article">
-                            Leer Artículo <span data-lucide="arrow-right" class="w-4 h-4 ml-2"></span>
-                        </span>
-                    </a>
-
-                    <!-- Artículo 2: Desarrollo Móvil -->
-                    <a href="#" class="blog-card rounded-xl block group">
-                        <div class="blog-icon-circle-new">
-                            <span data-lucide="smartphone" class="w-6 h-6 text-accent-purple"></span>
-                        </div>
-
-                        <span class="text-accent-purple text-xs font-semibold mb-1 block uppercase"
-                            data-text-key="blog2_tag">Desarrollo Móvil</span>
-                        <h3 class="text-2xl font-bold mb-3 blog-title-link" data-text-key="blog2_title">Flutter vs.
-                            Nativo: ¿Cuál elegir para tu App?</h3>
-                        <p class="text-gray-400 text-base mb-4" data-text-key="blog2_desc">Un análisis comparativo de
-                            costos, rendimiento y tiempo de desarrollo para aplicaciones modernas.</p>
-
-                        <!-- Enlace Leer Artículo -->
-                        <span class="blog-read-link" data-text-key="btn_read_article">
-                            Leer Artículo <span data-lucide="arrow-right" class="w-4 h-4 ml-2"></span>
-                        </span>
-                    </a>
-
-                    <!-- Artículo 3: Metodología -->
-                    <a href="#" class="blog-card rounded-xl block group">
-                        <div class="blog-icon-circle-new">
-                            <span data-lucide="code" class="w-6 h-6 text-electric-blue"></span>
-                        </div>
-
-                        <span class="text-electric-blue text-xs font-semibold mb-1 block uppercase"
-                            data-text-key="blog3_tag">Metodología</span>
-                        <h3 class="text-2xl font-bold mb-3 blog-title-link" data-text-key="blog3_title">Cómo
-                            implementamos la Metodología Ágil en Minddev</h3>
-                        <p class="text-gray-400 text-base mb-4" data-text-key="blog3_desc">Nuestro proceso de 5 pasos
-                            para garantizar la transparencia y el éxito del proyecto en cada entrega.</p>
-
-                        <!-- Enlace Leer Artículo -->
-                        <span class="blog-read-link" data-text-key="btn_read_article">
-                            Leer Artículo <span data-lucide="arrow-right" class="w-4 h-4 ml-2"></span>
-                        </span>
-                    </a>
-                </div>
-
-                <div class="text-center mt-12">
-                    <a href="#"
-                        class="inline-flex items-center text-lg font-bold text-electric-blue hover:text-white-pure transition duration-300 border-b border-electric-blue/50 hover:border-white-pure/50 pb-0.5"
-                        data-text-key="btn_go_blog">
-                        Ir al Blog Completo <span data-lucide="chevron-right" class="w-5 h-5 ml-2"></span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- 12. Formulario de Contacto (Cotizar) - NUEVO DISEÑO DE DOS COLUMNAS -->
-        <section id="contacto" class="py-16 bg-deep-blue">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- Contenedor principal del Formulario y la Tarjeta de Valor -->
-                <div
-                    class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto rounded-3xl shadow-2xl border border-electric-blue/30 overflow-hidden bg-dark-alt">
-
-                    <!-- Columna Izquierda: Formulario de Inputs -->
-                    <div class="p-8 lg:p-10 bg-dark-alt">
-
-                        <div class="text-left mb-6">
-                            <!-- COMENTARIO: MODIFICAR TÍTULOS DEL FORMULARIO AQUÍ -->
-                            <h2 class="text-4xl font-extrabold mb-2 leading-tight" data-text-key="contact_form_title">
-                                Contáctanos</h2>
-                            <p class="text-lg text-gray-300" data-text-key="contact_form_subtitle">Desarrollemos tu
-                                software a medida.</p>
-                        </div>
-
-                        <form class="space-y-6">
-
-                            <!-- Input: Nombre y Apellido -->
-                            <div>
-                                <label for="full_name" class="block text-sm font-medium text-gray-300 mb-1"
-                                    data-text-key="form_label_name">Nombre y Apellido</label>
-                                <input type="text" id="full_name" name="full_name" class="w-full form-input-custom"
-                                    data-placeholder-key="form_placeholder_name"
-                                    placeholder="Ingresa tu nombre y apellido aquí" required>
-                            </div>
-
-                            <!-- Input: Email Corporativo -->
-                            <div>
-                                <label for="email" class="block text-sm font-medium text-gray-300 mb-1"
-                                    data-text-key="form_label_email">Email</label>
-                                <input type="email" id="email" name="email" class="w-full form-input-custom"
-                                    data-placeholder-key="form_placeholder_email" placeholder="nombre@mail.com"
-                                    required>
-                            </div>
-
-                            <!-- Dropdown: Servicio de Interés -->
-                            <div class="relative">
-                                <label for="service_interest" class="block text-sm font-medium text-gray-300 mb-1"
-                                    data-text-key="form_label_service">¿Qué servicio te interesa?</label>
-                                <select id="service_interest" name="service_interest"
-                                    class="w-full form-input-custom appearance-none" required>
-                                    <!-- COMENTARIO: MODIFICAR OPTIONS DEL FORMULARIO AQUÍ (Necesitan ser traducidos en JS) -->
-                                    <option value="" disabled selected class="text-gray-500 bg-dark-alt"
-                                        data-option-key="option_select_service">Selecciona un servicio o alianza
-                                    </option>
-                                    <option value="desarrollo_web" class="bg-dark-alt" data-option-key="option_web_dev">
-                                        Desarrollo Web (Sitios, E-commerce, Landing)</option>
-                                    <option value="app_movil" class="bg-dark-alt" data-option-key="option_mobile_app">
-                                        Aplicaciones Móviles (iOS, Android, Híbridas)</option>
-                                    <option value="mantenimiento_seo" class="bg-dark-alt"
-                                        data-option-key="option_maint_seo">Mantenimiento Web, Rediseño y SEO</option>
-                                    <option value="hosting_cloud" class="bg-dark-alt" data-option-key="option_hosting">
-                                        Hosting y Cloud Computing</option>
-                                    <option value="capacitaciones" class="bg-dark-alt"
-                                        data-option-key="option_training">Capacitaciones Tecnológicas</option>
-                                    <option value="alianza" class="bg-dark-alt font-bold"
-                                        data-option-key="option_alliance">Quiero formar parte de su Alianza Estratégica
-                                    </option>
-                                </select>
-                                <span class="absolute right-0 bottom-3 pointer-events-none p-2"><span
-                                        data-lucide="chevron-down" class="w-4 h-4 text-gray-400"></span></span>
-                            </div>
-
-                            <!-- Input: Teléfono (Combinado) -->
-                            <div>
-                                <label for="phone" class="block text-sm font-medium text-gray-300 mb-1"
-                                    data-text-key="form_label_phone">Teléfono</label>
-                                <div class="flex space-x-2 relative">
-                                    <!-- Selector de Código (Simulado) -->
-                                    <select
-                                        class="form-input-custom w-24 flex-shrink-0 bg-dark-alt text-gray-300 appearance-none pr-6">
-                                        <option value="PE" class="bg-dark-alt">PE +51</option>
-                                        <option value="CO" class="bg-dark-alt">CO +57</option>
-                                        <option value="MX" class="bg-dark-alt">MX +52</option>
-                                        <option value="AR" class="bg-dark-alt">AR +54</option>
-                                    </select>
-                                    <input type="tel" id="phone" name="phone" class="w-full form-input-custom"
-                                        data-placeholder-key="form_placeholder_phone"
-                                        placeholder="Ingresa tu teléfono aquí">
-                                </div>
-                            </div>
-
-                            <!-- Checkboxes de Aceptación -->
-                            <div class="space-y-3 pt-2 text-sm">
-                                <div class="flex items-start">
-                                    <input id="accept_terms" type="checkbox" required
-                                        class="mt-1 w-4 h-4 text-electric-blue bg-deep-blue border-gray-600 rounded focus:ring-electric-blue">
-                                    <label for="accept_terms" class="ml-3 text-gray-300 cursor-pointer"
-                                        data-text-key="form_check_terms">
-                                        Acepto los <a href="#" target="_blank"
-                                            class="text-electric-blue hover:text-accent-purple transition duration-200 font-semibold">términos,
-                                            condiciones y política de privacidad</a>.
-                                    </label>
-                                </div>
-                                <div class="flex items-start">
-                                    <input id="accept_info" type="checkbox"
-                                        class="mt-1 w-4 h-4 text-electric-blue bg-deep-blue border-gray-600 rounded focus:ring-electric-blue">
-                                    <label for="accept_info" class="ml-3 text-gray-300 cursor-pointer"
-                                        data-text-key="form_check_info">
-                                        Acepto recibir información exclusiva sobre eventos y programas.
-                                    </label>
-                                </div>
-                            </div>
-
-                            <!-- Botón de Envío -->
-                            <div class="pt-4">
-                                <button type="submit"
-                                    class="w-full bg-electric-blue text-white-pure px-6 py-3 rounded-xl font-bold text-lg hover:bg-accent-purple transition duration-300 shadow-lg shadow-electric-blue/40 transform hover:scale-[1.01]"
-                                    data-text-key="btn_submit_form">
-                                    Enviar Solicitud
-                                </button>
-                                <p class="text-center text-xs text-gray-500 mt-3" data-text-key="form_legal_note">Al
-                                    enviar tus datos en este formulario, aceptas recibir comunicación de parte de
-                                    Minddev Perú.</p>
-                            </div>
-                        </form>
-                    </div>
-
-                    <!-- Columna Derecha: Tarjeta de Valor / Información de Contacto -->
-                    <div class="p-8 lg:p-10 bg-deep-blue flex flex-col justify-center space-y-6 lg:space-y-8">
-                        <div class="text-left">
-                            <span data-lucide="rocket" class="w-10 h-10 text-electric-blue mb-4"></span>
-                            <!-- COMENTARIO: MODIFICAR TEXTOS DE LA TARJETA LATERAL AQUÍ -->
-                            <h3 class="text-4xl sm:text-5xl font-extrabold text-white-pure leading-tight mb-2"
-                                data-text-key="contact_card_title_line1">
-                                Da el <span class="text-accent-purple"
-                                    data-text-key="contact_card_title_highlight">siguiente paso</span> con Minddev
-                            </h3>
-                            <p class="text-lg text-gray-400 max-w-sm" data-text-key="contact_card_subtitle">
-                                Hablemos de tu MVP, rediseño web, o estrategia digital. ¡La transformación comienza
-                                ahora!
-                            </p>
-                        </div>
-
-                        <!-- Contacto Directo -->
-                        <div class="space-y-2">
-                            <div class="flex items-center space-x-3">
-                                <span data-lucide="mail" class="w-5 h-5 text-electric-blue"></span>
-                                <div>
-                                    <p class="text-sm text-gray-400" data-text-key="contact_label_email">Email Directo
-                                    </p>
-                                    <p class="font-semibold text-white-pure">contacto@minddevperu.com</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center space-x-3">
-                                <span data-lucide="phone" class="w-5 h-5 text-electric-blue"></span>
-                                <div>
-                                    <p class="text-sm text-gray-400" data-text-key="contact_label_phone">Llama o Envía
-                                        WhatsApp</p>
-                                    <p class="font-semibold text-white-pure">+51 903 067 489</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- 13. Preguntas Frecuentes (FAQ) -->
-        <section id="faq" class="py-16 bg-dark-alt">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <p class="case-study-tag uppercase text-center mb-2" data-text-key="faq_tag">Resuelve tus dudas</p>
-                <h2 class="text-4xl font-bold text-center mb-12" data-text-key="faq_title">Preguntas <span
-                        class="text-electric-blue">Frecuentes</span></h2>
 
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-
-                    <!-- Columna Izquierda: Acordeón de FAQs -->
-                    <div class="lg:col-span-2 space-y-4">
-                        <!-- COMENTARIO: MODIFICAR TEXTOS DE LAS PREGUNTAS FRECUENTES AQUÍ -->
-
-                        <!-- FAQ Item 1: Presupuesto Flexible -->
-                        <div class="faq-item" id="faq-1">
-                            <div class="faq-header" data-text-key="faq1_q">
-                                <span>¿Mi presupuesto es limitado? ¿Pueden ajustar el alcance del proyecto?</span>
-                                <span class="transform transition duration-300 text-electric-blue"
-                                    data-lucide="plus"></span>
-                            </div>
-                            <div class="faq-answer">
-                                <p data-text-key="faq1_a">¡Absolutamente! Entendemos las restricciones de un <span
-                                        class="text-accent-purple font-semibold">emprendimiento</span> y no queremos que
-                                    el presupuesto sea una barrera. Estamos especializados en la creación de <span
-                                        class="text-electric-blue font-semibold">Productos Mínimos Viables (MVP)</span>.
-                                    Trabajaremos contigo para definir un alcance inicial que se ajuste a tus recursos,
-                                    permitiéndote lanzar y validar tu idea digital. ¡Tu éxito es nuestro éxito!</p>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 2: Financiamiento / Cuotas -->
-                        <div class="faq-item" id="faq-2">
-                            <div class="faq-header" data-text-key="faq2_q">
-                                <span>¿Ofrecen planes de financiamiento o pago en cuotas para los proyectos?</span>
-                                <span class="transform transition duration-300 text-electric-blue"
-                                    data-lucide="plus"></span>
-                            </div>
-                            <div class="faq-answer">
-                                <p data-text-key="faq2_a">Sí, ofrecemos facilidades de <span
-                                        class="text-accent-purple font-semibold">pago directo</span> para tu proyecto.
-                                    Puedes elegir dividir el costo en <span class="text-electric-blue font-semibold">3,
-                                        6, 9 o hasta 12 cuotas</span>, dependiendo del tamaño y la duración del
-                                    proyecto. Para discutir la mejor estructura de pagos que se adapte a tus
-                                    necesidades, por favor escríbenos a nuestro <span
-                                        class="text-electric-blue font-semibold">WhatsApp</span> al <a
-                                        href="https://wa.me/51903067489" target="_blank"
-                                        class="text-electric-blue hover:text-accent-purple">+51 903 067 489</a> o
-                                    déjanos un mensaje en nuestro formulario de contacto.</p>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 3: Metodología Ágil -->
-                        <div class="faq-item" id="faq-3">
-                            <div class="faq-header" data-text-key="faq3_q">
-                                <span>¿Trabajan con la metodología Ágil (Agile)?</span>
-                                <span class="transform transition duration-300 text-electric-blue"
-                                    data-lucide="plus"></span>
-                            </div>
-                            <div class="faq-answer">
-                                <p data-text-key="faq3_a">Sí, implementamos la metodología <span
-                                        class="text-electric-blue font-semibold">Ágil, principalmente Scrum</span>, para
-                                    garantizar transparencia, flexibilidad y entregas incrementales de valor. Esto nos
-                                    permite adaptarnos rápidamente a los cambios y asegurar que el producto final cumpla
-                                    con tus expectativas.</p>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 4: Soporte y Mantenimiento -->
-                        <div class="faq-item" id="faq-4">
-                            <div class="faq-header" data-text-key="faq4_q">
-                                <span>¿Ofrecen soporte y mantenimiento después del lanzamiento?</span>
-                                <span class="transform transition duration-300 text-electric-blue"
-                                    data-lucide="plus"></span>
-                            </div>
-                            <div class="faq-answer">
-                                <p data-text-key="faq4_a">Absolutamente. Proporcionamos <span
-                                        class="text-electric-blue font-semibold">planes de soporte y mantenimiento
-                                        continuos</span> que incluyen actualizaciones de seguridad, monitoreo de
-                                    rendimiento, corrección de errores y escalabilidad, asegurando que tu solución
-                                    digital funcione perfectamente a largo plazo.</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- Columna Derecha: Tarjetas de Información Adicional -->
-                    <div class="lg:col-span-1 space-y-6">
-
-                        <!-- Tarjeta 1: Contacto Directo -->
-                        <div class="support-card bg-deep-blue">
-                            <div class="support-card-bg opacity-20"></div>
-                            <div class="relative z-10">
-                                <div
-                                    class="w-12 h-12 bg-electric-blue rounded-full flex items-center justify-center mb-3">
-                                    <span data-lucide="message-square" class="w-6 h-6 text-deep-blue"></span>
-                                </div>
-                                <h3 class="text-xl font-bold text-white-pure mb-2" data-text-key="faq_card1_title">
-                                    ¿Tienes otras preguntas?</h3>
-                                <p class="text-gray-300 text-sm mb-4" data-text-key="faq_card1_desc">Nuestro equipo
-                                    responderá todas tus consultas. Aseguramos una respuesta rápida.</p>
-                                <a href="#contacto"
-                                    class="inline-flex items-center bg-electric-blue text-deep-blue px-6 py-2 rounded-full font-bold hover:bg-accent-purple hover:text-white-pure transition duration-300"
-                                    data-text-key="btn_contact_us">
-                                    Contáctanos
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Tarjeta 2: Servicio 24/7 -->
-                        <div class="support-card bg-dark-alt border border-gray-700/50">
-                            <div class="relative z-10">
-                                <div class="flex items-center space-x-3 mb-2">
-                                    <span data-lucide="phone-call" class="w-6 h-6 text-electric-blue"></span>
-                                    <p class="text-sm font-medium text-electric-blue" data-text-key="faq_card2_label">Tu
-                                        Comodidad, Nuestra Prioridad</p>
-                                </div>
-                                <h3 class="text-2xl font-extrabold text-white-pure mb-1"
-                                    data-text-key="faq_card2_title">Soporte 24/7</h3>
-                                <p class="text-xl font-bold text-gray-300">+51 903 067 489</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div id="faq"></div>
 
         <!-- Modal de Detalles del Portafolio (Oculto por defecto) -->
-        <!-- COMENTARIO: AGREGAR DATA-KEYS AL MODAL DEL PORTAFOLIO -->
         <div id="portfolio-modal"
             class="hidden fixed inset-0 z-[100] bg-deep-blue/80 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity duration-300 opacity-0">
             <div class="bg-dark-alt rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto transform scale-95 transition-transform duration-300 border border-electric-blue/20"
@@ -1922,8 +279,9 @@
         </div>
 
         <!-- 14. Footer Moderno (Rediseñado y Compactado) -->
-
         <div id="footer"></div>
+
+
         <script>
 
             document.addEventListener("DOMContentLoaded", () => {
@@ -1944,6 +302,17 @@
                     }
                 };
 
+                includeHTML("inicio", "./partials/inicio.html");
+                includeHTML("servicios", "./partials/servicios.html");
+                includeHTML("proceso", "./partials/proceso.html");
+                includeHTML("portafolio", "./partials/portafolio.html");
+                includeHTML("clientes_y_testimonios", "./partials/clientes_y_testimonios.html");
+                includeHTML("alianzas", "./partials/alianzas.html");
+                includeHTML("tecnologias", "./partials/tecnologias.html");
+                includeHTML("equipo", "./partials/equipo.html");
+                includeHTML("blogs", "./partials/blogs.html");
+                includeHTML("contacto", "./partials/contacto.html");
+                includeHTML("faq", "./partials/faq.html");
                 includeHTML("footer", "./partials/footer.html");
             });
 
@@ -2088,21 +457,21 @@
 
                     // SECCIÓN 10: EQUIPO
                     team_title: 'Conoce a Nuestro Equipo',
-                    leader1_name: 'Ricardo S.',
+                    leader1_name: 'Ricardo R.',
                     leader1_title: 'CEO & Fundador',
-                    leader1_bio: 'Ricardo es el visionario detrás de Minddev, con más de 15 años de experiencia en transformación digital y arquitecturas de microservicios. Su enfoque está en la innovación ágil y la expansión global de la compañía.',
-                    leader2_name: 'Lucía P.',
+                    leader1_bio: 'Ricardo es el visionario detrás de MindDev, con más de 5 años de experiencia en transformación digital y arquitecturas de microservicios. Su enfoque está en la innovación ágil y la expansión global de la compañía.',
+                    leader2_name: 'Kevin S.',
                     leader2_title: 'Co-Founder & CTO',
-                    leader2_bio: 'Lucía es la fuerza técnica, liderando la estrategia de desarrollo y asegurando la calidad de cada solución. Es una experta en Cloud Computing (AWS/GCP) y arquitectura de bases de datos NoSQL.',
+                    leader2_bio: 'Kevin es la mente estratégica y especialista en desarrollo Full Stack, liderando la innovación y supervisando cada etapa del proceso técnico. Su experiencia combina el diseño de interfaces modernas con la creación de arquitecturas escalables y eficientes.',
                     team_collaborators: 'Nuestros Colaboradores',
-                    collab1_name: 'Ana G.', collab1_title: 'Frontend Developer',
-                    collab2_name: 'Pedro C.', collab2_title: 'Backend Engineer',
-                    collab3_name: 'Julián R.', collab3_title: 'Diseño UX/UI',
-                    collab4_name: 'Elena S.', collab4_title: 'Psicología Org.',
-                    collab5_name: 'Manuel T.', collab5_title: 'Ejec. Comercial',
-                    collab6_name: 'Diana Q.', collab6_title: 'Project Manager',
-                    collab7_name: 'Javier L.', collab7_title: 'QA Tester',
-                    collab8_name: 'Carla V.', collab8_title: 'Marketing Digital',
+                    collab1_name: 'Andrea J.', collab1_title: 'Frontend Developer',
+                    collab2_name: 'Pedro A.', collab2_title: 'Backend Engineer',
+                    collab3_name: 'Maitena C.', collab3_title: 'Diseño UX/UI',
+                    collab4_name: 'Astrid R.', collab4_title: 'Psicología Org.',
+                    collab5_name: 'Frecsia C.', collab5_title: 'Ejec. Comercial',
+                    collab6_name: 'Lesly H.', collab6_title: 'Project Manager',
+                    collab7_name: 'Angel R.', collab7_title: 'QA Tester',
+                    collab8_name: 'Patricia S.', collab8_title: 'Marketing Digital',
                     careers_title: 'Oportunidades Laborales',
                     careers_subtitle: '¿Buscas un reto? Únete a nuestro equipo de alto rendimiento. Creamos el futuro, juntos.',
                     btn_view_careers: 'Ver Carreras',
@@ -2326,21 +695,21 @@
 
                     // SECCIÓN 10: EQUIPO
                     team_title: 'Meet Our Team',
-                    leader1_name: 'Ricardo S.',
+                    leader1_name: 'Ricardo R.',
                     leader1_title: 'CEO & Founder',
-                    leader1_bio: 'Ricardo is the visionary behind Minddev, with over 15 years of experience in digital transformation and microservices architecture. His focus is on agile innovation and global expansion.',
-                    leader2_name: 'Lucía P.',
+                    leader1_bio: 'Ricardo is the visionary behind MindDev, with over 5 years of experience in digital transformation and microservices architecture. His focus is on agile innovation and global expansion.',
+                    leader2_name: 'Kevin S.',
                     leader2_title: 'Co-Founder & CTO',
-                    leader2_bio: 'Lucía is the technical force, leading development strategy and ensuring the quality of every solution. She is an expert in Cloud Computing (AWS/GCP) and NoSQL database architecture.',
+                    leader2_bio: 'Kevin is the strategic mind and Full Stack specialist, driving innovation and overseeing every stage of the technical process. His expertise blends modern interface design with the creation of scalable and efficient architectures.',
                     team_collaborators: 'Our Collaborators',
-                    collab1_name: 'Ana G.', collab1_title: 'Frontend Developer',
-                    collab2_name: 'Pedro C.', collab2_title: 'Backend Engineer',
-                    collab3_name: 'Julián R.', collab3_title: 'UX/UI Designer',
-                    collab4_name: 'Elena S.', collab4_title: 'Org. Psychology',
-                    collab5_name: 'Manuel T.', collab5_title: 'Commercial Exec.',
-                    collab6_name: 'Diana Q.', collab6_title: 'Project Manager',
-                    collab7_name: 'Javier L.', collab7_title: 'QA Tester',
-                    collab8_name: 'Carla V.', collab8_title: 'Digital Marketing',
+                    collab1_name: 'Andrea J.', collab1_title: 'Frontend Developer',
+                    collab2_name: 'Pedro A.', collab2_title: 'Backend Engineer',
+                    collab3_name: 'Jorge J.', collab3_title: 'Designer',
+                    collab4_name: 'Astrid R.', collab4_title: 'Org. Psychology',
+                    collab5_name: 'Frecsia C.', collab5_title: 'Commercial Exec.',
+                    collab6_name: 'Lesly H.', collab6_title: 'Project Manager',
+                    collab7_name: 'Angel R.', collab7_title: 'QA Tester',
+                    collab8_name: 'Patricia S.', collab8_title: 'Digital Marketing',
                     careers_title: 'Career Opportunities',
                     careers_subtitle: 'Looking for a challenge? Join our high-performance team. We create the future, together.',
                     btn_view_careers: 'View Careers',
@@ -2440,7 +809,7 @@
                     const key = el.getAttribute('data-text-key');
                     if (keys[key]) {
                         // Si el elemento contiene HTML (como los span resaltados en el FAQ/Testimonios)
-                        if (el.tagName === 'P' || el.tagName === 'H2' || el.tagName === 'H3' || el.tagName === 'A' || el.tagName === 'SPAN') {
+                        if (el.tagName === 'P' || el.tagName === 'H2' || el.tagName === 'H3' || el.tagName === 'A' || el.tagName === 'SPAN' || el.tagName === 'LABEL') {
                             el.innerHTML = keys[key];
                         } else {
                             el.textContent = keys[key];
@@ -2660,27 +1029,40 @@
             });
 
             // --- Lógica del Carrusel de Testimonios ---
-            const carousel = document.getElementById('testimonial-carousel');
-            const prevBtn = document.getElementById('prev-testimony');
-            const nextBtn = document.getElementById('next-testimony');
-            const slides = document.querySelectorAll('.testimonial-slide');
-            let currentTestimony = 0;
-            const totalSlides = slides.length;
+            const observer = new MutationObserver(() => {
+                const carousel = document.getElementById('testimonial-carousel');
+                if (carousel) {
+                    initTestimonialCarousel();
+                    observer.disconnect(); // ya no observar
+                }
+            });
 
-            function updateTestimony() {
-                const offset = -currentTestimony * 100;
-                carousel.style.transform = `translateX(${offset}%)`;
+            observer.observe(document.body, { childList: true, subtree: true });
+
+            function initTestimonialCarousel() {
+                const carousel = document.getElementById('testimonial-carousel');
+                const prevBtn = document.getElementById('prev-testimony');
+                const nextBtn = document.getElementById('next-testimony');
+                const slides = document.querySelectorAll('.testimonial-slide');
+                let currentTestimony = 0;
+                const totalSlides = slides.length;
+
+                function updateTestimony() {
+                    const offset = -currentTestimony * 100;
+                    carousel.style.transform = `translateX(${offset}%)`;
+                }
+
+                nextBtn.addEventListener('click', () => {
+                    currentTestimony = (currentTestimony + 1) % totalSlides;
+                    updateTestimony();
+                });
+
+                prevBtn.addEventListener('click', () => {
+                    currentTestimony = (currentTestimony - 1 + totalSlides) % totalSlides;
+                    updateTestimony();
+                });
             }
 
-            nextBtn.addEventListener('click', () => {
-                currentTestimony = (currentTestimony + 1) % totalSlides;
-                updateTestimony();
-            });
-
-            prevBtn.addEventListener('click', () => {
-                currentTestimony = (currentTestimony - 1 + totalSlides) % totalSlides;
-                updateTestimony();
-            });
 
             // Inicializa la posición del carrusel
             updateTestimony();
@@ -2715,143 +1097,191 @@
             }
 
             // --- Lógica para el Acordeón del FAQ ---
-            function toggleFAQ(id) {
-                const item = document.getElementById(id);
-                const answer = item.querySelector('.faq-answer');
-                const icon = item.querySelector('[data-lucide]');
 
-                // Si ya está activo, ciérralo
-                if (item.classList.contains('active')) {
-                    item.classList.remove('active');
-                    icon.setAttribute('data-lucide', 'plus');
-                } else {
-                    // Cierra todos los demás
-                    document.querySelectorAll('.faq-item.active').forEach(activeItem => {
-                        activeItem.classList.remove('active');
-                        const activeIcon = activeItem.querySelector('[data-lucide]');
-                        if (activeIcon) activeIcon.setAttribute('data-lucide', 'plus');
+            document.addEventListener("DOMContentLoaded", () => {
+                // includeHTML: carga un partial y lo inserta dentro del elemento con id
+                const includeHTML = async (id, file) => {
+                    const element = document.getElementById(id);
+                    if (!element) return Promise.resolve(); // nada que hacer
+
+                    try {
+                        const response = await fetch(file);
+                        if (!response.ok) {
+                            console.error(`Error cargando ${file}: ${response.status}`);
+                            return;
+                        }
+                        element.innerHTML = await response.text();
+
+                        // volver a renderizar íconos lucide (si existe)
+                        if (window.lucide && typeof lucide.createIcons === "function") {
+                            lucide.createIcons();
+                        }
+                    } catch (err) {
+                        console.error(`Error fetch ${file}:`, err);
+                    }
+                };
+
+                // Toggle del FAQ (recibe el elemento .faq-item)
+                const toggleFAQItem = (item) => {
+                    if (!item) return;
+                    const icon = item.querySelector('[data-lucide]');
+                    // si ya está activo, ciérralo
+                    if (item.classList.contains('active')) {
+                        item.classList.remove('active');
+                        item.querySelector('.faq-answer')?.removeAttribute('style');
+                        item.querySelector('.faq-header')?.setAttribute('aria-expanded', 'false');
+                        if (icon) icon.setAttribute('data-lucide', 'plus');
+                    } else {
+                        // cerrar todos los demás
+                        document.querySelectorAll('.faq-item.active').forEach(activeItem => {
+                            activeItem.classList.remove('active');
+                            activeItem.querySelector('.faq-answer')?.removeAttribute('style');
+                            activeItem.querySelector('.faq-header')?.setAttribute('aria-expanded', 'false');
+                            const activeIcon = activeItem.querySelector('[data-lucide]');
+                            if (activeIcon) activeIcon.setAttribute('data-lucide', 'plus');
+                        });
+
+                        // abrir el actual
+                        item.classList.add('active');
+                        const answer = item.querySelector('.faq-answer');
+                        if (answer) {
+                            // animación simple: calcular scrollHeight para max-height
+                            answer.style.maxHeight = answer.scrollHeight + "px";
+                        }
+                        item.querySelector('.faq-header')?.setAttribute('aria-expanded', 'true');
+                        if (icon) icon.setAttribute('data-lucide', 'minus');
+                    }
+
+                    // re-renderizar lucide para que actualice los iconos
+                    if (window.lucide && typeof lucide.createIcons === "function") {
+                        lucide.createIcons();
+                    }
+                };
+
+                // Inicializar comportamiento FAQ usando delegación de eventos
+                const initFAQ = () => {
+                    // delegación: escucha clicks en todo el documento, filtra .faq-header
+                    document.addEventListener('click', (e) => {
+                        const header = e.target.closest('.faq-header');
+                        if (!header) return;
+                        const item = header.closest('.faq-item');
+                        if (!item) return;
+                        toggleFAQItem(item);
                     });
 
-                    // Abre el actual
-                    item.classList.add('active');
-                    icon.setAttribute('data-lucide', 'minus');
-                }
-                // Re-renderizar iconos en el modal
-                lucide.createIcons();
-            }
+                    // (Opcional) Si quieres que la tecla Enter/Space sobre el header funcione:
+                    document.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            const active = document.activeElement;
+                            if (active && active.classList.contains('faq-header')) {
+                                e.preventDefault();
+                                const item = active.closest('.faq-item');
+                                toggleFAQItem(item);
+                            }
+                        }
+                    });
+                };
 
-            // Asignar el listener de clic a cada header de FAQ
-            document.querySelectorAll('.faq-item').forEach(item => {
-                item.querySelector('.faq-header').addEventListener('click', () => {
-                    toggleFAQ(item.id);
-                });
+                // Cargar los partials que necesites y luego inicializar funcionalidades
+                (async () => {
+                    // ejemplo: carga faq y footer (añade otros si los necesitas)
+                    await includeHTML('faq', './partials/faq.html');
+                    await includeHTML('footer', './partials/footer.html');
+
+                    // inicializar FAQ (delegación y accesibilidad)
+                    initFAQ();
+
+                    // opcional: si quieres abrir el primer FAQ por defecto
+                    const first = document.querySelector('.faq-item');
+                    if (first) {
+                        // abre el primero sin animación compleja
+                        // toggleFAQItem(first);
+                    }
+                })();
             });
+
 
             // --- Lógica del Modal de Partners (NUEVO) ---
-            const partnerModal = document.getElementById('partner-modal');
-            const partnerModalTitle = document.getElementById('partner-modal-title');
-            const partnerModalService = document.getElementById('partner-modal-service');
-            const partnerModalDescription = document.getElementById('partner-modal-description');
-            const partnerModalLogo = document.getElementById('partner-modal-logo');
-            const partnerModalDiscount = document.getElementById('partner-modal-discount');
-            const partnerModalLink = document.getElementById('partner-modal-link');
-            const partnerModalBenefitText = document.getElementById('partner-modal-benefit-text');
-            const couponDisplay = document.getElementById('coupon-display');
-            const partnerModalCouponCode = document.getElementById('partner-modal-coupon-code');
+            // Función para abrir el modal de partner
+            function openPartnerModal(name, service, description, logo, link) {
+                const modal = document.getElementById('partner-modal');
+                const modalContent = document.getElementById('partner-modal-content');
 
+                // Asignar los valores al modal
+                document.getElementById('partner-modal-title').textContent = name;
+                document.getElementById('partner-modal-service').textContent = service;
+                document.getElementById('partner-modal-description').textContent = description;
+                document.getElementById('partner-modal-logo').src = logo;
+                document.getElementById('partner-modal-link').href = link;
 
-            function openPartnerModal(title, service, description, logoUrl, referralLink) {
-                // Rellenar contenido
-                partnerModalTitle.textContent = title;
-                partnerModalService.textContent = service;
-                partnerModalDescription.textContent = description;
-                partnerModalLogo.src = logoUrl;
-                partnerModalLink.href = referralLink;
-
-                // Lógica para manejar el cupón/descuento/beneficio
-                const url = new URL(referralLink);
-                const discountParam = url.searchParams.get('discount');
-                const couponParam = url.searchParams.get('coupon');
-
-                const keys = translations[currentLanguage]; // Obtener textos en el idioma actual
-
-                // 1. Resetear el display
-                couponDisplay.classList.add('hidden');
-                partnerModalDiscount.textContent = keys.partner_modal_benefit_title.replace('Beneficio Exclusivo Minddev', 'beneficio especial'); // Usar texto del idioma
-                partnerModalBenefitText.innerHTML = `¡${currentLanguage === 'es' ? 'Obtén un' : 'Get an'} <span id="partner-modal-discount" class="font-extrabold text-electric-blue">${currentLanguage === 'es' ? 'beneficio exclusivo' : 'exclusive benefit'}</span> ${currentLanguage === 'es' ? 'por ser cliente nuestro!' : 'for being our client!'}`;
-
-                // 2. Aplicar lógica de beneficio
-                if (couponParam) {
-                    // Es un cupón específico (ej: VTurb)
-                    partnerModalDiscount.textContent = discountParam || (currentLanguage === 'es' ? '15%' : '15%');
-                    partnerModalBenefitText.innerHTML = `${currentLanguage === 'es' ? '¡Usa el cupón' : 'Use coupon'} <span class="font-extrabold text-electric-blue">${couponParam}</span> ${currentLanguage === 'es' ? 'y obtén un' : 'and get a'} <span class="font-extrabold text-electric-blue">${discountParam || (currentLanguage === 'es' ? 'gran descuento' : 'great discount')}</span> ${currentLanguage === 'es' ? 'en sus servicios!' : 'on their services!'}`;
-
-                    partnerModalCouponCode.textContent = couponParam;
-                    couponDisplay.classList.remove('hidden');
-
-                } else if (discountParam && discountParam.endsWith('%')) {
-                    // Es un porcentaje de descuento directo (ej: Intercapital)
-                    partnerModalDiscount.textContent = discountParam;
-                    partnerModalBenefitText.innerHTML = `${currentLanguage === 'es' ? '¡Obtén hasta un' : 'Get up to'} <span class="font-extrabold text-electric-blue">${discountParam}</span> ${currentLanguage === 'es' ? 'de retorno con esta alianza!' : 'return with this alliance!'}`;
-
-                } else {
-                    // Es un beneficio exclusivo general (ej: Call Bell, Vocanty)
-                    partnerModalDiscount.textContent = currentLanguage === 'es' ? 'beneficio exclusivo' : 'exclusive benefit';
-                    partnerModalBenefitText.innerHTML = `¡${currentLanguage === 'es' ? 'Obtén un' : 'Get an'} <span class="font-extrabold text-electric-blue">${currentLanguage === 'es' ? 'beneficio exclusivo' : 'exclusive benefit'}</span> ${currentLanguage === 'es' ? 'por ser cliente nuestro!' : 'for being our client!'}`;
-                }
-
-
-                // Mostrar el modal con transición suave
-                partnerModal.classList.remove('hidden', 'opacity-0');
-                partnerModal.classList.add('opacity-100');
-                document.getElementById('partner-modal-content').classList.remove('scale-95');
-                document.getElementById('partner-modal-content').classList.add('scale-100');
-
-                // Prevenir scroll en el body
-                document.body.style.overflow = 'hidden';
-
-                lucide.createIcons();
-            }
-
-            function closePartnerModal() {
-                // Ocultar el modal con transición suave
-                partnerModal.classList.remove('opacity-100');
-                partnerModal.classList.add('opacity-0');
-                document.getElementById('partner-modal-content').classList.remove('scale-100');
-                document.getElementById('partner-modal-content').classList.add('scale-95');
-
+                // Mostrar modal
+                modal.classList.remove('hidden');
                 setTimeout(() => {
-                    partnerModal.classList.add('hidden');
-                    // Restaurar scroll en el body
-                    document.body.style.overflow = 'auto';
-                }, 300);
+                    modal.classList.add('opacity-100');
+                    modal.classList.remove('opacity-0');
+                    modalContent.classList.add('scale-100');
+                    modalContent.classList.remove('scale-95');
+                }, 10);
+
+                // Si el enlace tiene un cupón en la URL, mostrarlo
+                const couponDisplay = document.getElementById('coupon-display');
+                const couponCode = document.getElementById('partner-modal-coupon-code');
+                if (link.includes('coupon=')) {
+                    const coupon = link.split('coupon=')[1].split('&')[0];
+                    couponCode.textContent = coupon.toUpperCase();
+                    couponDisplay.classList.remove('hidden');
+                } else {
+                    couponDisplay.classList.add('hidden');
+                }
+
+                // Cargar íconos de Lucide
+                if (typeof lucide !== 'undefined') {
+                    lucide.createIcons();
+                }
             }
 
-            // Cerrar modal de partner al presionar ESC
-            document.addEventListener('keydown', (e) => {
-                if (e.key === "Escape" && !partnerModal.classList.contains('hidden')) {
+            // Función para cerrar el modal
+            function closePartnerModal() {
+                const modal = document.getElementById('partner-modal');
+                const modalContent = document.getElementById('partner-modal-content');
+
+                // Animación de cierre
+                modal.classList.remove('opacity-100');
+                modal.classList.add('opacity-0');
+                modalContent.classList.remove('scale-100');
+                modalContent.classList.add('scale-95');
+
+                // Esperar la animación y ocultar
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                }, 200);
+            }
+
+            // Función para copiar el cupón
+            function copyCouponCode() {
+                const code = document.getElementById('partner-modal-coupon-code').textContent;
+                navigator.clipboard.writeText(code);
+
+                // Feedback visual
+                const btn = event.target;
+                const originalText = btn.textContent;
+                btn.textContent = 'Copiado!';
+                btn.disabled = true;
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.disabled = false;
+                }, 2000);
+            }
+
+            // Cerrar modal si se hace clic fuera del contenido
+            document.addEventListener('click', (e) => {
+                const modal = document.getElementById('partner-modal');
+                const content = document.getElementById('partner-modal-content');
+                if (!modal.classList.contains('hidden') && !content.contains(e.target)) {
                     closePartnerModal();
                 }
             });
 
-            // Cerrar modal de partner al hacer clic fuera del contenido (en el overlay)
-            partnerModal.addEventListener('click', (e) => {
-                if (e.target === partnerModal) {
-                    closePartnerModal();
-                }
-            });
-
-
-            // Exponer las funciones al scope global
-            window.toggleBio = toggleBio;
-            window.openPortfolioModal = openPortfolioModal;
-            window.closePortfolioModal = closePortfolioModal;
-            window.toggleFAQ = toggleFAQ;
-            window.openPartnerModal = openPartnerModal;
-            window.closePartnerModal = closePartnerModal;
-
-            // Ejecutar Lucide Create Icons al final del script para garantizar que se rendericen correctamente
-            lucide.createIcons();
         </script>
 </body>
 

@@ -1,0 +1,198 @@
+<section id="clientes_y_testimonios" class="py-16 bg-dark-alt">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Sección de Testimonios (Estilo Asimétrico) -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-12">
+            <!-- Columna Izquierda: Título y CTA -->
+            <div class="text-center lg:text-left">
+                <!-- COMENTARIO: MODIFICAR TÍTULOS Y DESCRIPCIONES DE TESTIMONIOS AQUÍ -->
+                <p class="case-study-tag uppercase mb-2" data-text-key="testimonials_tag">Testimonios</p>
+                <h2 class="text-4xl sm:text-5xl font-extrabold leading-tight mb-3"
+                    data-text-key="testimonials_title_line1">
+                    Historias de <span class="text-electric-blue"
+                        data-text-key="testimonials_title_highlight1">innovación</span> y <span
+                        class="text-electric-blue" data-text-key="testimonials_title_highlight2">impacto</span>
+                </h2>
+                <p class="text-lg text-gray-300 mb-6 max-w-md mx-auto lg:mx-0" data-text-key="testimonials_subtitle">
+                    De la visión a la realidad, así es como influimos en el éxito de nuestros socios.
+                </p>
+
+                <!-- Controles de Navegación del Carrusel -->
+                <div class="flex justify-center lg:justify-start space-x-4 mb-4 lg:mb-0">
+                    <button id="prev-testimony"
+                        class="p-2 rounded-full border border-electric-blue text-electric-blue hover:bg-electric-blue hover:text-deep-blue transition duration-300">
+                        <span data-lucide="chevron-left" class="w-5 h-5"></span>
+                    </button>
+                    <button id="next-testimony"
+                        class="p-2 rounded-full border border-electric-blue text-electric-blue hover:bg-electric-blue hover:text-deep-blue transition duration-300">
+                        <span data-lucide="chevron-right" class="w-5 h-5"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Tarjeta de Testimonio (Carrusel) -->
+            <div class="relative w-full h-full min-h-72 overflow-hidden">
+                <div id="testimonial-carousel" class="flex transition-transform duration-700 ease-in-out">
+                    <!-- Testimonio 1 -->
+                    <div class="testimonial-slide flex-shrink-0 w-full">
+                        <div class="testimonial-card w-full p-6 sm:p-8">
+                            <span class="quote-icon absolute top-4 left-4 text-6xl font-serif">"</span>
+                            <p class="italic text-base text-gray-300 relative z-20 pl-6 pb-6"
+                                data-text-key="testimony1_text">
+                                "Durante dos años, buscamos sin éxito un equipo de desarrollo que combinara
+                                conocimientos técnicos, compromiso y perseverancia. Minddev no solo nos dio un
+                                equipo de desarrollo, sino un <span class="text-electric-blue font-semibold">socio
+                                    estratégico</span> en el que
+                                podemos confiar totalmente."
+                            </p>
+                            <div class="flex items-center pt-3 border-t border-gray-700/50">
+                                <img src="https://placehold.co/60x60/3b82f6/0f172a?text=JR" alt="Foto Javier R."
+                                    class="w-10 h-10 rounded-full mr-4 object-cover border-2 border-electric-blue">
+                                <div>
+                                    <p class="font-bold text-white-pure text-sm" data-text-key="testimony1_name">Javier
+                                        R. (Cliente A)</p>
+                                    <p class="text-xs text-electric-blue" data-text-key="testimony1_title">CEO,
+                                        Startup Tech</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 2 -->
+                    <div class="testimonial-slide flex-shrink-0 w-full">
+                        <div class="testimonial-card w-full p-6 sm:p-8">
+                            <span class="quote-icon absolute top-4 left-4 text-6xl font-serif">"</span>
+                            <p class="italic text-base text-gray-300 relative z-20 pl-6 pb-6"
+                                data-text-key="testimony2_text">
+                                "El rediseño de nuestra web superó todas las expectativas. El nuevo enfoque
+                                minimalista y la optimización de SEO nos permitió mejorar la <span
+                                    class="text-accent-purple font-semibold">conversión de leads</span> en un
+                                impresionante 40% en el primer trimestre."
+                            </p>
+                            <div class="flex items-center pt-3 border-t border-gray-700/50">
+                                <img src="https://placehold.co/60x60/5355dd/0f172a?text=SM" alt="Foto Sofía M."
+                                    class="w-10 h-10 rounded-full mr-4 object-cover border-2 border-accent-purple">
+                                <div>
+                                    <p class="font-bold text-white-pure text-sm" data-text-key="testimony2_name">Sofía
+                                        M. (Cliente B)</p>
+                                    <p class="text-xs text-accent-purple" data-text-key="testimony2_title">
+                                        Gerente de Marketing, Retail</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonio 3 -->
+                    <div class="testimonial-slide flex-shrink-0 w-full">
+                        <div class="testimonial-card w-full p-6 sm:p-8">
+                            <span class="quote-icon absolute top-4 left-4 text-6xl font-serif">"</span>
+                            <p class="italic text-base text-gray-300 relative z-20 pl-6 pb-6"
+                                data-text-key="testimony3_text">
+                                "El proyecto MVP se lanzó en la fecha prometida y con una <span
+                                    class="text-electric-blue font-semibold">calidad excepcional</span>. Su
+                                metodología de trabajo ágil es la razón por la que seguimos confiando en ellos
+                                para el desarrollo de nuevas funcionalidades."
+                            </p>
+                            <div class="flex items-center pt-3 border-t border-gray-700/50">
+                                <img src="https://placehold.co/60x60/3b82f6/0f172a?text=CG" alt="Foto Carlos G."
+                                    class="w-10 h-10 rounded-full mr-4 object-cover border-2 border-electric-blue">
+                                <div>
+                                    <p class="font-bold text-white-pure text-sm" data-text-key="testimony3_name">Carlos
+                                        G. (Cliente C)</p>
+                                    <p class="text-xs text-electric-blue" data-text-key="testimony3_title">
+                                        Director de TI, Fintech</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloque de Estadísticas Personalizado -->
+        <!-- COMENTARIO: MODIFICAR TEXTOS DE LOGROS CLAVE AQUÍ -->
+        <h3 class="text-xl font-bold mb-6 text-center mt-8" data-text-key="achievements_title">Nuestros <span
+                class="text-electric-blue">Logros Clave</span></h3>
+        <div class="flex justify-center flex-wrap gap-x-8 gap-y-4 mb-12 py-4">
+            <div class="p-3">
+                <p class="text-4xl font-extrabold text-electric-blue leading-none">+8 Años</p>
+                <p class="text-gray-400 text-xs mt-1" data-text-key="achievement1_desc">de experiencia en el
+                    sector</p>
+            </div>
+            <div class="p-3">
+                <p class="text-4xl font-extrabold text-electric-blue leading-none">+50</p>
+                <p class="text-gray-400 text-xs mt-1" data-text-key="achievement2_desc">proyectos digitales
+                    completados</p>
+            </div>
+            <div class="p-3">
+                <p class="text-4xl font-extrabold text-electric-blue leading-none">+90%</p>
+                <p class="text-gray-400 text-xs mt-1" data-text-key="achievement3_desc">tasa de retención de
+                    clientes</p>
+            </div>
+        </div>
+
+        <!-- Carrusel Infinito de Clientes (Logos) -->
+        <h3 class="text-xl font-bold text-center mb-6" data-text-key="clients_trust">Empresas que <span
+                class="text-accent-purple">Confían en Nosotros</span></h3>
+        <div class="relative w-full overflow-hidden py-4 border-y border-gray-700/50">
+            <div class="logo-track flex items-center">
+                <!-- Logos Originales -->
+                <div class="logo-item"><img src="https://placehold.co/120x60/0f172a/3b82f6?text=Cliente+A"
+                        alt="Logo Cliente A"
+                        class="h-8 mx-auto opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0">
+                </div>
+                <div class="logo-item"><img src="https://placehold.co/120x60/0f172a/3b82f6?text=Cliente+B"
+                        alt="Logo Cliente B"
+                        class="h-8 mx-auto opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0">
+                </div>
+                <div class="logo-item"><img src="https://placehold.co/120x60/0f172a/3b82f6?text=Cliente+C"
+                        alt="Logo Cliente C"
+                        class="h-8 mx-auto opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0">
+                </div>
+                <div class="logo-item"><img src="https://placehold.co/120x60/0f172a/3b82f6?text=Cliente+D"
+                        alt="Logo Cliente D"
+                        class="h-8 mx-auto opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0">
+                </div>
+                <div class="logo-item"><img src="https://placehold.co/120x60/0f172a/3b82f6?text=Cliente+E"
+                        alt="Logo Cliente E"
+                        class="h-8 mx-auto opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0">
+                </div>
+
+                <!-- Logos Duplicados para loop seamless -->
+                <div class="logo-item"><img src="https://placehold.co/120x60/0f172a/3b82f6?text=Cliente+F"
+                        alt="Logo Cliente F"
+                        class="h-8 mx-auto opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0">
+                </div>
+                <div class="logo-item"><img src="https://placehold.co/120x60/0f172a/3b82f6?text=Cliente+G"
+                        alt="Logo Cliente G"
+                        class="h-8 mx-auto opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0">
+                </div>
+                <div class="logo-item"><img src="https://placehold.co/120x60/0f172a/3b82f6?text=Cliente+H"
+                        alt="Logo Cliente H"
+                        class="h-8 mx-auto opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0">
+                </div>
+                <div class="logo-item"><img src="https://placehold.co/120x60/0f172a/3b82f6?text=Cliente+I"
+                        alt="Logo Cliente I"
+                        class="h-8 mx-auto opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0">
+                </div>
+                <div class="logo-item"><img src="https://placehold.co/120x60/0f172a/3b82f6?text=Cliente+J"
+                        alt="Logo Cliente J"
+                        class="h-8 mx-auto opacity-70 hover:opacity-100 transition duration-300 grayscale hover:grayscale-0">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Botón de Acción -->
+        <div class="text-center mt-12">
+            <a href="#contacto"
+                class="inline-flex items-center bg-accent-purple text-white-pure px-8 py-3 rounded-full font-bold text-lg hover:bg-electric-blue transition duration-300 shadow-xl shadow-accent-purple/40 transform hover:scale-105"
+                data-text-key="btn_schedule_call">
+                <span data-lucide="calendar-check" class="w-5 h-5 mr-2"></span>
+                Programa una Llamada
+            </a>
+        </div>
+
+    </div>
+</section>
