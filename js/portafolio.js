@@ -13,7 +13,7 @@ const projectTech = {
     3: ['React Native', 'React JS', 'APIs REST', 'UX Móvil']
 };
 
-function openPortfolioModal(id, title, description, imageUrl) {
+function openPortfolioModal(id, title, description, imageUrl, projectUrl) {
     // Rellenar contenido
     modalTitle.textContent = title;
     modalId.textContent = `Proyecto #00${id}`;
@@ -28,6 +28,16 @@ function openPortfolioModal(id, title, description, imageUrl) {
         chip.textContent = tech;
         modalTechStack.appendChild(chip);
     });
+
+    // 🔗 Actualizar enlace "Visitar Sitio Web"
+    const link = modal.querySelector("a[data-text-key='btn_visit_website']");
+    if (projectUrl) {
+        link.href = projectUrl;
+        link.target = "_blank"; // abre en nueva pestaña
+        link.style.display = "inline-flex";
+    } else {
+        link.style.display = "none"; // oculta si no hay link
+    }
 
     // Mostrar el modal con transición suave
     modal.classList.remove('hidden', 'opacity-0');

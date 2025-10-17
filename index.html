@@ -15,31 +15,53 @@
     <meta property="og:title" content="MindDev Perú | Soluciones Digitales Modernas">
     <meta property="og:description"
         content="Transformamos ideas en soluciones digitales. Expertos en desarrollo web, móvil y tecnología.">
-    <meta property="og:image" content="/assets/og-image.png">
+    <meta property="og:image" content="./assets/images/icon-emp/banner-opg.webp">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://minddevperu.com">
+    <meta property="og:locale" content="es_PE">
     <link rel="stylesheet" href="./css/_base.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
 
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MindDev Perú",
+    "url": "https://minddevperu.com",
+    "logo": "https://minddevperu.com/assets/images/icon-emp/logo-header.png",
+    "description": "Agencia especializada en desarrollo web, aplicaciones móviles, hosting y marketing digital.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+51 903 067 489",
+      "contactType": "Servicio al cliente",
+      "areaServed": "PE",
+      "availableLanguage": ["Spanish", "English"]
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/minddev-peru",
+      "https://www.facebook.com/minddev.peru",
+      "https://www.instagram.com/minddevperu"
+    ]
+  }
+  </script>
+
 </head>
 
 <body class="text-white-pure">
-
     <!-- 1. Top Bar -->
     <div class="bg-accent-purple py-2 px-4 text-center text-sm font-semibold overflow-hidden flex justify-center sm:justify-between items-center relative z-50"
         id="top-bar">
 
-        <!-- Contenedor del Mensaje (Centrado - Order 2 en desktop) -->
+        <!-- Contenedor del Mensaje -->
         <div id="promo-message"
             class="transition-opacity duration-500 ease-in-out text-center absolute left-1/2 transform -translate-x-1/2 w-full max-w-sm sm:max-w-none">
-            <!-- El contenido será insertado por JavaScript -->
         </div>
 
         <!-- Espacio en blanco (Columna Izquierda, para balancear la promo) -->
         <div class="hidden sm:block w-32"></div>
 
-        <!-- Selector de Idioma (Interruptor - Derecha - Order 3 en desktop) -->
+        <!-- Selector de Idioma -->
         <div class="relative order-last" id="language-switcher-container">
             <div class="language-switch" id="lang-switch" data-lang="es" onclick="toggleLanguageSwitch()">
                 <div class="switch-toggle"></div>
@@ -62,8 +84,6 @@
                     </a>
                 </div>
 
-                <!-- Menú de Navegación (Desktop - Iconos) -->
-                <!-- COMENTARIO: MODIFICAR TEXTOS DEL MENÚ AQUÍ -->
                 <div class="hidden lg:flex items-center space-x-8 text-sm font-medium">
                     <a href="#inicio"
                         class="p-2 rounded-full hover:bg-deep-blue/50 nav-item-hover group flex flex-col items-center"
@@ -108,7 +128,6 @@
                 </div>
 
                 <!-- Menú Móvil -->
-
                 <button class="lg:hidden text-white-pure focus:outline-none"
                     onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
                     <span data-lucide="menu" class="w-7 h-7"></span>
