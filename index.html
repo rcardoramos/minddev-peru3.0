@@ -55,56 +55,51 @@
             <nav class="bg-dark-alt rounded-full shadow-2xl p-2 flex items-center justify-between max-w-5xl w-full border border-electric-blue/20 transition-all duration-300 px-6"
                 id="floating-nav">
                 <!-- Logo -->
-                <div class="flex items-center space-x-1 p-2">
-                    <span class="text-xl sm:text-2xl font-extrabold text-electric-blue ml-2">&lt;mdv/&gt;</span>
+                <div class="flex items-center p-2">
+                    <a href="#inicio" class="flex items-center space-x-2">
+                        <img src="./assets/images/icon-emp/logo-header.png" alt="Minddev Perú"
+                            class="h-8 sm:h-9 w-auto object-contain">
+                    </a>
                 </div>
 
                 <!-- Menú de Navegación (Desktop - Iconos) -->
                 <!-- COMENTARIO: MODIFICAR TEXTOS DEL MENÚ AQUÍ -->
                 <div class="hidden lg:flex items-center space-x-8 text-sm font-medium">
-                    <!-- Home -->
                     <a href="#inicio"
                         class="p-2 rounded-full hover:bg-deep-blue/50 nav-item-hover group flex flex-col items-center"
                         data-text-key="nav_home">
 
                         <span class="nav-label text-xs text-electric-blue nav-item-hover">Inicio</span>
                     </a>
-                    <!-- Servicios -->
                     <a href="#servicios"
                         class="p-2 rounded-full hover:bg-deep-blue/50 nav-item-hover group flex flex-col items-center"
                         data-text-key="nav_services">
 
                         <span class="nav-label text-xs text-electric-blue nav-item-hover">Servicios</span>
                     </a>
-                    <!-- Proceso (Añadido al menú) -->
                     <a href="#proceso"
                         class="p-2 rounded-full hover:bg-deep-blue/50 nav-item-hover group flex flex-col items-center"
                         data-text-key="nav_process">
                         <span class="nav-label text-xs text-electric-blue nav-item-hover">Proceso</span>
                     </a>
-                    <!-- Equipo -->
                     <a href="#equipo"
                         class="p-2 rounded-full hover:bg-deep-blue/50 nav-item-hover group flex flex-col items-center"
                         data-text-key="nav_team">
                         <span class="nav-label text-xs text-electric-blue nav-item-hover">Equipo</span>
                     </a>
-                    <!-- Portafolio -->
                     <a href="#portafolio"
                         class="p-2 rounded-full hover:bg-deep-blue/50 nav-item-hover group flex flex-col items-center"
                         data-text-key="nav_portfolio">
                         <span class="nav-label text-xs text-electric-blue nav-item-hover">Portafolio</span>
                     </a>
-                    <!-- Contacto -->
-                    <a href="#contacto"
+                    <!-- <a href="#contacto"
                         class="p-2 rounded-full hover:bg-deep-blue/50 nav-item-hover group flex flex-col items-center"
                         data-text-key="nav_contact">
                         <span class="nav-label text-xs text-electric-blue nav-item-hover">Contacto</span>
-                    </a>
+                    </a> -->
                 </div>
 
-                <!-- Botón de Acción y Selector de Idioma (Desktop) -->
                 <div class="flex items-center space-x-3">
-                    <!-- Botón de Acción -->
                     <a href="#contacto"
                         class="bg-electric-blue text-white-pure px-5 py-2 rounded-full font-bold hover:bg-accent-purple transition duration-300 shadow-lg shadow-electric-blue/30 flex items-center transform hover:scale-[1.03] transition duration-300"
                         data-text-key="btn_quote">
@@ -112,8 +107,8 @@
                     </a>
                 </div>
 
-                <!-- Menú Móvil (Hamburguesa - Oculto en este estilo de header, podría usarse en una versión sticky superior) -->
-                <!-- Dejamos el botón para asegurar funcionalidad en caso de cambiar el estilo en móvil -->
+                <!-- Menú Móvil -->
+
                 <button class="lg:hidden text-white-pure focus:outline-none"
                     onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
                     <span data-lucide="menu" class="w-7 h-7"></span>
@@ -121,9 +116,8 @@
             </nav>
         </div>
 
-        <!-- Menú Móvil Desplegable (Se mantiene para la versión responsive) -->
+        <!-- Menú Móvil Desplegable  -->
         <div id="mobile-menu" class="hidden lg:hidden bg-deep-blue absolute w-full pb-4 shadow-xl">
-            <!-- Este menú se activa si el botón de hamburguesa se usa en la versión móvil -->
             <div class="flex flex-col space-y-3 px-4 sm:px-6 py-2">
                 <a href="#inicio" class="block py-2 hover:text-electric-blue transition"
                     onclick="document.getElementById('mobile-menu').classList.add('hidden')"
