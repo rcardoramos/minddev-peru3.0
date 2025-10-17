@@ -1,6 +1,5 @@
 <section id="contacto" class="py-16 bg-deep-blue">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Contenedor principal del Formulario y la Tarjeta de Valor -->
         <div
             class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto rounded-3xl shadow-2xl border border-electric-blue/30 overflow-hidden bg-dark-alt">
 
@@ -8,7 +7,6 @@
             <div class="p-8 lg:p-10 bg-dark-alt">
 
                 <div class="text-left mb-6">
-                    <!-- COMENTARIO: MODIFICAR TÍTULOS DEL FORMULARIO AQUÍ -->
                     <h2 class="text-4xl font-extrabold mb-2 leading-tight" data-text-key="contact_form_title">
                         Contáctanos</h2>
                     <p class="text-lg text-gray-300" data-text-key="contact_form_subtitle">Desarrollemos tu
@@ -17,7 +15,6 @@
 
                 <form id="contactForm" class="space-y-6">
 
-                    <!-- Input: Nombre y Apellido -->
                     <div>
                         <label for="full_name" class="block text-sm font-medium text-gray-300 mb-1"
                             data-text-key="form_label_name">Nombre y Apellido</label>
@@ -26,7 +23,6 @@
                             required>
                     </div>
 
-                    <!-- Input: Email Corporativo -->
                     <div>
                         <label for="email" class="block text-sm font-medium text-gray-300 mb-1"
                             data-text-key="form_label_email">Email</label>
@@ -34,13 +30,12 @@
                             data-placeholder-key="form_placeholder_email" placeholder="nombre@mail.com" required>
                     </div>
 
-                    <!-- Dropdown: Servicio de Interés -->
                     <div class="relative">
                         <label for="service_interest" class="block text-sm font-medium text-gray-300 mb-1"
                             data-text-key="form_label_service">¿Qué servicio te interesa?</label>
                         <select id="service_interest" name="service_interest"
                             class="w-full form-input-custom appearance-none" required>
-                            <!-- COMENTARIO: MODIFICAR OPTIONS DEL FORMULARIO AQUÍ (Necesitan ser traducidos en JS) -->
+
                             <option value="" disabled selected class="text-gray-500 bg-dark-alt"
                                 data-option-key="option_select_service">Selecciona un servicio o alianza
                             </option>
@@ -62,12 +57,11 @@
                                 class="w-4 h-4 text-gray-400"></span></span>
                     </div>
 
-                    <!-- Input: Teléfono (Combinado) -->
                     <div>
                         <label for="phone" class="block text-sm font-medium text-gray-300 mb-1"
                             data-text-key="form_label_phone">Teléfono</label>
                         <div class="flex space-x-2 relative">
-                            <!-- Selector de Código (Simulado) -->
+
                             <select
                                 class="form-input-custom w-24 flex-shrink-0 bg-dark-alt text-gray-300 appearance-none pr-6">
                                 <option value="PE" class="bg-dark-alt">PE +51</option>
@@ -103,7 +97,6 @@
                         </div>
                     </div>
 
-                    <!-- Botón de Envío -->
                     <div class="pt-4">
                         <button type="submit"
                             class="w-full bg-electric-blue text-white-pure px-6 py-3 rounded-xl font-bold text-lg hover:bg-accent-purple transition duration-300 shadow-lg shadow-electric-blue/40 transform hover:scale-[1.01]"

@@ -1,0 +1,52 @@
+ .blog-card {
+     background-color: #0f1a37;
+     /* dark-alt como fondo de tarjeta */
+     border: 1px solid transparent;
+     border-radius: 0.75rem;
+     padding: 1.5rem;
+     transition: all 0.3s ease-in-out;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+ }
+
+ .blog-card:hover {
+     border-color: #5355dd;
+     /* Borde Acento morado al pasar el mouse */
+     box-shadow: 0 10px 20px rgba(83, 85, 221, 0.15);
+     transform: translateY(-5px);
+     /* Efecto de elevación */
+ }
+
+ /* Nuevo estilo para el círculo de ícono (similar al hero/referencia) */
+ .blog-icon-circle-new {
+     width: 48px;
+     height: 48px;
+     background-color: #3b82f61a;
+     /* electric-blue/10 */
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 1rem;
+ }
+
+ .blog-title-link {
+     transition: color 0.3s;
+ }
+
+ .blog-card:hover .blog-title-link {
+     color: #3b82f6;
+ }
+
+ /* Estilo para el enlace Leer Artículo (como en la imagen) */
+ .blog-read-link {
+     color: #3b82f6;
+     font-weight: 600;
+     display: inline-flex;
+     align-items: center;
+     margin-top: 1rem;
+     transition: color 0.3s;
+ }
+
+ .blog-card:hover .blog-read-link {
+     color: #5355dd;
+ }

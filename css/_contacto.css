@@ -1,0 +1,20 @@
+.form-input-custom {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #3b82f640 !important;
+    border-radius: 0 !important;
+    padding: 12px 0 !important;
+    color: #ffffff;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-input-custom:focus {
+    outline: none !important;
+    border-bottom: 1px solid #3b82f6 !important;
+    box-shadow: none !important;
+}
+
+.form-input-custom::placeholder {
+    color: #9ca3af;
+    font-size: 0.9rem;
+}

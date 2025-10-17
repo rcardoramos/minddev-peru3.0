@@ -195,21 +195,17 @@
             <div class="bg-dark-alt rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto transform scale-95 transition-transform duration-300 border border-electric-blue/20"
                 id="modal-content">
                 <div class="p-6 sm:p-8">
-                    <!-- Botón de Cierre -->
                     <button onclick="closePortfolioModal()"
                         class="absolute top-4 right-4 text-gray-400 hover:text-electric-blue transition z-20 p-2 rounded-full hover:bg-deep-blue">
                         <span data-lucide="x" class="w-6 h-6"></span>
                     </button>
 
-                    <!-- Contenido del Modal -->
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
-                        <!-- Imagen del Proyecto -->
                         <div class="order-1">
                             <img id="modal-image" src="" alt="Imagen del Proyecto"
                                 class="w-full rounded-xl shadow-lg mb-4 lg:mb-0">
                         </div>
 
-                        <!-- Descripción del Proyecto -->
                         <div class="order-2">
                             <h2 id="modal-title" class="text-3xl font-bold text-electric-blue mb-3"></h2>
                             <p class="text-sm font-medium text-gray-400 mb-4" data-text-key="modal_case_study">Caso de
@@ -222,7 +218,6 @@
                             <h3 class="text-xl font-semibold text-white-pure mb-2" data-text-key="modal_tech_title">
                                 Tecnologías Clave</h3>
                             <div id="modal-tech-stack" class="flex flex-wrap gap-2 text-sm">
-                                <!-- Los chips serán inyectados por JS -->
                             </div>
 
                             <div class="mt-8">
