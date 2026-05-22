@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Oportunidades Laborales | MindDev Perú</title>
+    <link rel="icon" href="./assets/images/icon-emp/favicon_64.ico" type="image/png">
+    <meta name="description"
+        content="Únete al equipo de MindDev Perú. Descubre nuestras vacantes abiertas para Frontend, Backend, QA, Ejecutivo Comercial y Project Manager, y postula hoy mismo.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="./css/_base.css?v=1.0.3">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'deep-blue': '#0f172a',
+                        'electric-blue': '#3b82f6',
+                        'dark-alt': '#0f1a37',
+                        'accent-purple': '#5355dd',
+                        'white-pure': '#ffffff',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s ease;
+        }
+        .accordion-content.open {
+            max-height: 1000px;
+            padding-top: 1.5rem;
+        }
+        .filter-btn.active {
+            background-color: #3b82f6;
+            border-color: #3b82f6;
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+    </style>
+</head>
+
+<body class="bg-deep-blue text-white-pure font-sans min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-deep-blue/95 backdrop-blur-md border-b border-electric-blue/10 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="./assets/images/icon-emp/logo-header.png" alt="MindDev Perú" class="h-8 sm:h-9 w-auto object-contain">
+            </a>
+            <a href="index.html#equipo" class="bg-electric-blue hover:bg-accent-purple text-white-pure px-5 py-2 rounded-full font-bold text-sm transition duration-300 flex items-center shadow-lg shadow-electric-blue/20">
+                <span data-lucide="arrow-left" class="w-4 h-4 mr-2"></span> Volver al Sitio
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative py-20 overflow-hidden bg-dark-alt/50 border-b border-electric-blue/10">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.08)_0%,rgba(15,23,42,1)_70%)]"></div>
+            </div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-3xl">
+                <span class="px-3 py-1 bg-electric-blue/10 border border-electric-blue/30 text-electric-blue rounded-full text-xs font-bold uppercase tracking-wider">
+                    Trabaja con Nosotros
+                </span>
+                <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight mt-6 mb-6">
+                    Únete a nuestro equipo de <span class="text-gradient">Alto Rendimiento</span>
+                </h1>
+                <p class="text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto">
+                    En MindDev Perú transformamos ideas en software de primer nivel. Si eres apasionado, proactivo y quieres asumir grandes retos, estás en el lugar correcto.
+                </p>
+            </div>
+        </section>
+
+        <!-- Filtros y Oportunidades -->
+        <section class="py-16 container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <!-- Selector de Categorías -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button onclick="filterJobs('todos')" id="btn-todos" class="filter-btn active px-5 py-2 border border-gray-700 rounded-full text-sm font-semibold transition-all duration-300 hover:border-electric-blue hover:text-white">
+                    Todos
+                </button>
+                <button onclick="filterJobs('desarrollo')" id="btn-desarrollo" class="filter-btn px-5 py-2 border border-gray-700 rounded-full text-sm font-semibold transition-all duration-300 hover:border-electric-blue hover:text-white">
+                    Desarrollo
+                </button>
+                <button onclick="filterJobs('calidad')" id="btn-calidad" class="filter-btn px-5 py-2 border border-gray-700 rounded-full text-sm font-semibold transition-all duration-300 hover:border-electric-blue hover:text-white">
+                    Calidad (QA)
+                </button>
+                <button onclick="filterJobs('gestion')" id="btn-gestion" class="filter-btn px-5 py-2 border border-gray-700 rounded-full text-sm font-semibold transition-all duration-300 hover:border-electric-blue hover:text-white">
+                    Ventas & Gestión
+                </button>
+            </div>
+
+            <!-- Listado de Ofertas (Acordeones) -->
+            <div class="space-y-6" id="jobs-container">
+                
+                <!-- 1. Frontend Jr -->
+                <div class="job-card bg-dark-alt border border-electric-blue/10 rounded-2xl p-6 transition-all duration-300 hover:border-electric-blue/40 shadow-xl" data-category="desarrollo">
+                    <div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion('frontend-details')">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-electric-blue/10 flex items-center justify-center text-electric-blue">
+                                <span data-lucide="code-2" class="w-6 h-6"></span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white-pure">Desarrollador Jr Frontend</h3>
+                                <span class="text-xs text-electric-blue font-semibold uppercase tracking-wider">Desarrollo • Remoto</span>
+                            </div>
+                        </div>
+                        <button class="w-8 h-8 rounded-full bg-deep-blue flex items-center justify-center text-gray-400 hover:text-white transition duration-300">
+                            <span data-lucide="chevron-down" id="frontend-details-icon" class="w-5 h-5 transition-transform duration-300"></span>
+                        </button>
+                    </div>
+
+                    <div id="frontend-details" class="accordion-content border-t border-gray-700/30 mt-4">
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Buscamos un desarrollador Frontend Junior proactivo con especial gusto por el diseño de interfaces modernas y la maquetación responsiva. Colaborarás directamente con nuestro equipo técnico para codificar el aspecto visual y la interactividad de nuestros proyectos web y MVPs.
+                        </p>
+                        
+                        <h4 class="text-white-pure font-bold mb-3 flex items-center">
+                            <span data-lucide="check-circle-2" class="w-5 h-5 text-electric-blue mr-2"></span> Requisitos Clave:
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-400 space-y-2 mb-6 ml-1">
+                            <li>Sólidos conocimientos de HTML5, CSS3 y JavaScript ES6+.</li>
+                            <li>Experiencia en maquetación utilizando Tailwind CSS.</li>
+                            <li>Familiaridad y experiencia académica o práctica con React (u otros frameworks modernos).</li>
+                            <li>Nociones de consumo y conexión con APIs REST.</li>
+                            <li>Uso básico de control de versiones con Git/GitHub.</li>
+                        </ul>
+
+                        <h4 class="text-white-pure font-bold mb-3 flex items-center">
+                            <span data-lucide="gift" class="w-5 h-5 text-electric-blue mr-2"></span> ¿Qué ofrecemos?
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-400 space-y-2 mb-8 ml-1">
+                            <li>Esquema de trabajo 100% remoto con horarios flexibles.</li>
+                            <li>Capacitación técnica directa y mentoría por parte de nuestros ingenieros senior.</li>
+                            <li>Oportunidad de trabajar en proyectos dinámicos que impulsarán tu portafolio profesional.</li>
+                        </ul>
+
+                        <div class="text-right">
+                            <a href="https://forms.gle/GYuohj7f34VsBjgZ9" target="_blank" class="inline-block bg-electric-blue hover:bg-accent-purple text-white-pure px-6 py-3 rounded-xl font-bold transition duration-300 shadow-lg shadow-electric-blue/20">
+                                Postular a esta vacante
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Backend Jr -->
+                <div class="job-card bg-dark-alt border border-electric-blue/10 rounded-2xl p-6 transition-all duration-300 hover:border-electric-blue/40 shadow-xl" data-category="desarrollo">
+                    <div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion('backend-details')">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-accent-purple/10 flex items-center justify-center text-accent-purple">
+                                <span data-lucide="database" class="w-6 h-6"></span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white-pure">Desarrollador Jr Backend</h3>
+                                <span class="text-xs text-accent-purple font-semibold uppercase tracking-wider">Desarrollo • Remoto</span>
+                            </div>
+                        </div>
+                        <button class="w-8 h-8 rounded-full bg-deep-blue flex items-center justify-center text-gray-400 hover:text-white transition duration-300">
+                            <span data-lucide="chevron-down" id="backend-details-icon" class="w-5 h-5 transition-transform duration-300"></span>
+                        </button>
+                    </div>
+
+                    <div id="backend-details" class="accordion-content border-t border-gray-700/30 mt-4">
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Buscamos un apasionado por la arquitectura y la lógica de servidor para unirse al equipo de backend. Te encargarás de modelar bases de datos, estructurar APIs eficientes y asegurar la escalabilidad del backend de nuestras aplicaciones.
+                        </p>
+                        
+                        <h4 class="text-white-pure font-bold mb-3 flex items-center">
+                            <span data-lucide="check-circle-2" class="w-5 h-5 text-accent-purple mr-2"></span> Requisitos Clave:
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-400 space-y-2 mb-6 ml-1">
+                            <li>Experiencia de programación con Node.js y frameworks como Express.</li>
+                            <li>Comprensión teórica y práctica de bases de datos relacionales (MySQL/PostgreSQL) y no relacionales (MongoDB).</li>
+                            <li>Habilidad para diseñar y estructurar endpoints REST APIs ordenados y seguros.</li>
+                            <li>Familiaridad con sistemas de autenticación y autorización (JWT, sesiones).</li>
+                            <li>Dominio básico de Git y manejo de la terminal de comandos.</li>
+                        </ul>
+
+                        <h4 class="text-white-pure font-bold mb-3 flex items-center">
+                            <span data-lucide="gift" class="w-5 h-5 text-accent-purple mr-2"></span> ¿Qué ofrecemos?
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-400 space-y-2 mb-8 ml-1">
+                            <li>Trabajo 100% virtual con ambiente orientado a la autonomía.</li>
+                            <li>Aprendizaje continuo en tecnologías Cloud de punta (AWS, Firebase, Docker).</li>
+                            <li>Plan de carrera técnico y feedback continuo de tu crecimiento.</li>
+                        </ul>
+
+                        <div class="text-right">
+                            <a href="https://forms.gle/GYuohj7f34VsBjgZ9" target="_blank" class="inline-block bg-accent-purple hover:bg-electric-blue text-white-pure px-6 py-3 rounded-xl font-bold transition duration-300 shadow-lg shadow-accent-purple/20">
+                                Postular a esta vacante
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. QA Tester -->
+                <div class="job-card bg-dark-alt border border-electric-blue/10 rounded-2xl p-6 transition-all duration-300 hover:border-electric-blue/40 shadow-xl" data-category="calidad">
+                    <div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion('qa-details')">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-electric-blue/10 flex items-center justify-center text-electric-blue">
+                                <span data-lucide="bug" class="w-6 h-6"></span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white-pure">QA Tester (Manual & Automatización Básica)</h3>
+                                <span class="text-xs text-electric-blue font-semibold uppercase tracking-wider">Calidad (QA) • Remoto</span>
+                            </div>
+                        </div>
+                        <button class="w-8 h-8 rounded-full bg-deep-blue flex items-center justify-center text-gray-400 hover:text-white transition duration-300">
+                            <span data-lucide="chevron-down" id="qa-details-icon" class="w-5 h-5 transition-transform duration-300"></span>
+                        </button>
+                    </div>
+
+                    <div id="qa-details" class="accordion-content border-t border-gray-700/30 mt-4">
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            La calidad de nuestros entregables es la prioridad número uno. Buscamos un QA Tester enfocado en identificar fallos tempranos en interfaces y lógicas funcionales, diseñando planes de pruebas sólidos y participando en la automatización de flujos de navegación básicos.
+                        </p>
+                        
+                        <h4 class="text-white-pure font-bold mb-3 flex items-center">
+                            <span data-lucide="check-circle-2" class="w-5 h-5 text-electric-blue mr-2"></span> Requisitos Clave:
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-400 space-y-2 mb-6 ml-1">
+                            <li>Experiencia diseñando casos de prueba, matrices funcionales y escenarios críticos.</li>
+                            <li>Habilidad impecable de análisis técnico y redacción de reportes de incidencias (bugs).</li>
+                            <li>Familiaridad con herramientas de seguimiento e inspección del navegador.</li>
+                            <li>Interés y conocimientos básicos de automatización (Cypress, Playwright o Selenium).</li>
+                            <li>Conocimientos de metodologías ágiles de testing continuo.</li>
+                        </ul>
+
+                        <h4 class="text-white-pure font-bold mb-3 flex items-center">
+                            <span data-lucide="gift" class="w-5 h-5 text-electric-blue mr-2"></span> ¿Qué ofrecemos?
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-400 space-y-2 mb-8 ml-1">
+                            <li>Cultura de calidad y desarrollo ágil en entornos dinámicos.</li>
+                            <li>Espacio para proponer y liderar estrategias de automatización avanzada.</li>
+                            <li>Horarios totalmente compatibles con un balance de vida personal.</li>
+                        </ul>
+
+                        <div class="text-right">
+                            <a href="https://forms.gle/GYuohj7f34VsBjgZ9" target="_blank" class="inline-block bg-electric-blue hover:bg-accent-purple text-white-pure px-6 py-3 rounded-xl font-bold transition duration-300 shadow-lg shadow-electric-blue/20">
+                                Postular a esta vacante
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Ejecutivo Comercial -->
+                <div class="job-card bg-dark-alt border border-electric-blue/10 rounded-2xl p-6 transition-all duration-300 hover:border-electric-blue/40 shadow-xl" data-category="gestion">
+                    <div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion('comercial-details')">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-accent-purple/10 flex items-center justify-center text-accent-purple">
+                                <span data-lucide="trending-up" class="w-6 h-6"></span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white-pure">Ejecutivo Comercial (Venta de Soluciones IT)</h3>
+                                <span class="text-xs text-accent-purple font-semibold uppercase tracking-wider">Ventas & Gestión • Remoto</span>
+                            </div>
+                        </div>
+                        <button class="w-8 h-8 rounded-full bg-deep-blue flex items-center justify-center text-gray-400 hover:text-white transition duration-300">
+                            <span data-lucide="chevron-down" id="comercial-details-icon" class="w-5 h-5 transition-transform duration-300"></span>
+                        </button>
+                    </div>
+
+                    <div id="comercial-details" class="accordion-content border-t border-gray-700/30 mt-4">
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Buscamos un profesional extrovertido y enfocado en resultados para impulsar las ventas de nuestros servicios de software. Tu rol consistirá en prospectar clientes corporativos (B2B), contactar startups que necesiten construir su MVP, presentar ofertas de desarrollo web a medida y cerrar alianzas.
+                        </p>
+                        
+                        <h4 class="text-white-pure font-bold mb-3 flex items-center">
+                            <span data-lucide="check-circle-2" class="w-5 h-5 text-accent-purple mr-2"></span> Requisitos Clave:
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-400 space-y-2 mb-6 ml-1">
+                            <li>Experiencia previa en ventas de servicios intangibles, de preferencia desarrollo de software o servicios IT.</li>
+                            <li>Habilidades extraordinarias de comunicación interpersonal, negociación y relaciones públicas.</li>
+                            <li>Comprensión básica de conceptos técnicos de software (qué es una landing page, un e-commerce y un MVP).</li>
+                            <li>Proactividad para la prospección en frío y seguimiento continuo a leads de la base comercial.</li>
+                            <li>Enfoque claro en cumplimiento de metas de facturación mensual.</li>
+                        </ul>
+
+                        <h4 class="text-white-pure font-bold mb-3 flex items-center">
+                            <span data-lucide="gift" class="w-5 h-5 text-accent-purple mr-2"></span> ¿Qué ofrecemos?
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-400 space-y-2 mb-8 ml-1">
+                            <li>Atractivo esquema de comisiones **sin tope máximo** por cada contrato y proyecto cerrado.</li>
+                            <li>Flexibilidad absoluta para organizar tus tiempos y reuniones diarias.</li>
+                            <li>Soporte técnico completo del CEO y CTO para dar viabilidad e ingeniería a tus cotizaciones y demos con clientes.</li>
+                        </ul>
+
+                        <div class="text-right">
+                            <a href="https://forms.gle/GYuohj7f34VsBjgZ9" target="_blank" class="inline-block bg-accent-purple hover:bg-electric-blue text-white-pure px-6 py-3 rounded-xl font-bold transition duration-300 shadow-lg shadow-accent-purple/20">
+                                Postular a esta vacante
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Project Manager / Scrum Master -->
+                <div class="job-card bg-dark-alt border border-electric-blue/10 rounded-2xl p-6 transition-all duration-300 hover:border-electric-blue/40 shadow-xl" data-category="gestion">
+                    <div class="flex items-center justify-between cursor-pointer" onclick="toggleAccordion('pm-details')">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-electric-blue/10 flex items-center justify-center text-electric-blue">
+                                <span data-lucide="users" class="w-6 h-6"></span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white-pure">Project Manager / Scrum Master</h3>
+                                <span class="text-xs text-electric-blue font-semibold uppercase tracking-wider">Ventas & Gestión • Remoto</span>
+                            </div>
+                        </div>
+                        <button class="w-8 h-8 rounded-full bg-deep-blue flex items-center justify-center text-gray-400 hover:text-white transition duration-300">
+                            <span data-lucide="chevron-down" id="pm-details-icon" class="w-5 h-5 transition-transform duration-300"></span>
+                        </button>
+                    </div>
+
+                    <div id="pm-details" class="accordion-content border-t border-gray-700/30 mt-4">
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Buscamos un organizador nato enfocado en la agilidad de los equipos técnicos. Serás responsable de estructurar la planificación de entregas de software de nuestros clientes, coordinar el backlog de tareas, facilitar las ceremonias ágiles (Scrum) y asegurar que el desarrollo fluya sin retrasos garantizando la satisfacción del cliente final.
+                        </p>
+                        
+                        <h4 class="text-white-pure font-bold mb-3 flex items-center">
+                            <span data-lucide="check-circle-2" class="w-5 h-5 text-electric-blue mr-2"></span> Requisitos Clave:
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-400 space-y-2 mb-6 ml-1">
+                            <li>Experiencia comprobable en gestión de equipos de desarrollo de software (Web / Móvil).</li>
+                            <li>Dominio y aplicación rigurosa de metodologías ágiles, especialmente Scrum.</li>
+                            <li>Gran capacidad de comunicación y empatía para liderar equipos técnicos y gestionar reportes al cliente.</li>
+                            <li>Dominio de herramientas de gestión de proyectos técnicos como Jira, Trello o ClickUp.</li>
+                            <li>Excelente atención al detalle, planeación de sprints y mitigación de riesgos de alcance.</li>
+                        </ul>
+
+                        <h4 class="text-white-pure font-bold mb-3 flex items-center">
+                            <span data-lucide="gift" class="w-5 h-5 text-electric-blue mr-2"></span> ¿Qué ofrecemos?
+                        </h4>
+                        <ul class="list-disc list-inside text-gray-400 space-y-2 mb-8 ml-1">
+                            <li>Liderazgo en proyectos de innovación y startups con alcance regional y global.</li>
+                            <li>Metodología de trabajo transparente y madura.</li>
+                            <li>Modelo 100% remoto, horario flexible y capacitación constante en agilidad.</li>
+                        </ul>
+
+                        <div class="text-right">
+                            <a href="https://forms.gle/GYuohj7f34VsBjgZ9" target="_blank" class="inline-block bg-electric-blue hover:bg-accent-purple text-white-pure px-6 py-3 rounded-xl font-bold transition duration-300 shadow-lg shadow-electric-blue/20">
+                                Postular a esta vacante
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sección de Beneficios de la Empresa -->
+        <section class="py-16 bg-dark-alt border-t border-electric-blue/10">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+                <h2 class="text-3xl font-bold mb-12 text-center text-white-pure">¿Por qué unirte a <span class="text-electric-blue">MindDev Perú</span>?</h2>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Beneficio 1 -->
+                    <div class="p-6 bg-deep-blue border border-electric-blue/10 rounded-xl hover:border-electric-blue/35 transition duration-300">
+                        <span data-lucide="home" class="w-8 h-8 text-electric-blue mb-4"></span>
+                        <h4 class="text-lg font-bold text-white-pure mb-2">100% Trabajo Remoto</h4>
+                        <p class="text-sm text-gray-400">Trabaja desde la comodidad de tu hogar, organizando tu entorno para máxima productividad y confort.</p>
+                    </div>
+
+                    <!-- Beneficio 2 -->
+                    <div class="p-6 bg-deep-blue border border-electric-blue/10 rounded-xl hover:border-electric-blue/35 transition duration-300">
+                        <span data-lucide="clock" class="w-8 h-8 text-accent-purple mb-4"></span>
+                        <h4 class="text-lg font-bold text-white-pure mb-2">Horario Flexible</h4>
+                        <p class="text-sm text-gray-400">Creemos en el cumplimiento de objetivos y entregables de valor sobre cumplir horas rígidas en un escritorio.</p>
+                    </div>
+
+                    <!-- Beneficio 3 -->
+                    <div class="p-6 bg-deep-blue border border-electric-blue/10 rounded-xl hover:border-electric-blue/35 transition duration-300">
+                        <span data-lucide="trending-up" class="w-8 h-8 text-electric-blue mb-4"></span>
+                        <h4 class="text-lg font-bold text-white-pure mb-2">Crecimiento Rápido</h4>
+                        <p class="text-sm text-gray-400">Te verás expuesto a desafíos reales y herramientas de punta que acelerarán tu evolución profesional.</p>
+                    </div>
+
+                    <!-- Beneficio 4 -->
+                    <div class="p-6 bg-deep-blue border border-electric-blue/10 rounded-xl hover:border-electric-blue/35 transition duration-300">
+                        <span data-lucide="smile" class="w-8 h-8 text-accent-purple mb-4"></span>
+                        <h4 class="text-lg font-bold text-white-pure mb-2">Cultura Horizontal</h4>
+                        <p class="text-sm text-gray-400">Fomentamos la comunicación abierta, la empatía y la retroalimentación constructiva continua entre todos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-deep-blue text-center text-gray-400 text-sm py-8 border-t border-electric-blue/10">
+        <div class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 MindDev Perú. Todos los derechos reservados.</p>
+            <div class="flex space-x-6">
+                <a href="https://www.linkedin.com/company/minddev-peru" target="_blank" class="hover:text-electric-blue transition"><span data-lucide="linkedin" class="w-5 h-5"></span></a>
+                <a href="https://www.facebook.com/minddev.peru" target="_blank" class="hover:text-electric-blue transition"><span data-lucide="facebook" class="w-5 h-5"></span></a>
+                <a href="https://www.instagram.com/minddevperu/" target="_blank" class="hover:text-electric-blue transition"><span data-lucide="instagram" class="w-5 h-5"></span></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Inicializar iconos Lucide
+        lucide.createIcons();
+
+        // Lógica del Acordeón
+        function toggleAccordion(id) {
+            const details = document.getElementById(id);
+            const icon = document.getElementById(id + '-icon');
+            const isOpen = details.classList.contains('open');
+
+            // Cerrar todos los acordeones primero para un efecto ordenado
+            document.querySelectorAll('.accordion-content').forEach(item => {
+                item.classList.remove('open');
+            });
+            document.querySelectorAll('[id$="-icon"]').forEach(ico => {
+                ico.style.transform = 'rotate(0deg)';
+            });
+
+            // Si no estaba abierto, abrir el actual
+            if (!isOpen) {
+                details.classList.add('open');
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // Lógica de Filtrado de Categorías
+        function filterJobs(category) {
+            // Actualizar clase activa de los botones
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Asignar active al seleccionado
+            document.getElementById('btn-' + category).classList.add('active');
+
+            // Filtrar las tarjetas
+            const jobCards = document.querySelectorAll('.job-card');
+            
+            jobCards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                
+                if (category === 'todos' || cardCategory === category) {
+                    card.style.display = 'block';
+                    // Re-aplicar animaciones al mostrar
+                    card.classList.remove('animate-fade-in');
+                    void card.offsetWidth; // Forzar reflow para reiniciar la animación
+                    card.classList.add('animate-fade-in');
+                } else {
+                    card.style.display = 'none';
+                    card.classList.remove('animate-fade-in');
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

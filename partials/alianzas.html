@@ -69,9 +69,13 @@
 <!-- Modal de Detalles del Partner -->
 
 <div id="partner-modal"
-    class="hidden fixed inset-0 z-[100] bg-deep-blue/80 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity duration-300 opacity-0">
-    <div class="bg-dark-alt rounded-2xl shadow-2xl max-w-lg w-full transform scale-95 transition-transform duration-300 border border-accent-purple/50"
+    class="hidden fixed inset-0 z-[100] bg-deep-blue/80 backdrop-blur-md flex items-center justify-center p-4 transition-opacity duration-300 opacity-0">
+    <div class="premium-modal-content rounded-2xl max-w-lg w-full transform scale-95 transition-transform duration-300 flex flex-col relative"
         id="partner-modal-content">
+        
+        <!-- Accent Line at the top of the modal -->
+        <div class="h-1.5 w-full premium-top-bar rounded-t-2xl flex-shrink-0"></div>
+
         <div class="p-6 sm:p-8 relative">
 
             <button onclick="closePartnerModal()"

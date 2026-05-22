@@ -1,8 +1,17 @@
 // Lógica para el carrusel de mensajes en el Top Bar
 const messages = [
-    { es: '✨ OFERTA ESPECIAL: 50% de descuento en Desarrollo Web', en: '✨ SPECIAL OFFER: 50% off Web Development' },
-    { es: '🚀 ¡LANZA TU APP! 20% de descuento en Aplicativos Móviles', en: '🚀 LAUNCH YOUR APP! 20% off Mobile Applications' },
-    { es: '📈 POTENCIA TU MARCA: 30% de descuento en Rediseño Web o SEO', en: '📈 BOOST YOUR BRAND: 30% off Web Redesign or SEO' },
+    { 
+        es: '✨ <span class="font-bold text-white-pure">OFERTA ESPECIAL:</span> Consigue un <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-amber-300 to-orange-400 font-extrabold">50% de descuento</span> en Desarrollo Web', 
+        en: '✨ <span class="font-bold text-white-pure">SPECIAL OFFER:</span> Get <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-amber-300 to-orange-400 font-extrabold">50% off</span> on Web Development' 
+    },
+    { 
+        es: '🚀 <span class="font-bold text-white-pure">¡LANZA TU APP!</span> Obtén un <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-emerald-300 to-green-300 font-extrabold">20% de descuento</span> en Aplicativos Móviles', 
+        en: '🚀 <span class="font-bold text-white-pure">LAUNCH YOUR APP!</span> Get <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-emerald-300 to-green-300 font-extrabold">20% off</span> on Mobile Applications' 
+    },
+    { 
+        es: '📈 <span class="font-bold text-white-pure">POTENCIA TU MARCA:</span> Ahorra <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-sky-300 to-teal-200 font-extrabold">30% de descuento</span> en Rediseño Web o SEO', 
+        en: '📈 <span class="font-bold text-white-pure">BOOST YOUR BRAND:</span> Save <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-sky-300 to-teal-200 font-extrabold">30% off</span> on Web Redesign or SEO' 
+    },
 ];
 
 let currentIndex = 0;

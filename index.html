@@ -17,9 +17,9 @@
         content="Transformamos ideas en soluciones digitales. Expertos en desarrollo web, móvil y tecnología.">
     <meta property="og:image" content="./assets/images/icon-emp/banner-opg.webp">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://minddevperu.com">
+    <meta property="og:url" content="https://minddev.pe">
     <meta property="og:locale" content="es_PE">
-    <link rel="stylesheet" href="./css/_base.css">
+    <link rel="stylesheet" href="./css/_base.css?v=1.0.3">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -28,8 +28,8 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "MindDev Perú",
-    "url": "https://minddevperu.com",
-    "logo": "https://minddevperu.com/assets/images/icon-emp/logo-header.png",
+    "url": "https://minddev.pe",
+    "logo": "https://minddev.pe/assets/images/icon-emp/logo-header.png",
     "description": "Agencia especializada en desarrollo web, aplicaciones móviles, hosting y marketing digital.",
     "contactPoint": {
       "@type": "ContactPoint",
@@ -50,19 +50,16 @@
 
 <body class="text-white-pure">
     <!-- 1. Top Bar -->
-    <div class="bg-accent-purple py-2 px-4 text-center text-sm font-semibold overflow-hidden flex justify-center sm:justify-between items-center relative z-50"
+    <div class="premium-top-bar py-2 px-4 text-xs font-semibold flex justify-center items-center relative z-50 min-h-[38px] transition-all duration-300"
         id="top-bar">
 
         <!-- Contenedor del Mensaje -->
         <div id="promo-message"
-            class="transition-opacity duration-500 ease-in-out text-center absolute left-1/2 transform -translate-x-1/2 w-full max-w-sm sm:max-w-none">
+            class="transition-opacity duration-500 ease-in-out text-center text-xs sm:text-sm text-slate-300 max-w-full px-12 leading-relaxed">
         </div>
 
-        <!-- Espacio en blanco (Columna Izquierda, para balancear la promo) -->
-        <div class="hidden sm:block w-32"></div>
-
         <!-- Selector de Idioma -->
-        <div class="relative order-last" id="language-switcher-container">
+        <div class="hidden lg:block absolute right-4 top-1/2 -translate-y-1/2 flex-shrink-0" id="language-switcher-container">
             <div class="language-switch" id="lang-switch" data-lang="es" onclick="toggleLanguageSwitch()">
                 <div class="switch-toggle"></div>
                 <span class="switch-label es-label">ES</span>
@@ -119,9 +116,9 @@
                     </a> -->
                 </div>
 
-                <div class="flex items-center space-x-3">
+                <div class="hidden lg:flex items-center space-x-3">
                     <a href="#contacto"
-                        class="bg-electric-blue text-white-pure px-5 py-2 rounded-full font-bold hover:bg-accent-purple transition duration-300 shadow-lg shadow-electric-blue/30 flex items-center transform hover:scale-[1.03] transition duration-300"
+                        class="bg-electric-blue text-white-pure px-5 py-2 rounded-full font-bold hover:bg-accent-purple transition duration-300 shadow-lg shadow-electric-blue/30 flex items-center transform hover:scale-[1.03]"
                         data-text-key="btn_quote">
                         Cotizar
                     </a>
@@ -156,11 +153,21 @@
                 <a href="#contacto" class="block py-2 hover:text-electric-blue transition"
                     onclick="document.getElementById('mobile-menu').classList.add('hidden')"
                     data-text-key="nav_contact">Contacto</a>
-                <a href="#cotizar"
+                <a href="#contacto"
                     class="block text-center bg-electric-blue text-white-pure px-5 py-2 rounded-lg font-bold hover:bg-accent-purple transition mt-2"
                     onclick="document.getElementById('mobile-menu').classList.add('hidden')" data-text-key="btn_quote">
                     Cotizar Ahora
                 </a>
+
+                <!-- Selector de Idioma en Mobile -->
+                <div class="pt-4 border-t border-gray-700/50 flex justify-between items-center px-2">
+                    <span class="text-sm font-semibold text-gray-400">Idioma / Language</span>
+                    <button class="bg-dark-alt border border-electric-blue/40 px-4 py-1.5 rounded-full font-bold text-sm text-electric-blue hover:bg-electric-blue hover:text-white-pure transition duration-300 flex items-center"
+                        onclick="toggleLanguageSwitch(); document.getElementById('mobile-menu').classList.add('hidden');">
+                        <span data-lucide="globe" class="w-4 h-4 mr-2"></span>
+                        <span data-text-key="btn_toggle_lang">English (EN)</span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -191,15 +198,21 @@
 
         <!-- Modal de Detalles del Portafolio -->
         <div id="portfolio-modal"
-            class="hidden fixed inset-0 z-[100] bg-deep-blue/80 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity duration-300 opacity-0">
-            <div class="bg-dark-alt rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto transform scale-95 transition-transform duration-300 border border-electric-blue/20"
+            class="hidden fixed inset-0 z-[100] bg-deep-blue/80 backdrop-blur-md flex items-center justify-center p-4 transition-opacity duration-300 opacity-0">
+            <div class="premium-modal-content rounded-2xl max-w-4xl w-full flex flex-col max-h-[90vh] transform scale-95 transition-transform duration-300 relative"
                 id="modal-content">
-                <div class="p-6 sm:p-8">
-                    <button onclick="closePortfolioModal()"
-                        class="absolute top-4 right-4 text-gray-400 hover:text-electric-blue transition z-20 p-2 rounded-full hover:bg-deep-blue">
-                        <span data-lucide="x" class="w-6 h-6"></span>
-                    </button>
+                
+                <!-- Accent Line at the top of the modal -->
+                <div class="h-1.5 w-full premium-top-bar rounded-t-2xl flex-shrink-0"></div>
 
+                <!-- Close button positioned relative to modal box -->
+                <button onclick="closePortfolioModal()"
+                    class="absolute top-4 right-4 text-gray-400 hover:text-electric-blue transition z-30 p-2 rounded-full hover:bg-deep-blue">
+                    <span data-lucide="x" class="w-6 h-6"></span>
+                </button>
+
+                <!-- Scrollable Body inside the glowing container -->
+                <div class="p-6 sm:p-8 overflow-y-auto flex-grow rounded-b-2xl">
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
                         <div class="order-1">
                             <img id="modal-image" src="" alt="Imagen del Proyecto"
