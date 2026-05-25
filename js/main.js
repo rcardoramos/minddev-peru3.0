@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     includeHTMLSections([
         { id: "inicio", file: "./partials/inicio.html" },
         { id: "servicios", file: "./partials/servicios.html" },
+        { id: "productos", file: "./partials/productos.html" },
         { id: "proceso", file: "./partials/proceso.html" },
         { id: "portafolio", file: "./partials/portafolio.html" },
         { id: "clientes_y_testimonios", file: "./partials/clientes_y_testimonios.html" },

@@ -1,0 +1,132 @@
+<section id="productos" class="py-20 bg-deep-blue relative overflow-hidden">
+    <!-- Decorative background glow -->
+    <div class="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 bg-electric-blue/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute bottom-10 right-10 w-80 h-80 bg-accent-purple/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl sm:text-5xl font-extrabold mb-4" data-text-key="products_title_main">
+                Productos <span class="text-electric-blue">Disponibles</span>
+            </h2>
+            <p class="text-gray-300 text-lg sm:text-xl max-w-3xl mx-auto" data-text-key="products_subtitle">
+                Soluciones listas para implementar y potenciar los procesos clave de tu negocio.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Producto 1: CRM de Hotel -->
+            <div class="bg-dark-alt/60 backdrop-blur-md rounded-2xl border border-electric-blue/20 hover:border-electric-blue/50 p-8 flex flex-col justify-between transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] hover:scale-[1.02] group">
+                <div>
+                    <div class="flex justify-between items-center mb-6">
+                        <div class="w-14 h-14 bg-electric-blue/10 rounded-2xl flex items-center justify-center border border-electric-blue/30 group-hover:bg-electric-blue/20 transition-all duration-300">
+                            <span data-lucide="hotel" class="w-7 h-7 text-electric-blue"></span>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-widest px-3 py-1 bg-electric-blue/10 text-electric-blue rounded-full border border-electric-blue/20" data-text-key="product1_badge">Listo para usar</span>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white-pure mb-4" data-text-key="product1_title">CRM de Hotel</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6" data-text-key="product1_desc">
+                        Control integral de reservas, check-in/out, habitaciones, facturación y reportes en tiempo real para optimizar la experiencia del huésped.
+                    </p>
+
+                    <!-- Features -->
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-sm text-gray-300">
+                            <span data-lucide="check-circle" class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0"></span>
+                            <span data-text-key="product1_feat1">Gestión de Reservas</span>
+                        </li>
+                        <li class="flex items-center text-sm text-gray-300">
+                            <span data-lucide="check-circle" class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0"></span>
+                            <span data-text-key="product1_feat2">Control de Habitaciones y Limpieza</span>
+                        </li>
+                        <li class="flex items-center text-sm text-gray-300">
+                            <span data-lucide="check-circle" class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0"></span>
+                            <span data-text-key="product1_feat3">Facturación Rápida</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="#contacto" class="w-full text-center py-3 bg-electric-blue text-white-pure font-bold rounded-xl hover:bg-accent-purple transition duration-300 shadow-lg shadow-electric-blue/20 flex items-center justify-center group-hover:shadow-accent-purple/20" data-text-key="btn_request_demo">
+                    Solicitar Demo
+                    <span data-lucide="arrow-right" class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1"></span>
+                </a>
+            </div>
+
+            <!-- Producto 2: CRM Servicio de Gas -->
+            <div class="bg-dark-alt/60 backdrop-blur-md rounded-2xl border border-accent-purple/20 hover:border-accent-purple/50 p-8 flex flex-col justify-between transition-all duration-300 hover:shadow-[0_0_30px_rgba(83,85,221,0.15)] hover:scale-[1.02] group">
+                <div>
+                    <div class="flex justify-between items-center mb-6">
+                        <div class="w-14 h-14 bg-accent-purple/10 rounded-2xl flex items-center justify-center border border-accent-purple/30 group-hover:bg-accent-purple/20 transition-all duration-300">
+                            <span data-lucide="flame" class="w-7 h-7 text-accent-purple"></span>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-widest px-3 py-1 bg-accent-purple/10 text-accent-purple rounded-full border border-accent-purple/20" data-text-key="product2_badge">Especializado</span>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white-pure mb-4" data-text-key="product2_title">CRM Servicio de Gas</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6" data-text-key="product2_desc">
+                        Optimiza el reparto de gas, gestiona pedidos a domicilio, mapeo de rutas de repartidores y fidelización de clientes recurrentes.
+                    </p>
+
+                    <!-- Features -->
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-sm text-gray-300">
+                            <span data-lucide="check-circle" class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0"></span>
+                            <span data-text-key="product2_feat1">Despacho y Rutas</span>
+                        </li>
+                        <li class="flex items-center text-sm text-gray-300">
+                            <span data-lucide="check-circle" class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0"></span>
+                            <span data-text-key="product2_feat2">Historial de Consumo</span>
+                        </li>
+                        <li class="flex items-center text-sm text-gray-300">
+                            <span data-lucide="check-circle" class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0"></span>
+                            <span data-text-key="product2_feat3">Notificaciones SMS/WhatsApp</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="#contacto" class="w-full text-center py-3 bg-accent-purple text-white-pure font-bold rounded-xl hover:bg-electric-blue transition duration-300 shadow-lg shadow-accent-purple/20 flex items-center justify-center group-hover:shadow-electric-blue/20" data-text-key="btn_request_demo">
+                    Solicitar Demo
+                    <span data-lucide="arrow-right" class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1"></span>
+                </a>
+            </div>
+
+            <!-- Producto 3: Sistema de Facturación Sunat -->
+            <div class="bg-dark-alt/60 backdrop-blur-md rounded-2xl border border-electric-blue/20 hover:border-electric-blue/50 p-8 flex flex-col justify-between transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.15)] hover:scale-[1.02] group">
+                <div>
+                    <div class="flex justify-between items-center mb-6">
+                        <div class="w-14 h-14 bg-electric-blue/10 rounded-2xl flex items-center justify-center border border-electric-blue/30 group-hover:bg-electric-blue/20 transition-all duration-300">
+                            <span data-lucide="receipt" class="w-7 h-7 text-electric-blue"></span>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-widest px-3 py-1 bg-electric-blue/10 text-electric-blue rounded-full border border-electric-blue/20" data-text-key="product3_badge">Sunat 2026</span>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white-pure mb-4" data-text-key="product3_title">Sistema de Facturación Sunat</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6" data-text-key="product3_desc">
+                        Emisión rápida de boletas, facturas, notas de crédito y débito con envío automático y homologado ante la SUNAT.
+                    </p>
+
+                    <!-- Features -->
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-sm text-gray-300">
+                            <span data-lucide="check-circle" class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0"></span>
+                            <span data-text-key="product3_feat1">Firma Digital Incluida</span>
+                        </li>
+                        <li class="flex items-center text-sm text-gray-300">
+                            <span data-lucide="check-circle" class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0"></span>
+                            <span data-text-key="product3_feat2">Soporte Offline</span>
+                        </li>
+                        <li class="flex items-center text-sm text-gray-300">
+                            <span data-lucide="check-circle" class="w-5 h-5 text-emerald-500 mr-3 flex-shrink-0"></span>
+                            <span data-text-key="product3_feat3">Reportes de Ventas e Impuestos</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="#contacto" class="w-full text-center py-3 bg-electric-blue text-white-pure font-bold rounded-xl hover:bg-accent-purple transition duration-300 shadow-lg shadow-electric-blue/20 flex items-center justify-center group-hover:shadow-accent-purple/20" data-text-key="btn_request_demo">
+                    Solicitar Demo
+                    <span data-lucide="arrow-right" class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
