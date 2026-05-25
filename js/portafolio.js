@@ -10,7 +10,8 @@ const modalTechStack = document.getElementById('modal-tech-stack');
 const projectTech = {
     1: ['HTML/CSS/JS', 'Tailwind CSS', 'GetForm', 'Responsivo'],
     2: ['HTML/CSS/JS', 'Tailwind CSS', 'Seguridad Web', 'Rendimiento'],
-    3: ['React Native', 'React JS', 'APIs REST', 'UX Móvil']
+    3: ['React Native', 'React JS', 'APIs REST', 'UX Móvil'],
+    4: ['React JS', 'Tailwind CSS', 'Supabase', 'SaaS Panel']
 };
 
 function openPortfolioModal(id, title, description, imageUrl, projectUrl) {

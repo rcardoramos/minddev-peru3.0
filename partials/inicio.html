@@ -1,71 +1,109 @@
-<section id="inicio" class="pt-24 pb-32">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<section id="inicio" class="pt-28 pb-32 relative overflow-hidden bg-deep-blue">
+    <!-- Glowing background elements -->
+    <div class="absolute top-1/4 right-0 w-[500px] h-[500px] bg-electric-blue/10 rounded-full blur-[150px] pointer-events-none"></div>
+    <div class="absolute bottom-10 left-10 w-[400px] h-[400px] bg-accent-purple/10 rounded-full blur-[130px] pointer-events-none"></div>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
-            <!-- Columna Izquierda: Título y Botones -->
-            <div class="lg:col-span-8 text-center lg:text-left">
+            <!-- Columna Izquierda: Título, Botones y Social Proof -->
+            <div class="lg:col-span-8 text-center lg:text-left flex flex-col items-center lg:items-start">
+                
+                <!-- Pill Badge -->
+                <div class="inline-flex items-center space-x-2 bg-electric-blue/10 border border-electric-blue/30 rounded-full px-4 py-1.5 mb-6 text-xs sm:text-sm font-semibold text-electric-blue tracking-wide shadow-lg shadow-electric-blue/5">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-electric-blue opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-electric-blue"></span>
+                    </span>
+                    <span>Software a Medida & Productos SaaS</span>
+                </div>
 
-                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight mb-4">
-                    <span class="block" data-text-key="hero_title_line1">Transformamos</span>
-                    <span class="block" data-text-key="hero_title_line2">ideas en soluciones</span>
-                    <span class="text-electric-blue" data-text-key="hero_title_line3">digitales</span>
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 tracking-tight">
+                    <span class="block text-white" data-text-key="hero_title_line1">Transformamos</span>
+                    <span class="block text-white/90" data-text-key="hero_title_line2">ideas en soluciones</span>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue via-blue-400 to-accent-purple" data-text-key="hero_title_line3">digitales</span>
                 </h1>
-                <p class="text-xl sm:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto lg:mx-0"
-                    data-text-key="hero_subtitle">
-                    Especialistas en desarrollo web, aplicaciones móviles y servicios tecnológicos para
-                    potenciar tu negocio.
+                
+                <p class="text-lg sm:text-xl text-gray-300 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed" data-text-key="hero_subtitle">
+                    Especialistas en desarrollo web, aplicaciones móviles y servicios tecnológicos para potenciar tu negocio.
                 </p>
 
-                <div
-                    class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 w-full sm:w-auto">
                     <a href="#contacto"
-                        class="bg-electric-blue text-white-pure px-8 py-3 rounded-xl font-bold text-lg hover:bg-accent-purple transition duration-300 shadow-xl shadow-electric-blue/40 flex items-center justify-center sm:justify-start transform hover:scale-105"
+                        class="bg-electric-blue text-white-pure px-8 py-4 rounded-xl font-bold text-lg hover:bg-accent-purple transition duration-300 shadow-xl shadow-electric-blue/30 flex items-center justify-center transform hover:scale-[1.03] group"
                         data-text-key="btn_start_project">
-                        <span data-lucide="send" class="w-5 h-5 mr-2"></span>
+                        <span data-lucide="send" class="w-5 h-5 mr-2 transition-transform group-hover:translate-x-1"></span>
                         Iniciar Proyecto
                     </a>
 
                     <a href="#servicios"
-                        class="bg-dark-alt text-white-pure px-8 py-3 rounded-xl font-bold text-lg border border-gray-700 hover:bg-deep-blue/50 transition duration-300 flex items-center justify-center sm:justify-start transform hover:scale-105"
+                        class="bg-dark-alt/80 backdrop-blur-sm text-white-pure px-8 py-4 rounded-xl font-bold text-lg border border-gray-700/80 hover:bg-deep-blue/80 transition duration-300 flex items-center justify-center transform hover:scale-[1.03]"
                         data-text-key="btn_explore">
                         <span data-lucide="search" class="w-5 h-5 mr-2"></span>
                         Explorar
                     </a>
                 </div>
+
+                <!-- Trust Indicators / Social Proof -->
+                <div class="mt-12 pt-8 border-t border-gray-800/80 flex flex-wrap items-center justify-center lg:justify-start gap-y-4 gap-x-8 text-gray-400 text-sm w-full">
+                    <div class="flex items-center space-x-1">
+                        <div class="flex space-x-0.5">
+                            <span data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></span>
+                            <span data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></span>
+                            <span data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></span>
+                            <span data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></span>
+                            <span data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></span>
+                        </div>
+                        <span class="ml-2 text-white font-bold">5.0</span>
+                        <span class="text-gray-500">en calificaciones</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                        <span class="text-gray-300 font-medium">+30 proyectos exitosos</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="w-2.5 h-2.5 rounded-full bg-electric-blue"></span>
+                        <span class="text-gray-300 font-medium">Soporte garantizado</span>
+                    </div>
+                </div>
             </div>
 
-            <!-- Columna Derecha -->
-            <div class="lg:col-span-4 flex flex-col space-y-6 items-center lg:items-end mt-12 lg:mt-0">
+            <!-- Columna Derecha: Tarjetas premium interactivas -->
+            <div class="lg:col-span-4 flex flex-col space-y-6 items-center lg:items-end mt-12 lg:mt-0 w-full">
                 <!-- Card 1: Desarrollo Web/Software -->
-                <div
-                    class="glass-card w-full max-w-xs p-5 rounded-2xl text-center transition duration-500 hover:scale-105 hover:shadow-electric-blue/50">
-                    <span data-lucide="code" class="w-10 h-10 text-electric-blue mx-auto mb-2"></span>
-                    <p class="text-lg font-semibold text-white-pure" data-text-key="hero_card1_title">Desarrollo
-                        Software</p>
-                    <p class="text-xs text-gray-400" data-text-key="hero_card1_subtitle">Web, MVP y Backend</p>
+                <div class="glass-card w-full max-w-sm p-6 rounded-2xl transition duration-300 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(59,130,246,0.2)] border border-electric-blue/20 hover:border-electric-blue/40 flex items-center space-x-5">
+                    <div class="w-12 h-12 bg-electric-blue/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <span data-lucide="code" class="w-6 h-6 text-electric-blue"></span>
+                    </div>
+                    <div>
+                        <p class="text-lg font-bold text-white-pure" data-text-key="hero_card1_title">Desarrollo Software</p>
+                        <p class="text-sm text-gray-400" data-text-key="hero_card1_subtitle">Web, MVP y Backend</p>
+                    </div>
                 </div>
 
                 <!-- Card 2: Aplicaciones Móviles -->
-                <div
-                    class="glass-card w-full max-w-xs p-5 rounded-2xl text-center transition duration-500 hover:scale-105 hover:shadow-electric-blue/50">
-                    <span data-lucide="smartphone" class="w-10 h-10 text-electric-blue mx-auto mb-2"></span>
-                    <p class="text-lg font-semibold text-white-pure" data-text-key="hero_card2_title">Apps
-                        Móviles</p>
-                    <p class="text-xs text-gray-400" data-text-key="hero_card2_subtitle">iOS, Android,
-                        Multi-Plataforma</p>
+                <div class="glass-card w-full max-w-sm p-6 rounded-2xl transition duration-300 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(83,85,221,0.2)] border border-accent-purple/20 hover:border-accent-purple/40 flex items-center space-x-5">
+                    <div class="w-12 h-12 bg-accent-purple/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <span data-lucide="smartphone" class="w-6 h-6 text-accent-purple"></span>
+                    </div>
+                    <div>
+                        <p class="text-lg font-bold text-white-pure" data-text-key="hero_card2_title">Apps Móviles</p>
+                        <p class="text-sm text-gray-400" data-text-key="hero_card2_subtitle">iOS, Android, Multi-Plataforma</p>
+                    </div>
                 </div>
 
-                <!-- Card 3: SEO / IA / Marketing -->
-                <div
-                    class="glass-card w-full max-w-xs p-5 rounded-2xl text-center transition duration-500 hover:scale-105 hover:shadow-electric-blue/50">
-                    <span data-lucide="brain" class="w-10 h-10 text-electric-blue mx-auto mb-2"></span>
-                    <p class="text-lg font-semibold text-white-pure" data-text-key="hero_card3_title">Estrategia
-                        Digital</p>
-                    <p class="text-xs text-gray-400" data-text-key="hero_card3_subtitle">SEO, Marketing y Cloud
-                    </p>
+                <!-- Card 3: Estrategia Digital -->
+                <div class="glass-card w-full max-w-sm p-6 rounded-2xl transition duration-300 hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(59,130,246,0.2)] border border-electric-blue/20 hover:border-electric-blue/40 flex items-center space-x-5">
+                    <div class="w-12 h-12 bg-electric-blue/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <span data-lucide="brain" class="w-6 h-6 text-electric-blue"></span>
+                    </div>
+                    <div>
+                        <p class="text-lg font-bold text-white-pure" data-text-key="hero_card3_title">Estrategia Digital</p>
+                        <p class="text-sm text-gray-400" data-text-key="hero_card3_subtitle">SEO, Marketing y Cloud</p>
+                    </div>
                 </div>
             </div>
+            
         </div>
     </div>
 </section>
